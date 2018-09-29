@@ -1,6 +1,6 @@
 # SCSS Library: Property rulesets
 
-Library of .scss partials for generating responsive, property-based classes (Atomic/FUN CSS) for building components.
+Library of .scss partials for generating responsive, property-based classes (Atomic/FUN CSS).
 
 ---
 
