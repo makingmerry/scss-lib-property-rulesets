@@ -1,0 +1,54 @@
+// # Column
+// CSS column properties,
+// not to be confused with layout grid/column classes.
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include breakpoint-rules($breakpoints) {
+  // column-fill:
+  .col-fill-auto#{$breakpoint-step} { column-fill: auto; }
+  .col-fill-balance#{$breakpoint-step} { column-fill: balance; }
+  .col-fill-balance-all#{$breakpoint-step} { column-fill: balance-all; }
+
+  // column-span:
+  .col-span-none#{$breakpoint-step} { column-span: none; }
+  .col-span-all#{$breakpoint-step} { column-span: all; }
+
+  // column-gap:
+  .col-gap-normal#{$breakpoint-step} { column-gap: normal; }
+
+  @include spacing-rules($custom-spacings, $spacings, $spacing-scale) {
+    .col-gap#{$spacing-step}#{$breakpoint-step} { column-gap: $spacing-val; }
+  }
+
+  // column-count:
+  .col-count-auto#{$breakpoint-step} { column-count: auto; }
+
+  @for $i from 1 through $column-count {
+    $column-index: '-' + $i;
+    .col-count#{$column-index}#{$breakpoint-step} { column-count: $i; }
+  }
+
+  // column-width:
+  .col-w-auto#{$breakpoint-step} { column-width: auto; }
+  .col-w-normal#{$breakpoint-step} { column-width: map-get($measures, normal); }
+  .col-w-narrow#{$breakpoint-step} { column-width: map-get($measures, narrow); }
+  .col-w-wide#{$breakpoint-step} { column-width: map-get($measures, wide); }
+
+  // column-rule-width:
+  @include border-width-rules($border-widths) {
+    .col-rule-w#{$border-width-step}#{$breakpoint-step} { column-rule-width: $border-width-val; }
+  }
+
+  // column-rule-color:
+  @include color-rules($colors) {
+    .col-rule-c#{$color-name}#{$breakpoint-step} { column-rule-color: $color-val; }
+  }
+
+  // column-rule-style:
+  .col-rule-st-none#{$breakpoint-step} { column-rule-style: none; }
+  .col-rule-st-solid#{$breakpoint-step} { column-rule-style: solid; }
+  .col-rule-st-dot#{$breakpoint-step} { column-rule-style: dot; }
+  .col-rule-st-dash#{$breakpoint-step} { column-rule-style: dash; }
+}

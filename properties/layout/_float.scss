@@ -1,0 +1,26 @@
+// # Float
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include breakpoint-rules($breakpoints) {
+  // float:
+  .float-none#{$breakpoint-step} { float: none; }
+  .float-right#{$breakpoint-step} { float: right; }
+  .float-left#{$breakpoint-step} { float: left; }
+
+  // clear:
+  .clear-none#{$breakpoint-step} { clear: none; }
+  .clear-right#{$breakpoint-step} { clear: right; }
+  .clear-left#{$breakpoint-step} { clear: left; }
+  .clear-both#{$breakpoint-step} { clear: both; }
+
+  // *clear-fix:
+  .contain-floats#{$breakpoint-step} {
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}

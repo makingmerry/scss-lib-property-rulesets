@@ -1,0 +1,142 @@
+// # Config
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+// # Layout
+////////////////////////////////////////
+////////////////////////////////////////
+
+$breakpoints: (
+  small: 40em,
+  medium: 60em,
+  large: 80em,
+);
+
+$wraps: (
+  small: 50em,
+  medium: 70em,
+  large: 90em,
+);
+
+// List $spacing values if custom-spacings is required, e.g.
+// $spacings: (1: 1em, 2: 2em);
+$custom-spacings: false;
+$spacings: null;
+$spacing-scale: (
+  base: 1em,
+  ratio: 2,
+  steps: 6,
+);
+
+$widths: (
+  1: 1em,
+  2: 2em,
+  3: 4em,
+  4: 8em,
+  5: 16em,
+);
+
+$heights: (
+  1: 1em,
+  2: 2em,
+  3: 4em,
+  4: 8em,
+  5: 16em,
+);
+
+$column-count: 12;
+$z-index-count: 4;
+
+// # Typography
+////////////////////////////////////////
+////////////////////////////////////////
+
+$font-families: (
+  helvetica: '"helvetica neue", helvetica, sans-serif',
+  times-new-roman: '"times new roman", serif',
+);
+
+// List $font-sizes values if custom-font-sizes is required, e.g.
+// $font-sizes: (1: 2em, 2: 1em);
+$custom-font-sizes: false;
+$font-sizes: null;
+$font-size-scale: (
+  base: 1em,
+  ratio: 1.25,
+  steps-up: 5,
+  steps-down: 2,
+);
+
+$measures: (
+  normal: 30em,
+  narrow: 20em,
+  wide: 34em,
+);
+
+$line-heights: (
+  normal: 1.45,
+  title: 1.15,
+  solid: 1,
+);
+
+$letter-spacings: (
+  normal: 0,
+  track: 0.05em,
+  tight: -0.25em,
+  wide: 0.25em,
+);
+
+// # Theming
+////////////////////////////////////////
+////////////////////////////////////////
+
+$colors: (
+  // Brand:
+  // Neutrals:
+  black: #000,
+  near-black: #111,
+  dark-grey: #333,
+  mid-grey: #555,
+  grey: #777,
+  silver: #999,
+  light-silver: #aaa,
+  moon-grey: #ccc,
+  light-grey: #eee,
+  near-white: #f4f4f4,
+  white: #fff,
+  near-transparent-white: rgba(255,255,255,0.15),
+  transparent: transparent,
+  // Utility:
+  ut-dark-red: #e7040f,
+  ut-red: #ff4136,
+  ut-light-red: #ff725c,
+  ut-dark-green: #137752,
+  ut-green: #19a974,
+  ut-light-green: #9eebcf,
+);
+
+$border-widths: (
+  1: 1px,
+  2: 0.125em,
+  3: 0.25em,
+  4: 0.5em,
+);
+
+$border-radiuses: (
+  1: 1px,
+  2: 0.125em,
+  3: 0.25em,
+  4: 0.5em,
+);
+
+$opacities: (
+  near-transparent: 0.15,
+  translucent: 0.85,
+);
+
+$transitions: (
+  normal: 0.2s,
+  slow: 1s,
+  fast: 0.1s,
+);

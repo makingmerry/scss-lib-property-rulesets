@@ -1,0 +1,15 @@
+// # Z-index
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include breakpoint-rules($breakpoints) {
+  .z-1n#{$breakpoint-step} { z-index: -1; }
+  .z-0#{$breakpoint-step} { z-index: 0; }
+  .z-99#{$breakpoint-step} { z-index: 99; }
+
+  @for $i from 1 through $z-index-count {
+    $z-index-step: '-' + $i;
+    .z#{$z-index-step}#{$breakpoint-step} { z-index: $i; }
+  }
+}

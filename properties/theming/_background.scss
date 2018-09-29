@@ -1,0 +1,57 @@
+// # Background
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include breakpoint-rules($breakpoints) {
+  // background-position:
+  .bg-pos-center-center#{$breakpoint-step} { background-position: center center; }
+  .bg-pos-center-top#{$breakpoint-step} { background-position: center top; }
+  .bg-pos-right-top#{$breakpoint-step} { background-position: right top; }
+  .bg-pos-right-center#{$breakpoint-step} { background-position: right center; }
+  .bg-pos-right-bottom#{$breakpoint-step} { background-position: right bottom; }
+  .bg-pos-center-bottom#{$breakpoint-step} { background-position: center bottom; }
+  .bg-pos-left-bottom#{$breakpoint-step} { background-position: left bottom; }
+  .bg-pos-left-center#{$breakpoint-step} { background-position: left center; }
+  .bg-pos-left-top#{$breakpoint-step} { background-position: left top; }
+
+  // background-size:
+  .bg-size-auto#{$breakpoint-step} { background-size: auto; }
+  .bg-size-contain#{$breakpoint-step} { background-size: contain; }
+  .bg-size-cover#{$breakpoint-step} { background-size: cover; }
+
+  // background-repeat:
+  .bg-repeat#{$breakpoint-step} { background-repeat: repeat; }
+  .bg-repeat-none#{$breakpoint-step} { background-repeat: no-repeat; }
+  .bg-repeat-x#{$breakpoint-step} { background-repeat: repeat-x; }
+  .bg-repeat-y#{$breakpoint-step} { background-repeat: repeat-y; }
+
+  // background-attachment:
+  .bg-attach-scroll#{$breakpoint-step} { background-attachment: scroll; }
+  .bg-attach-fixed#{$breakpoint-step} { background-attachment: fixed; }
+  .bg-attach-local#{$breakpoint-step} { background-attachment: local; }
+
+  // background-blend-mode:
+  .bg-blend-normal#{$breakpoint-step} { background-blend-mode: normal; }
+  .bg-blend-multiply#{$breakpoint-step} { background-blend-mode: multiply; }
+  .bg-blend-screen#{$breakpoint-step} { background-blend-mode: screen; }
+  .bg-blend-overlay#{$breakpoint-step} { background-blend-mode: overlay; }
+  .bg-blend-darken#{$breakpoint-step} { background-blend-mode: darken; }
+  .bg-blend-lighten#{$breakpoint-step} { background-blend-mode: lighten; }
+  .bg-blend-color-dodge#{$breakpoint-step} { background-blend-mode: color-dodge; }
+  .bg-blend-color-burn#{$breakpoint-step} { background-blend-mode: color-burn; }
+  .bg-blend-hard-light#{$breakpoint-step} { background-blend-mode: hard-light; }
+  .bg-blend-soft-light#{$breakpoint-step} { background-blend-mode: soft-light; }
+  .bg-blend-difference#{$breakpoint-step} { background-blend-mode: difference; }
+  .bg-blend-exclusion#{$breakpoint-step} { background-blend-mode: exclusion; }
+  .bg-blend-hue#{$breakpoint-step} { background-blend-mode: hue; }
+  .bg-blend-saturation#{$breakpoint-step} { background-blend-mode: saturation; }
+  .bg-blend-color#{$breakpoint-step} { background-blend-mode: color; }
+  .bg-blend-luminosity#{$breakpoint-step} { background-blend-mode: luminosity; }
+
+  // background-color:
+  @include color-rules($colors) {
+    .bg-c#{$color-name}#{$breakpoint-step} { background-color: $color-val; }
+    .hov-bg-c#{$color-name}#{$breakpoint-step}:hover {background-color: $color-val; }
+  }
+}
