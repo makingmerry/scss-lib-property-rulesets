@@ -5,6 +5,7 @@
 !properties/
 !utilities/
 !_config.scss
+!style.scss
 
 # Ignore all files starting with . or ~.
 .*
