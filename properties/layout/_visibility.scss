@@ -4,7 +4,13 @@
 ////////////////////////////////////////////////////////////
 
 @include breakpoint-rules($breakpoints) {
-  .vis-visible#{$breakpoint-step} { visibility: visible; }
-  .vis-hidden#{$breakpoint-step} { visibility: hidden; }
-  .vis-collapse#{$breakpoint-step} { visibility: collapse; }
+  .vis-visible#{$breakpoint-step} {
+    visibility: visible;
+  }
+  .vis-hidden#{$breakpoint-step} {
+    visibility: hidden;
+  }
+  .vis-collapse#{$breakpoint-step} {
+    visibility: collapse;
+  }
 }

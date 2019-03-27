@@ -5,63 +5,159 @@
 
 @include breakpoint-rules($breakpoints) {
   // width:
-  .w-auto#{$breakpoint-step} { width: auto; }
-  .w-10#{$breakpoint-step} { width: 10%; }
-  .w-20#{$breakpoint-step} { width: 20%; }
-  .w-25#{$breakpoint-step} { width: 25%; }
-  .w-30#{$breakpoint-step} { width: 30%; }
-  .w-40#{$breakpoint-step} { width: 40%; }
-  .w-50#{$breakpoint-step} { width: 50%; }
-  .w-60#{$breakpoint-step} { width: 60%; }
-  .w-70#{$breakpoint-step} { width: 70%; }
-  .w-75#{$breakpoint-step} { width: 75%; }
-  .w-80#{$breakpoint-step} { width: 80%; }
-  .w-90#{$breakpoint-step} { width: 90%; }
-  .w-100#{$breakpoint-step} { width: 100%; }
-  .w-third#{$breakpoint-step} { width: #{1 / 3 * 100%}; }
-  .w-two-thirds#{$breakpoint-step} { width: #{2 / 3 * 100%}; }
+  .w-auto#{$breakpoint-step} {
+    width: auto;
+  }
+  .w-10#{$breakpoint-step} {
+    width: 10%;
+  }
+  .w-20#{$breakpoint-step} {
+    width: 20%;
+  }
+  .w-25#{$breakpoint-step} {
+    width: 25%;
+  }
+  .w-30#{$breakpoint-step} {
+    width: 30%;
+  }
+  .w-40#{$breakpoint-step} {
+    width: 40%;
+  }
+  .w-50#{$breakpoint-step} {
+    width: 50%;
+  }
+  .w-60#{$breakpoint-step} {
+    width: 60%;
+  }
+  .w-70#{$breakpoint-step} {
+    width: 70%;
+  }
+  .w-75#{$breakpoint-step} {
+    width: 75%;
+  }
+  .w-80#{$breakpoint-step} {
+    width: 80%;
+  }
+  .w-90#{$breakpoint-step} {
+    width: 90%;
+  }
+  .w-100#{$breakpoint-step} {
+    width: 100%;
+  }
+  .w-third#{$breakpoint-step} {
+    width: 1 / 3 * 100%;
+  }
+  .w-two-thirds#{$breakpoint-step} {
+    width: 2 / 3 * 100%;
+  }
 
   // min-width:
-  .w-min-auto#{$breakpoint-step} { min-width: auto; }
-  .w-min-10#{$breakpoint-step} { min-width: 10%; }
-  .w-min-20#{$breakpoint-step} { min-width: 20%; }
-  .w-min-25#{$breakpoint-step} { min-width: 25%; }
-  .w-min-30#{$breakpoint-step} { min-width: 30%; }
-  .w-min-40#{$breakpoint-step} { min-width: 40%; }
-  .w-min-50#{$breakpoint-step} { min-width: 50%; }
-  .w-min-60#{$breakpoint-step} { min-width: 60%; }
-  .w-min-70#{$breakpoint-step} { min-width: 70%; }
-  .w-min-75#{$breakpoint-step} { min-width: 75%; }
-  .w-min-80#{$breakpoint-step} { min-width: 80%; }
-  .w-min-90#{$breakpoint-step} { min-width: 90%; }
-  .w-min-100#{$breakpoint-step} { min-width: 100%; }
-  .w-min-third#{$breakpoint-step} { width: #{1 / 3 * 100%}; }
-  .w-min-two-thirds#{$breakpoint-step} { width: #{2 / 3 * 100%}; }
+  .w-min-auto#{$breakpoint-step} {
+    min-width: auto;
+  }
+  .w-min-10#{$breakpoint-step} {
+    min-width: 10%;
+  }
+  .w-min-20#{$breakpoint-step} {
+    min-width: 20%;
+  }
+  .w-min-25#{$breakpoint-step} {
+    min-width: 25%;
+  }
+  .w-min-30#{$breakpoint-step} {
+    min-width: 30%;
+  }
+  .w-min-40#{$breakpoint-step} {
+    min-width: 40%;
+  }
+  .w-min-50#{$breakpoint-step} {
+    min-width: 50%;
+  }
+  .w-min-60#{$breakpoint-step} {
+    min-width: 60%;
+  }
+  .w-min-70#{$breakpoint-step} {
+    min-width: 70%;
+  }
+  .w-min-75#{$breakpoint-step} {
+    min-width: 75%;
+  }
+  .w-min-80#{$breakpoint-step} {
+    min-width: 80%;
+  }
+  .w-min-90#{$breakpoint-step} {
+    min-width: 90%;
+  }
+  .w-min-100#{$breakpoint-step} {
+    min-width: 100%;
+  }
+  .w-min-third#{$breakpoint-step} {
+    width: 1 / 3 * 100%;
+  }
+  .w-min-two-thirds#{$breakpoint-step} {
+    width: 2 / 3 * 100%;
+  }
 
   // max-height:
-  .w-max-none#{$breakpoint-step} { max-width: none; }
-  .w-max-10#{$breakpoint-step} { max-width: 10%; }
-  .w-max-20#{$breakpoint-step} { max-width: 20%; }
-  .w-max-25#{$breakpoint-step} { max-width: 25%; }
-  .w-max-30#{$breakpoint-step} { max-width: 30%; }
-  .w-max-40#{$breakpoint-step} { max-width: 40%; }
-  .w-max-50#{$breakpoint-step} { max-width: 50%; }
-  .w-max-60#{$breakpoint-step} { max-width: 60%; }
-  .w-max-70#{$breakpoint-step} { max-width: 70%; }
-  .w-max-75#{$breakpoint-step} { max-width: 75%; }
-  .w-max-80#{$breakpoint-step} { max-width: 80%; }
-  .w-max-90#{$breakpoint-step} { max-width: 90%; }
-  .w-max-100#{$breakpoint-step} { max-width: 100%; }
-  .w-max-third#{$breakpoint-step} { width: #{1 / 3 * 100%}; }
-  .w-max-two-thirds#{$breakpoint-step} { width: #{2 / 3 * 100%}; }
+  .w-max-none#{$breakpoint-step} {
+    max-width: none;
+  }
+  .w-max-10#{$breakpoint-step} {
+    max-width: 10%;
+  }
+  .w-max-20#{$breakpoint-step} {
+    max-width: 20%;
+  }
+  .w-max-25#{$breakpoint-step} {
+    max-width: 25%;
+  }
+  .w-max-30#{$breakpoint-step} {
+    max-width: 30%;
+  }
+  .w-max-40#{$breakpoint-step} {
+    max-width: 40%;
+  }
+  .w-max-50#{$breakpoint-step} {
+    max-width: 50%;
+  }
+  .w-max-60#{$breakpoint-step} {
+    max-width: 60%;
+  }
+  .w-max-70#{$breakpoint-step} {
+    max-width: 70%;
+  }
+  .w-max-75#{$breakpoint-step} {
+    max-width: 75%;
+  }
+  .w-max-80#{$breakpoint-step} {
+    max-width: 80%;
+  }
+  .w-max-90#{$breakpoint-step} {
+    max-width: 90%;
+  }
+  .w-max-100#{$breakpoint-step} {
+    max-width: 100%;
+  }
+  .w-max-third#{$breakpoint-step} {
+    max-width: 1 / 3 * 100%;
+  }
+  .w-max-two-thirds#{$breakpoint-step} {
+    max-width: 2 / 3 * 100%;
+  }
 
   @each $step, $val in $widths {
-    $width-step: '-' + $step;
+    $width-step: "-" + $step;
     // width:
-    .w#{$width-step}#{$breakpoint-step} { width: $val; }
+    .w#{$width-step}#{$breakpoint-step} {
+      width: $val;
+    }
     // min-width:
-    .w-min#{$width-step}#{$breakpoint-step} { min-width: $val; }
+    .w-min#{$width-step}#{$breakpoint-step} {
+      min-width: $val;
+    }
     // max-height:
-    .w-max#{$width-step}#{$breakpoint-step} { max-width: $val; }
+    .w-max#{$width-step}#{$breakpoint-step} {
+      max-width: $val;
+    }
   }
 }

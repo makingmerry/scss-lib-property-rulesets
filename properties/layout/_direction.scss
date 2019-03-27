@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////
 
 @include breakpoint-rules($breakpoints) {
-  .dir-ltr#{$breakpoint-step} { direction: ltr; }
-  .dir-rtl#{$breakpoint-step} { direction: rtl; }
+  .dir-ltr#{$breakpoint-step} {
+    direction: ltr;
+  }
+  .dir-rtl#{$breakpoint-step} {
+    direction: rtl;
+  }
 }

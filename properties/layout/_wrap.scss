@@ -5,7 +5,9 @@
 
 @include breakpoint-rules($breakpoints) {
   @each $step, $val in $wraps {
-    $wrap-step: '-' + $step;
-    .wrap#{$wrap-step}#{$breakpoint-step} { max-width: $val; }
+    $wrap-step: "-" + $step;
+    .wrap#{$wrap-step}#{$breakpoint-step} {
+      max-width: $val;
+    }
   }
 }

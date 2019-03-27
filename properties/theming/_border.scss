@@ -5,11 +5,21 @@
 
 @include breakpoint-rules($breakpoints) {
   // border:
-  .b-top#{$breakpoint-step} { border-top: 1px solid; }
-  .b-bottom#{$breakpoint-step} { border-bottom: 1px solid; }
-  .b-right#{$breakpoint-step} { border-right: 1px solid; }
-  .b-left#{$breakpoint-step} { border-left: 1px solid; }
-  .b-all#{$breakpoint-step} { border: 1px solid; }
+  .b-top#{$breakpoint-step} {
+    border-top: 1px solid;
+  }
+  .b-bottom#{$breakpoint-step} {
+    border-bottom: 1px solid;
+  }
+  .b-right#{$breakpoint-step} {
+    border-right: 1px solid;
+  }
+  .b-left#{$breakpoint-step} {
+    border-left: 1px solid;
+  }
+  .b-all#{$breakpoint-step} {
+    border: 1px solid;
+  }
   .b-hor#{$breakpoint-step} {
     border-right: 1px solid;
     border-left: 1px solid;
@@ -20,7 +30,9 @@
   }
 
   // border-width:
-  .b-w-none#{$breakpoint-step} { border-width: 0; }
+  .b-w-none#{$breakpoint-step} {
+    border-width: 0;
+  }
 
   @include border-width-rules($border-widths) {
     .b-w#{$border-width-step}#{$breakpoint-step} {
@@ -29,12 +41,20 @@
   }
 
   // border-radius:
-  .b-r-none#{$breakpoint-step} { border-radius: 0; }
-  .b-r-circle#{$breakpoint-step} { border-radius: 100%; }
-  .b-r-pill#{$breakpoint-step} { border-radius: 1000px; }
+  .b-r-none#{$breakpoint-step} {
+    border-radius: 0;
+  }
+  .b-r-circle#{$breakpoint-step} {
+    border-radius: 100%;
+  }
+  .b-r-pill#{$breakpoint-step} {
+    border-radius: 1000px;
+  }
 
   @include border-width-rules($border-widths) {
-    .b-r#{$border-width-step}#{$breakpoint-step} { border-radius: $border-width-val; }
+    .b-r#{$border-width-step}#{$breakpoint-step} {
+      border-radius: $border-width-val;
+    }
   }
 
   // border-radius 'position':
@@ -76,17 +96,33 @@
   }
 
   // border-style:
-  .b-st-none#{$breakpoint-step} { border-style: none; }
-  .b-st-solid#{$breakpoint-step} { border-style: solid; }
-  .b-st-dot#{$breakpoint-step} { border-style: dot; }
-  .b-st-dash#{$breakpoint-step} { border-style: dash; }
+  .b-st-none#{$breakpoint-step} {
+    border-style: none;
+  }
+  .b-st-solid#{$breakpoint-step} {
+    border-style: solid;
+  }
+  .b-st-dot#{$breakpoint-step} {
+    border-style: dot;
+  }
+  .b-st-dash#{$breakpoint-step} {
+    border-style: dash;
+  }
 
   // border-color:
-  .b-c-inherit#{$breakpoint-step} { border-color: inherit; }
-  .hov-b-c-inherit#{$breakpoint-step}:hover { border-color: inherit; }
+  .b-c-inherit#{$breakpoint-step} {
+    border-color: inherit;
+  }
+  .hov-b-c-inherit#{$breakpoint-step}:hover {
+    border-color: inherit;
+  }
 
   @include color-rules($colors) {
-    .b-c#{$color-name}#{$breakpoint-step} { border-color: $color-val; }
-    .hov-b-c#{$color-name}#{$breakpoint-step}:hover { border-color: $color-val; }
+    .b-c#{$color-name}#{$breakpoint-step} {
+      border-color: $color-val;
+    }
+    .hov-b-c#{$color-name}#{$breakpoint-step}:hover {
+      border-color: $color-val;
+    }
   }
 }

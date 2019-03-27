@@ -4,6 +4,10 @@
 ////////////////////////////////////////////////////////////
 
 @include breakpoint-rules($breakpoints) {
-  .box-sizing-content#{$breakpoint-step} { box-sizing: content-box; }
-  .box-sizing-border#{$breakpoint-step} { box-sizing: border-box; }
+  .box-sizing-content#{$breakpoint-step} {
+    box-sizing: content-box;
+  }
+  .box-sizing-border#{$breakpoint-step} {
+    box-sizing: border-box;
+  }
 }

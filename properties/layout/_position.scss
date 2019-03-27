@@ -5,28 +5,60 @@
 
 @include breakpoint-rules($breakpoints) {
   // position:
-  .pos-static#{$breakpoint-step} { position: static; }
-  .pos-fixed#{$breakpoint-step} { position: fixed; }
-  .pos-relative#{$breakpoint-step} { position: relative; }
-  .pos-absolute#{$breakpoint-step} { position: absolute; }
+  .pos-static#{$breakpoint-step} {
+    position: static;
+  }
+  .pos-fixed#{$breakpoint-step} {
+    position: fixed;
+  }
+  .pos-relative#{$breakpoint-step} {
+    position: relative;
+  }
+  .pos-absolute#{$breakpoint-step} {
+    position: absolute;
+  }
 
   // *translate:
-  .top-0#{$breakpoint-step} { top: 0; }
-  .bottom-0#{$breakpoint-step} { bottom: 0; }
-  .right-0#{$breakpoint-step} { right: 0; }
-  .left-0#{$breakpoint-step} { left: 0; }
+  .top-0#{$breakpoint-step} {
+    top: 0;
+  }
+  .bottom-0#{$breakpoint-step} {
+    bottom: 0;
+  }
+  .right-0#{$breakpoint-step} {
+    right: 0;
+  }
+  .left-0#{$breakpoint-step} {
+    left: 0;
+  }
 
   @include spacing-rules($custom-spacings, $spacings, $spacing-scale) {
     // position:
-    .top#{$spacing-step}#{$breakpoint-step} { top: $spacing-val; }
-    .bottom#{$spacing-step}#{$breakpoint-step} { bottom: $spacing-val; }
-    .right#{$spacing-step}#{$breakpoint-step} { right: $spacing-val; }
-    .left#{$spacing-step}#{$breakpoint-step} { left: $spacing-val; }
+    .top#{$spacing-step}#{$breakpoint-step} {
+      top: $spacing-val;
+    }
+    .bottom#{$spacing-step}#{$breakpoint-step} {
+      bottom: $spacing-val;
+    }
+    .right#{$spacing-step}#{$breakpoint-step} {
+      right: $spacing-val;
+    }
+    .left#{$spacing-step}#{$breakpoint-step} {
+      left: $spacing-val;
+    }
 
     // *translate (negative):
-    .top#{$spacing-step}n#{$breakpoint-step} { top: - $spacing-val; }
-    .bottom#{$spacing-step}n#{$breakpoint-step} { bottom: - $spacing-val; }
-    .right#{$spacing-step}n#{$breakpoint-step} { right: - $spacing-val; }
-    .left#{$spacing-step}n#{$breakpoint-step} { left: - $spacing-val; }
+    .top#{$spacing-step}n#{$breakpoint-step} {
+      top: -$spacing-val;
+    }
+    .bottom#{$spacing-step}n#{$breakpoint-step} {
+      bottom: -$spacing-val;
+    }
+    .right#{$spacing-step}n#{$breakpoint-step} {
+      right: -$spacing-val;
+    }
+    .left#{$spacing-step}n#{$breakpoint-step} {
+      left: -$spacing-val;
+    }
   }
 }

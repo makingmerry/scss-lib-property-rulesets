@@ -5,20 +5,44 @@
 
 @include breakpoint-rules($breakpoints) {
   // overflow:
-  .of-auto#{$breakpoint-step} { overflow: auto; }
-  .of-visible#{$breakpoint-step} { overflow: visible; }
-  .of-hidden#{$breakpoint-step} { overflow: hidden; }
-  .of-scroll#{$breakpoint-step} { overflow: scroll; }
+  .of-auto#{$breakpoint-step} {
+    overflow: auto;
+  }
+  .of-visible#{$breakpoint-step} {
+    overflow: visible;
+  }
+  .of-hidden#{$breakpoint-step} {
+    overflow: hidden;
+  }
+  .of-scroll#{$breakpoint-step} {
+    overflow: scroll;
+  }
 
   // overflow-x:
-  .of-x-auto#{$breakpoint-step} { overflow-x: auto; }
-  .of-x-visible#{$breakpoint-step} { overflow-x: visible; }
-  .of-x-hidden#{$breakpoint-step} { overflow-x: hidden; }
-  .of-x-scroll#{$breakpoint-step} { overflow-x: scroll; }
+  .of-x-auto#{$breakpoint-step} {
+    overflow-x: auto;
+  }
+  .of-x-visible#{$breakpoint-step} {
+    overflow-x: visible;
+  }
+  .of-x-hidden#{$breakpoint-step} {
+    overflow-x: hidden;
+  }
+  .of-x-scroll#{$breakpoint-step} {
+    overflow-x: scroll;
+  }
 
   // overflow-y:
-  .of-y-auto#{$breakpoint-step} { overflow-y: auto; }
-  .of-y-visible#{$breakpoint-step} { overflow-y: visible; }
-  .of-y-hidden#{$breakpoint-step} { overflow-y: hidden; }
-  .of-y-scroll#{$breakpoint-step} { overflow-y: scroll; }
+  .of-y-auto#{$breakpoint-step} {
+    overflow-y: auto;
+  }
+  .of-y-visible#{$breakpoint-step} {
+    overflow-y: visible;
+  }
+  .of-y-hidden#{$breakpoint-step} {
+    overflow-y: hidden;
+  }
+  .of-y-scroll#{$breakpoint-step} {
+    overflow-y: scroll;
+  }
 }

@@ -4,11 +4,19 @@
 ////////////////////////////////////////////////////////////
 
 @include breakpoint-rules($breakpoints) {
-  .c-inherit#{$breakpoint-step} { color: inherit; }
-  .hov-c-inherit#{$breakpoint-step}:hover { color: inherit; }
+  .c-inherit#{$breakpoint-step} {
+    color: inherit;
+  }
+  .hov-c-inherit#{$breakpoint-step}:hover {
+    color: inherit;
+  }
 
   @include color-rules($colors) {
-    .c#{$color-name}#{$breakpoint-step} { color: $color-val; }
-    .hov-c#{$color-name}#{$breakpoint-step}:hover { color: $color-val; }
+    .c#{$color-name}#{$breakpoint-step} {
+      color: $color-val;
+    }
+    .hov-c#{$color-name}#{$breakpoint-step}:hover {
+      color: $color-val;
+    }
   }
 }

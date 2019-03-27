@@ -5,7 +5,13 @@
 
 @include breakpoint-rules($breakpoints) {
   // transition-duration:
-  .tx-normal#{$breakpoint-step} { transition-duration: map-get($transitions, 'normal'); }
-  .tx-slow#{$breakpoint-step} { transition-duration: map-get($transitions, 'slow'); }
-  .tx-fast#{$breakpoint-step} { transition-duration: map-get($transitions, 'fast'); }
+  .tx-normal#{$breakpoint-step} {
+    transition-duration: map-get($transitions, "normal");
+  }
+  .tx-slow#{$breakpoint-step} {
+    transition-duration: map-get($transitions, "slow");
+  }
+  .tx-fast#{$breakpoint-step} {
+    transition-duration: map-get($transitions, "fast");
+  }
 }
