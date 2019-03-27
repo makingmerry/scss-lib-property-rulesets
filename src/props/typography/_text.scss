@@ -1,0 +1,148 @@
+// # Text
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include breakpoint-rules($breakpoints) {
+  // measure:
+  .measure-none#{$breakpoint-step} {
+    max-width: none;
+  }
+  .measure-normal#{$breakpoint-step} {
+    max-width: map-get($measures, normal);
+  }
+  .measure-narrow#{$breakpoint-step} {
+    max-width: map-get($measures, narrow);
+  }
+  .measure-wide#{$breakpoint-step} {
+    max-width: map-get($measures, wide);
+  }
+
+  // line-height:
+  .line-h-normal#{$breakpoint-step} {
+    line-height: map-get($line-heights, normal);
+  }
+  .line-h-title#{$breakpoint-step} {
+    line-height: map-get($line-heights, title);
+  }
+  .line-h-solid#{$breakpoint-step} {
+    line-height: map-get($line-heights, solid);
+  }
+
+  // letter-spacing:
+  .letter-sp-normal#{$breakpoint-step} {
+    letter-spacing: map-get($letter-spacings, normal);
+  }
+  .letter-sp-track#{$breakpoint-step} {
+    letter-spacing: map-get($letter-spacings, track);
+  }
+  .letter-sp-narrow#{$breakpoint-step} {
+    letter-spacing: map-get($letter-spacings, narrow);
+  }
+  .letter-sp-wide#{$breakpoint-step} {
+    letter-spacing: map-get($letter-spacings, wide);
+  }
+
+  // overflow-wrap:
+  .of-wrap-normal#{$breakpoint-step} {
+    overflow-wrap: normal;
+  }
+  .of-wrap-break-word#{$breakpoint-step} {
+    overflow-wrap: break-word;
+  }
+
+  // white-space:
+  .white-sp-normal#{$breakpoint-step} {
+    white-space: normal;
+  }
+  .white-sp-nowrap#{$breakpoint-step} {
+    white-space: nowrap;
+  }
+  .white-sp-pre#{$breakpoint-step} {
+    white-space: pre;
+  }
+  .white-sp-pre-wrap#{$breakpoint-step} {
+    white-space: pre-wrap;
+  }
+  .white-sp-pre-line#{$breakpoint-step} {
+    white-space: pre-line;
+  }
+
+  // word-break:
+  .word-br-normal#{$breakpoint-step} {
+    word-break: normal;
+  }
+  .word-br-break-all#{$breakpoint-step} {
+    word-break: break-all;
+  }
+  .word-br-keep-all#{$breakpoint-step} {
+    word-break: keep-all;
+  }
+  .word-br-break-word#{$breakpoint-step} {
+    word-break: break-word;
+  }
+
+  // hyphens:
+  .hyp-none#{$breakpoint-step} {
+    hyphens: none;
+  }
+  .hyp-manual#{$breakpoint-step} {
+    hyphens: manual;
+  }
+  .hyp-auto#{$breakpoint-step} {
+    hyphens: auto;
+  }
+
+  // text-align:
+  .t-a-left#{$breakpoint-step} {
+    text-align: left;
+  }
+  .t-a-center#{$breakpoint-step} {
+    text-align: center;
+  }
+  .t-a-right#{$breakpoint-step} {
+    text-align: right;
+  }
+
+  // text-decoration:
+  .t-d-none#{$breakpoint-step} {
+    text-decoration: none;
+  }
+  .t-d-strike#{$breakpoint-step} {
+    text-decoration: strike;
+  }
+  .t-d-underline#{$breakpoint-step} {
+    text-decoration: underline;
+  }
+
+  // text-indent:
+  .t-i-0#{$breakpoint-step} {
+    text-indent: 0;
+  }
+  .t-i-100#{$breakpoint-step} {
+    text-indent: 100%;
+  }
+
+  @include spacing-rules($custom-spacings, $spacings, $spacing-scale) {
+    .t-i#{$spacing-step}#{$breakpoint-step} {
+      text-indent: $spacing-val;
+    }
+    .t-i#{$spacing-step}n#{$breakpoint-step} {
+      text-indent: -$spacing-val;
+    }
+  }
+
+  // text-transform:
+  .t-t-none#{$breakpoint-step} {
+    text-transform: none;
+  }
+  .t-t-uppercase#{$breakpoint-step} {
+    text-transform: uppercase;
+  }
+  .t-t-lowercase#{$breakpoint-step} {
+    text-transform: lowercase;
+  }
+  .t-t-capitalize#{$breakpoint-step} {
+    text-transform: capitalize;
+  }
+}

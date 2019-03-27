@@ -1,0 +1,40 @@
+{
+  "name": "scss-atomic-classes",
+  "version": "1.0.0",
+  "description": "Library of .scss partials for generating responsive atomic CSS.",
+  "main": "build.js",
+  "watch": {
+    "dev": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "scss"
+    }
+  },
+  "scripts": {
+    "dev": "node build.js",
+    "start": "npm-watch dev",
+    "build": "node dist.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makingmerry/scss-atomic-classes.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "css"
+  ],
+  "author": "Neilson Cheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/makingmerry/scss-atomic-classes/issues"
+  },
+  "homepage": "https://github.com/makingmerry/scss-atomic-classes#readme",
+  "devDependencies": {
+    "fs-extra": "^7.0.1",
+    "node-sass": "^4.11.0",
+    "npm-watch": "^0.6.0"
+  }
+}

@@ -1,0 +1,52 @@
+// # Object fit (replaced-media)
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include breakpoint-rules($breakpoints) {
+  // object-fit:
+  .obj-fit-none#{$breakpoint-step} {
+    object-fit: none;
+  }
+  .obj-fit-fill#{$breakpoint-step} {
+    object-fit: fill;
+  }
+  .obj-fit-contain#{$breakpoint-step} {
+    object-fit: contain;
+  }
+  .obj-fit-cover#{$breakpoint-step} {
+    object-fit: cover;
+  }
+  .obj-fit-scale-down#{$breakpoint-step} {
+    object-fit: scale-down;
+  }
+
+  // object-position:
+  .obj-pos-center-center#{$breakpoint-step} {
+    object-position: center center;
+  }
+  .obj-pos-center-top#{$breakpoint-step} {
+    object-position: center top;
+  }
+  .obj-pos-right-top#{$breakpoint-step} {
+    object-position: right top;
+  }
+  .obj-pos-right-center#{$breakpoint-step} {
+    object-position: right center;
+  }
+  .obj-pos-right-bottom#{$breakpoint-step} {
+    object-position: right bottom;
+  }
+  .obj-pos-center-bottom#{$breakpoint-step} {
+    object-position: center bottom;
+  }
+  .obj-pos-left-bottom#{$breakpoint-step} {
+    object-position: left bottom;
+  }
+  .obj-pos-left-center#{$breakpoint-step} {
+    object-position: left center;
+  }
+  .obj-pos-left-top#{$breakpoint-step} {
+    object-position: left top;
+  }
+}

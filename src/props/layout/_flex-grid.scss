@@ -1,0 +1,14 @@
+// # Flex grid
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include breakpoint-rules($breakpoints) {
+  @include column-rules($column-count) {
+    $column-grid: "-" + $column-count;
+    .fg-#{$column-grid}#{$column-index}#{$breakpoint-step} {
+      flex-basis: $column-width-val;
+      max-width: $column-width-val;
+    }
+  }
+}

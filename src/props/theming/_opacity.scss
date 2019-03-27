@@ -1,0 +1,32 @@
+// # Opacity
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include breakpoint-rules($breakpoints) {
+  .op-transparent#{$breakpoint-step} {
+    opacity: 0;
+  }
+  .op-near-transparent#{$breakpoint-step} {
+    opacity: map-get($opacities, near-transparent);
+  }
+  .op-translucent#{$breakpoint-step} {
+    opacity: map-get($opacities, translucent);
+  }
+  .op-opaque#{$breakpoint-step} {
+    opacity: 1;
+  }
+
+  .hov-op-transparent#{$breakpoint-step}:hover {
+    opacity: 0;
+  }
+  .hov-op-near-transparent#{$breakpoint-step}:hover {
+    opacity: map-get($opacities, near-transparent);
+  }
+  .hov-op-translucent#{$breakpoint-step}:hover {
+    opacity: map-get($opacities, translucent);
+  }
+  .hov-op-opaque#{$breakpoint-step}:hover {
+    opacity: 1;
+  }
+}
