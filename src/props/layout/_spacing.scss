@@ -55,80 +55,78 @@
     padding: 0;
   }
 
-  @include spacing-rules($custom-spacings, $spacings, $spacing-scale) {
-    // margin:
-    .m-top#{$spacing-step}#{$breakpoint-step} {
-      margin-top: $spacing-val;
+  @include compose-index-rules($spacings-map) {
+    // margins:
+    .m-top-#{$index-mod}#{$breakpoint-step} {
+      margin-top: $index-val;
     }
-    .m-bottom#{$spacing-step}#{$breakpoint-step} {
-      margin-bottom: $spacing-val;
+    .m-top-n#{$index-mod}#{$breakpoint-step} {
+      margin-top: -$index-val;
     }
-    .m-right#{$spacing-step}#{$breakpoint-step} {
-      margin-right: $spacing-val;
+    .m-bottom-#{$index-mod}#{$breakpoint-step} {
+      margin-bottom: $index-val;
     }
-    .m-left#{$spacing-step}#{$breakpoint-step} {
-      margin-left: $spacing-val;
+    .m-bottom-n#{$index-mod}#{$breakpoint-step} {
+      margin-bottom: -$index-val;
     }
-    .m-ver#{$spacing-step}#{$breakpoint-step} {
-      margin-top: $spacing-val;
-      margin-bottom: $spacing-val;
+    .m-right-#{$index-mod}#{$breakpoint-step} {
+      margin-right: $index-val;
     }
-    .m-hor#{$spacing-step}#{$breakpoint-step} {
-      margin-right: $spacing-val;
-      margin-left: $spacing-val;
+    .m-right-n#{$index-mod}#{$breakpoint-step} {
+      margin-right: -$index-val;
     }
-    .m-all#{$spacing-step}#{$breakpoint-step} {
-      margin: $spacing-val;
+    .m-left-#{$index-mod}#{$breakpoint-step} {
+      margin-left: $index-val;
     }
-
-    // margin (negative):
-    .m-top#{$spacing-step}n#{$breakpoint-step} {
-      margin-top: -$spacing-val;
+    .m-left-n#{$index-mod}#{$breakpoint-step} {
+      margin-left: -$index-val;
     }
-    .m-bottom#{$spacing-step}n#{$breakpoint-step} {
-      margin-bottom: -$spacing-val;
+    .m-ver-#{$index-mod}#{$breakpoint-step} {
+      margin-top: $index-val;
+      margin-bottom: $index-val;
     }
-    .m-right#{$spacing-step}n#{$breakpoint-step} {
-      margin-right: -$spacing-val;
+    .m-ver-n#{$index-mod}#{$breakpoint-step} {
+      margin-top: -$index-val;
+      margin-bottom: -$index-val;
     }
-    .m-left#{$spacing-step}n#{$breakpoint-step} {
-      margin-left: -$spacing-val;
+    .m-hor-#{$index-mod}#{$breakpoint-step} {
+      margin-right: $index-val;
+      margin-left: $index-val;
     }
-    .m-ver#{$spacing-step}n#{$breakpoint-step} {
-      margin-top: -$spacing-val;
-      margin-bottom: -$spacing-val;
+    .m-hor-n#{$index-mod}#{$breakpoint-step} {
+      margin-right: -$index-val;
+      margin-left: -$index-val;
     }
-    .m-hor#{$spacing-step}n#{$breakpoint-step} {
-      margin-right: -$spacing-val;
-      margin-left: -$spacing-val;
+    .m-all-#{$index-mod}#{$breakpoint-step} {
+      margin: $index-val;
     }
-    .m-all#{$spacing-step}n#{$breakpoint-step} {
-      margin: -$spacing-val;
+    .m-all-n#{$index-mod}#{$breakpoint-step} {
+      margin: -$index-val;
     }
 
-    // padding:
-    .p-top#{$spacing-step}#{$breakpoint-step} {
-      padding-top: $spacing-val;
+    // paddings:
+    .p-top-#{$index-mod}#{$breakpoint-step} {
+      padding-top: $index-val;
     }
-    .p-bottom#{$spacing-step}#{$breakpoint-step} {
-      padding-bottom: $spacing-val;
+    .p-bottom-#{$index-mod}#{$breakpoint-step} {
+      padding-bottom: $index-val;
     }
-    .p-right#{$spacing-step}#{$breakpoint-step} {
-      padding-right: $spacing-val;
+    .p-right-#{$index-mod}#{$breakpoint-step} {
+      padding-right: $index-val;
     }
-    .p-left#{$spacing-step}#{$breakpoint-step} {
-      padding-left: $spacing-val;
+    .p-left-#{$index-mod}#{$breakpoint-step} {
+      padding-left: $index-val;
     }
-    .p-ver#{$spacing-step}#{$breakpoint-step} {
-      padding-top: $spacing-val;
-      padding-bottom: $spacing-val;
+    .p-ver-#{$index-mod}#{$breakpoint-step} {
+      padding-top: $index-val;
+      padding-bottom: $index-val;
     }
-    .p-hor#{$spacing-step}#{$breakpoint-step} {
-      padding-right: $spacing-val;
-      padding-left: $spacing-val;
+    .p-hor-#{$index-mod}#{$breakpoint-step} {
+      padding-right: $index-val;
+      padding-left: $index-val;
     }
-    .p-all#{$spacing-step}#{$breakpoint-step} {
-      padding: $spacing-val;
+    .p-all-#{$index-mod}#{$breakpoint-step} {
+      padding: $index-val;
     }
   }
 }

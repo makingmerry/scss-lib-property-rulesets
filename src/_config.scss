@@ -19,14 +19,10 @@ $wraps: (
   "large": 90em,
 );
 
-// List $spacing values if custom-spacings is required, e.g.
-// $spacings: (1: 1em, 2: 2em);
-$custom-spacings: false;
-$spacings: null;
-$spacing-scale: (
-  "base": 1em,
+$spacings-map: (
+  "base-val": 1em,
   "ratio": 2,
-  "steps": 6,
+  "counts": 6,
 );
 
 $widths: (
@@ -92,9 +88,7 @@ $letter-spacings: (
 ////////////////////////////////////////
 
 $colors: (
-  // Brand:
-    // Neutrals:
-    "black": #000,
+  "black": #000,
   "near-black": #111,
   "dark-grey": #333,
   "mid-grey": #555,
@@ -107,12 +101,12 @@ $colors: (
   "white": #fff,
   "near-transparent-white": rgba(255, 255, 255, 0.15),
   "transparent": transparent,
-  // Utility: ut-dark-red: #e7040f,
+  "ut-dark-red": #e7040f,
   "ut-red": #ff4136,
   "ut-light-red": #ff725c,
   "ut-dark-green": #137752,
   "ut-green": #19a974,
-  "ut-light-green": #9eebcf
+  "ut-light-green": #9eebcf,
 );
 
 $border-widths: (

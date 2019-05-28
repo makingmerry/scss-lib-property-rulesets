@@ -30,9 +30,9 @@
     column-gap: normal;
   }
 
-  @include spacing-rules($custom-spacings, $spacings, $spacing-scale) {
-    .col-gap#{$spacing-step}#{$breakpoint-step} {
-      column-gap: $spacing-val;
+  @include compose-index-rules($spacings-map) {
+    .col-gap-#{$index-mod}#{$breakpoint-step} {
+      column-gap: $index-val;
     }
   }
 

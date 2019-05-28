@@ -14,7 +14,6 @@
 @mixin breakpoint($map, $size) {
   @if $size == base {
     @content;
-
   } @else {
     @media (min-width: map-get($map, $size)) {
       @content;
@@ -28,12 +27,12 @@
     $size: base;
     // Undesirable, but expose mixin variables to the global scope
     // so @content can access them when composing rules.
-    $breakpoint-step: '' !global;
+    $breakpoint-step: "" !global;
 
     // Compose base rules with @media-query blocks.
     @if $i != 0 {
       $size: nth(map-keys($map), $i);
-      $breakpoint-step: '--' + str-slice($size, 0, 1) !global;
+      $breakpoint-step: "--" + str-slice($size, 0, 1) !global;
     }
 
     @include breakpoint($map, $size) {
@@ -42,43 +41,48 @@
   }
 }
 
-// # Spacings
+// # Index
 //
-// @global:
-// $spacing-step
-// $spacing-val
+// Takes in a `Map` param of options,
+// then generates and exposes (to the global scope) variables to @content
+//
+// e.g.
+// $map: (
+//   "base-val": 1em,
+//   "ratio": 2,
+//   "counts": 3,
+// );
+// .m-top-1 { margin-top: 1em }
+// .m-top-2 { margin-top: 2em }
+// .m-top-3 { margin-top: 4em }
+//
+// @params:
+// $map `Map`:
+// - $base-val `Num + (?unit)`: starting value
+// - $counts `Int`: total count in loop (excluding negative values)
+// - $ratio `Num`: ratio of next value in loop
+//
+// @global-vars:
+// $index-mod:  "-" + $step !global;
 ////////////////////////////////////////
 ////////////////////////////////////////
 
-// Calculate a spacing value from a scale step.
-@function get-scale-spacing($base, $step, $ratio) {
-  @return pow($ratio, $step - 1) * $base;
+// Helper function to determine next value in index
+@function index-val($base-val, $count, $ratio) {
+  @return pow($ratio, $count - 1) * $base-val;
 }
 
-// Constructs spacing rules with a map of spacing values.
-@mixin spacing-rules($custom, $custom-map, $scale-map) {
-  // Undesirable, but expose mixin variables to the global scope
+@mixin compose-index-rules($map) {
+  // !Exposes variables to the global scope,
   // so @content can access them when composing rules.
+  $base-val: map-get($map, base-val);
+  $ratio: map-get($map, ratio);
+  $counts: map-get($map, counts);
 
-  // Custom values from config.
-  @if ($custom) {
-    @each $step, $val in $custom-map {
-      $spacing-step: '-' + $step !global;
-      $spacing-val: $val !global;
-      @content;
-    }
-
-  // Generate values with a scale.
-  } @else {
-    $base: map-get($scale-map, base);
-    $ratio: map-get($scale-map, ratio);
-    $steps: map-get($scale-map, steps);
-
-    @for $step from 1 through $steps {
-      $spacing-step: '-' + $step !global;
-      $spacing-val: get-scale-spacing($base, $step, $ratio) !global;
-      @content;
-    }
+  @for $count from 1 through $counts {
+    $index-mod: $count !global;
+    $index-val: index-val($base-val, $count, $ratio) !global;
+    @content;
   }
 }
 
@@ -95,8 +99,8 @@
   @for $i from 1 through $count {
     // Undesirable, but expose mixin variables to the global scope
     // so @content can access them when composing rules.
-    $column-index: '-' + $i !global;
-    $column-width-val: 100 / ($column-count / $i) + '%' !global;
+    $column-index: "-" + $i !global;
+    $column-width-val: 100 / ($column-count / $i) + "%" !global;
     @content;
   }
 }
@@ -114,7 +118,7 @@
   @each $name, $val in $map {
     // Undesirable, but expose mixin variables to the global scope
     // so @content can access them when composing rules.
-    $color-name: '-' + $name !global;
+    $color-name: "-" + $name !global;
     $color-val: $val !global;
     @content;
   }
@@ -133,7 +137,7 @@
   @each $step, $val in $map {
     // Undesirable, but expose mixin variables to the global scope
     // so @content can access them when composing rules.
-    $border-width-step: '-' + $step !global;
+    $border-width-step: "-" + $step !global;
     $border-width-val: $val !global;
     @content;
   }

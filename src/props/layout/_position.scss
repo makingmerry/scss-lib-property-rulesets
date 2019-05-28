@@ -32,33 +32,30 @@
     left: 0;
   }
 
-  @include spacing-rules($custom-spacings, $spacings, $spacing-scale) {
-    // position:
-    .top#{$spacing-step}#{$breakpoint-step} {
-      top: $spacing-val;
+  @include compose-index-rules($spacings-map) {
+    .top-#{$index-mod}#{$breakpoint-step} {
+      top: $index-val;
     }
-    .bottom#{$spacing-step}#{$breakpoint-step} {
-      bottom: $spacing-val;
+    .top-n#{$index-mod}#{$breakpoint-step} {
+      top: -$index-val;
     }
-    .right#{$spacing-step}#{$breakpoint-step} {
-      right: $spacing-val;
+    .bottom-#{$index-mod}#{$breakpoint-step} {
+      bottom: $index-val;
     }
-    .left#{$spacing-step}#{$breakpoint-step} {
-      left: $spacing-val;
+    .bottom-n#{$index-mod}#{$breakpoint-step} {
+      bottom: -$index-val;
     }
-
-    // *translate (negative):
-    .top#{$spacing-step}n#{$breakpoint-step} {
-      top: -$spacing-val;
+    .right-#{$index-mod}#{$breakpoint-step} {
+      right: $index-val;
     }
-    .bottom#{$spacing-step}n#{$breakpoint-step} {
-      bottom: -$spacing-val;
+    .right-n#{$index-mod}#{$breakpoint-step} {
+      right: -$index-val;
     }
-    .right#{$spacing-step}n#{$breakpoint-step} {
-      right: -$spacing-val;
+    .left-#{$index-mod}#{$breakpoint-step} {
+      left: $index-val;
     }
-    .left#{$spacing-step}n#{$breakpoint-step} {
-      left: -$spacing-val;
+    .left-n#{$index-mod}#{$breakpoint-step} {
+      left: -$index-val;
     }
   }
 }
