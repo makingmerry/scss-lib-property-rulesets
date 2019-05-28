@@ -1,4 +1,4 @@
-const fs = require("fs")
+const fs = require("fs-extra")
 const sass = require("node-sass")
 
 sass.render(
@@ -14,12 +14,12 @@ sass.render(
       const { status, column, line, message } = err
       console.error("[SASS]:\n", { status, column, line, message })
     } else {
-      fs.writeFile("./dist/atomic.css", res.css, function(writeErr) {
+      fs.outputFile("./dist/atomic.css", res.css, function(writeErr) {
         if (!writeErr) {
           console.log("[FS]: CSS dist file written to disk.")
         }
       })
-      fs.writeFile("./dist/atomic.map.css", res.map, function(writeErr) {
+      fs.outputFile("./dist/atomic.map.css", res.map, function(writeErr) {
         if (!writeErr) {
           console.log("[FS]: CSS map dist file written to disk.")
         }
