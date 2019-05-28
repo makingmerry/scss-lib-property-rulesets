@@ -51,14 +51,10 @@
   .col-w-auto#{$breakpoint-mod} {
     column-width: auto;
   }
-  .col-w-normal#{$breakpoint-mod} {
-    column-width: map-get($measures, normal);
-  }
-  .col-w-narrow#{$breakpoint-mod} {
-    column-width: map-get($measures, narrow);
-  }
-  .col-w-wide#{$breakpoint-mod} {
-    column-width: map-get($measures, wide);
+  @include compose-mapped-rules($measures) {
+    .col-w-#{$map-prop}#{$breakpoint-mod} {
+      column-width: $map-val;
+    }
   }
 
   // column-rule-width:

@@ -7,26 +7,21 @@
   .op-transparent#{$breakpoint-mod} {
     opacity: 0;
   }
-  .op-near-transparent#{$breakpoint-mod} {
-    opacity: map-get($opacities, near-transparent);
-  }
-  .op-translucent#{$breakpoint-mod} {
-    opacity: map-get($opacities, translucent);
-  }
   .op-opaque#{$breakpoint-mod} {
     opacity: 1;
   }
-
   .hov-op-transparent#{$breakpoint-mod}:hover {
     opacity: 0;
   }
-  .hov-op-near-transparent#{$breakpoint-mod}:hover {
-    opacity: map-get($opacities, near-transparent);
-  }
-  .hov-op-translucent#{$breakpoint-mod}:hover {
-    opacity: map-get($opacities, translucent);
-  }
   .hov-op-opaque#{$breakpoint-mod}:hover {
     opacity: 1;
+  }
+  @include compose-mapped-rules($opacities) {
+    .op-#{$map-prop}#{$breakpoint-mod} {
+      opacity: $map-val;
+    }
+    .hov-op-#{$map-prop}#{$breakpoint-mod}:hover {
+      opacity: $map-val;
+    }
   }
 }

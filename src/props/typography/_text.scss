@@ -8,39 +8,24 @@
   .measure-none#{$breakpoint-mod} {
     max-width: none;
   }
-  .measure-normal#{$breakpoint-mod} {
-    max-width: map-get($measures, normal);
-  }
-  .measure-narrow#{$breakpoint-mod} {
-    max-width: map-get($measures, narrow);
-  }
-  .measure-wide#{$breakpoint-mod} {
-    max-width: map-get($measures, wide);
+  @include compose-mapped-rules($measures) {
+    .measure-#{$map-prop}#{$breakpoint-mod} {
+      max-width: $map-val;
+    }
   }
 
   // line-height:
-  .line-h-normal#{$breakpoint-mod} {
-    line-height: map-get($line-heights, normal);
-  }
-  .line-h-title#{$breakpoint-mod} {
-    line-height: map-get($line-heights, title);
-  }
-  .line-h-solid#{$breakpoint-mod} {
-    line-height: map-get($line-heights, solid);
+  @include compose-mapped-rules($line-heights) {
+    .line-h-#{$map-prop}#{$breakpoint-mod} {
+      line-height: $map-val;
+    }
   }
 
   // letter-spacing:
-  .letter-sp-normal#{$breakpoint-mod} {
-    letter-spacing: map-get($letter-spacings, normal);
-  }
-  .letter-sp-track#{$breakpoint-mod} {
-    letter-spacing: map-get($letter-spacings, track);
-  }
-  .letter-sp-narrow#{$breakpoint-mod} {
-    letter-spacing: map-get($letter-spacings, narrow);
-  }
-  .letter-sp-wide#{$breakpoint-mod} {
-    letter-spacing: map-get($letter-spacings, wide);
+  @include compose-mapped-rules($letter-spacings) {
+    .letter-sp-#{$map-prop}#{$breakpoint-mod} {
+      letter-spacing: $map-val;
+    }
   }
 
   // overflow-wrap:
@@ -122,7 +107,6 @@
   .t-i-100#{$breakpoint-mod} {
     text-indent: 100%;
   }
-
   @include compose-stepped-rules($spacings) {
     .t-i-#{$step-index}#{$breakpoint-mod} {
       text-indent: $step-val;

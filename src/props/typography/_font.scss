@@ -18,6 +18,14 @@
     }
   }
 
+  @if $custom-font-sizes != null {
+    @include compose-mapped-rules($custom-font-sizes) {
+      .f-s-#{$map-prop}#{$breakpoint-mod} {
+        font-size: $map-val;
+      }
+    }
+  }
+
   // font-weight:
   .f-w-1#{$breakpoint-mod} {
     font-weight: 100;

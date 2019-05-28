@@ -67,6 +67,9 @@ $font-sizes: (
   "smaller-steps": 2
 );
 
+// Optional: map custom font-sizes in ("name": value) pairs if required:
+$custom-font-sizes: null;
+
 $measures: (
   "normal": 30em,
   "narrow": 20em,
