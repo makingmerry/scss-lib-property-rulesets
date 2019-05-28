@@ -5,10 +5,10 @@
 
 @include compose-breakpoint-rules($breakpoints) {
   // table-layout:
-  .table-layout-auto--#{$breakpoint-mod} {
+  .table-layout-auto#{$breakpoint-mod} {
     table-layout: auto;
   }
-  .table-layout-fixed--#{$breakpoint-mod} {
+  .table-layout-fixed#{$breakpoint-mod} {
     table-layout: fixed;
   }
 }

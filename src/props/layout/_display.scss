@@ -4,40 +4,40 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .d-none--#{$breakpoint-mod} {
+  .d-none#{$breakpoint-mod} {
     display: none;
   }
-  .d-inline--#{$breakpoint-mod} {
+  .d-inline#{$breakpoint-mod} {
     display: inline;
   }
-  .d-i-block--#{$breakpoint-mod} {
+  .d-i-block#{$breakpoint-mod} {
     display: inline-block;
   }
-  .d-block--#{$breakpoint-mod} {
+  .d-block#{$breakpoint-mod} {
     display: block;
   }
-  .d-flex--#{$breakpoint-mod} {
+  .d-flex#{$breakpoint-mod} {
     display: flex;
   }
-  .d-table--#{$breakpoint-mod} {
+  .d-table#{$breakpoint-mod} {
     display: table;
   }
-  .d-i-table--#{$breakpoint-mod} {
+  .d-i-table#{$breakpoint-mod} {
     display: inline-table;
   }
-  .d-t-cell--#{$breakpoint-mod} {
+  .d-t-cell#{$breakpoint-mod} {
     display: table-cell;
   }
-  .d-t-row--#{$breakpoint-mod} {
+  .d-t-row#{$breakpoint-mod} {
     display: table-row;
   }
-  .d-t-row-grp--#{$breakpoint-mod} {
+  .d-t-row-grp#{$breakpoint-mod} {
     display: table-row-group;
   }
-  .d-t-col--#{$breakpoint-mod} {
+  .d-t-col#{$breakpoint-mod} {
     display: table-column;
   }
-  .d-t-col-grp--#{$breakpoint-mod} {
+  .d-t-col-grp#{$breakpoint-mod} {
     display: table-column-group;
   }
 }

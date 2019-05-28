@@ -5,126 +5,126 @@
 
 @include compose-breakpoint-rules($breakpoints) {
   // background-position:
-  .bg-pos-center-center--#{$breakpoint-mod} {
+  .bg-pos-center-center#{$breakpoint-mod} {
     background-position: center center;
   }
-  .bg-pos-center-top--#{$breakpoint-mod} {
+  .bg-pos-center-top#{$breakpoint-mod} {
     background-position: center top;
   }
-  .bg-pos-right-top--#{$breakpoint-mod} {
+  .bg-pos-right-top#{$breakpoint-mod} {
     background-position: right top;
   }
-  .bg-pos-right-center--#{$breakpoint-mod} {
+  .bg-pos-right-center#{$breakpoint-mod} {
     background-position: right center;
   }
-  .bg-pos-right-bottom--#{$breakpoint-mod} {
+  .bg-pos-right-bottom#{$breakpoint-mod} {
     background-position: right bottom;
   }
-  .bg-pos-center-bottom--#{$breakpoint-mod} {
+  .bg-pos-center-bottom#{$breakpoint-mod} {
     background-position: center bottom;
   }
-  .bg-pos-left-bottom--#{$breakpoint-mod} {
+  .bg-pos-left-bottom#{$breakpoint-mod} {
     background-position: left bottom;
   }
-  .bg-pos-left-center--#{$breakpoint-mod} {
+  .bg-pos-left-center#{$breakpoint-mod} {
     background-position: left center;
   }
-  .bg-pos-left-top--#{$breakpoint-mod} {
+  .bg-pos-left-top#{$breakpoint-mod} {
     background-position: left top;
   }
 
   // background-size:
-  .bg-size-auto--#{$breakpoint-mod} {
+  .bg-size-auto#{$breakpoint-mod} {
     background-size: auto;
   }
-  .bg-size-contain--#{$breakpoint-mod} {
+  .bg-size-contain#{$breakpoint-mod} {
     background-size: contain;
   }
-  .bg-size-cover--#{$breakpoint-mod} {
+  .bg-size-cover#{$breakpoint-mod} {
     background-size: cover;
   }
 
   // background-repeat:
-  .bg-repeat--#{$breakpoint-mod} {
+  .bg-repeat#{$breakpoint-mod} {
     background-repeat: repeat;
   }
-  .bg-repeat-none--#{$breakpoint-mod} {
+  .bg-repeat-none#{$breakpoint-mod} {
     background-repeat: no-repeat;
   }
-  .bg-repeat-x--#{$breakpoint-mod} {
+  .bg-repeat-x#{$breakpoint-mod} {
     background-repeat: repeat-x;
   }
-  .bg-repeat-y--#{$breakpoint-mod} {
+  .bg-repeat-y#{$breakpoint-mod} {
     background-repeat: repeat-y;
   }
 
   // background-attachment:
-  .bg-attach-scroll--#{$breakpoint-mod} {
+  .bg-attach-scroll#{$breakpoint-mod} {
     background-attachment: scroll;
   }
-  .bg-attach-fixed--#{$breakpoint-mod} {
+  .bg-attach-fixed#{$breakpoint-mod} {
     background-attachment: fixed;
   }
-  .bg-attach-local--#{$breakpoint-mod} {
+  .bg-attach-local#{$breakpoint-mod} {
     background-attachment: local;
   }
 
   // background-blend-mode:
-  .bg-blend-normal--#{$breakpoint-mod} {
+  .bg-blend-normal#{$breakpoint-mod} {
     background-blend-mode: normal;
   }
-  .bg-blend-multiply--#{$breakpoint-mod} {
+  .bg-blend-multiply#{$breakpoint-mod} {
     background-blend-mode: multiply;
   }
-  .bg-blend-screen--#{$breakpoint-mod} {
+  .bg-blend-screen#{$breakpoint-mod} {
     background-blend-mode: screen;
   }
-  .bg-blend-overlay--#{$breakpoint-mod} {
+  .bg-blend-overlay#{$breakpoint-mod} {
     background-blend-mode: overlay;
   }
-  .bg-blend-darken--#{$breakpoint-mod} {
+  .bg-blend-darken#{$breakpoint-mod} {
     background-blend-mode: darken;
   }
-  .bg-blend-lighten--#{$breakpoint-mod} {
+  .bg-blend-lighten#{$breakpoint-mod} {
     background-blend-mode: lighten;
   }
-  .bg-blend-color-dodge--#{$breakpoint-mod} {
+  .bg-blend-color-dodge#{$breakpoint-mod} {
     background-blend-mode: color-dodge;
   }
-  .bg-blend-color-burn--#{$breakpoint-mod} {
+  .bg-blend-color-burn#{$breakpoint-mod} {
     background-blend-mode: color-burn;
   }
-  .bg-blend-hard-light--#{$breakpoint-mod} {
+  .bg-blend-hard-light#{$breakpoint-mod} {
     background-blend-mode: hard-light;
   }
-  .bg-blend-soft-light--#{$breakpoint-mod} {
+  .bg-blend-soft-light#{$breakpoint-mod} {
     background-blend-mode: soft-light;
   }
-  .bg-blend-difference--#{$breakpoint-mod} {
+  .bg-blend-difference#{$breakpoint-mod} {
     background-blend-mode: difference;
   }
-  .bg-blend-exclusion--#{$breakpoint-mod} {
+  .bg-blend-exclusion#{$breakpoint-mod} {
     background-blend-mode: exclusion;
   }
-  .bg-blend-hue--#{$breakpoint-mod} {
+  .bg-blend-hue#{$breakpoint-mod} {
     background-blend-mode: hue;
   }
-  .bg-blend-saturation--#{$breakpoint-mod} {
+  .bg-blend-saturation#{$breakpoint-mod} {
     background-blend-mode: saturation;
   }
-  .bg-blend-color--#{$breakpoint-mod} {
+  .bg-blend-color#{$breakpoint-mod} {
     background-blend-mode: color;
   }
-  .bg-blend-luminosity--#{$breakpoint-mod} {
+  .bg-blend-luminosity#{$breakpoint-mod} {
     background-blend-mode: luminosity;
   }
 
   // background-color:
   @include color-rules($colors) {
-    .bg-c#{$color-name}--#{$breakpoint-mod} {
+    .bg-c#{$color-name}#{$breakpoint-mod} {
       background-color: $color-val;
     }
-    .hov-bg-c#{$color-name}--#{$breakpoint-mod}:hover {
+    .hov-bg-c#{$color-name}#{$breakpoint-mod}:hover {
       background-color: $color-val;
     }
   }

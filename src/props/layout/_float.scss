@@ -5,32 +5,32 @@
 
 @include compose-breakpoint-rules($breakpoints) {
   // float:
-  .float-none--#{$breakpoint-mod} {
+  .float-none#{$breakpoint-mod} {
     float: none;
   }
-  .float-right--#{$breakpoint-mod} {
+  .float-right#{$breakpoint-mod} {
     float: right;
   }
-  .float-left--#{$breakpoint-mod} {
+  .float-left#{$breakpoint-mod} {
     float: left;
   }
 
   // clear:
-  .clear-none--#{$breakpoint-mod} {
+  .clear-none#{$breakpoint-mod} {
     clear: none;
   }
-  .clear-right--#{$breakpoint-mod} {
+  .clear-right#{$breakpoint-mod} {
     clear: right;
   }
-  .clear-left--#{$breakpoint-mod} {
+  .clear-left#{$breakpoint-mod} {
     clear: left;
   }
-  .clear-both--#{$breakpoint-mod} {
+  .clear-both#{$breakpoint-mod} {
     clear: both;
   }
 
   // *clear-fix:
-  .contain-floats--#{$breakpoint-mod} {
+  .contain-floats#{$breakpoint-mod} {
     &::after {
       content: "";
       display: table;

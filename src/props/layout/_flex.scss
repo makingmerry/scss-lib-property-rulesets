@@ -9,81 +9,81 @@
   ////////////////////////////////////////
 
   // flex-wrap:
-  .flex-wrap-nowrap--#{$breakpoint-mod} {
+  .flex-wrap-nowrap#{$breakpoint-mod} {
     flex-wrap: nowrap;
   }
-  .flex-wrap-wrap--#{$breakpoint-mod} {
+  .flex-wrap-wrap#{$breakpoint-mod} {
     flex-wrap: wrap;
   }
-  .flex-wrap-reverse--#{$breakpoint-mod} {
+  .flex-wrap-reverse#{$breakpoint-mod} {
     flex-wrap: wrap-reverse;
   }
 
   // flex-direction:
-  .flex-dir-row--#{$breakpoint-mod} {
+  .flex-dir-row#{$breakpoint-mod} {
     flex-direction: row;
   }
-  .flex-dir-row-reverse--#{$breakpoint-mod} {
+  .flex-dir-row-reverse#{$breakpoint-mod} {
     flex-direction: row-reverse;
   }
-  .flex-dir-col--#{$breakpoint-mod} {
+  .flex-dir-col#{$breakpoint-mod} {
     flex-direction: column;
   }
-  .flex-dir-col-reverse--#{$breakpoint-mod} {
+  .flex-dir-col-reverse#{$breakpoint-mod} {
     flex-direction: column-reverse;
   }
 
   // justify-content:
-  .justify-ct-start--#{$breakpoint-mod} {
+  .justify-ct-start#{$breakpoint-mod} {
     justify-content: flex-start;
   }
-  .justify-ct-end--#{$breakpoint-mod} {
+  .justify-ct-end#{$breakpoint-mod} {
     justify-content: flex-end;
   }
-  .justify-ct-center--#{$breakpoint-mod} {
+  .justify-ct-center#{$breakpoint-mod} {
     justify-content: center;
   }
-  .justify-ct-space-btw--#{$breakpoint-mod} {
+  .justify-ct-space-btw#{$breakpoint-mod} {
     justify-content: space-between;
   }
-  .justify-ct-space-ard--#{$breakpoint-mod} {
+  .justify-ct-space-ard#{$breakpoint-mod} {
     justify-content: space-around;
   }
 
   // align-content:
-  .align-ct-start--#{$breakpoint-mod} {
+  .align-ct-start#{$breakpoint-mod} {
     align-content: flex-start;
   }
-  .align-ct-end--#{$breakpoint-mod} {
+  .align-ct-end#{$breakpoint-mod} {
     align-content: flex-end;
   }
-  .align-ct-center--#{$breakpoint-mod} {
+  .align-ct-center#{$breakpoint-mod} {
     align-content: center;
   }
-  .align-ct-stretch--#{$breakpoint-mod} {
+  .align-ct-stretch#{$breakpoint-mod} {
     align-content: stretch;
   }
-  .align-ct-space-btw--#{$breakpoint-mod} {
+  .align-ct-space-btw#{$breakpoint-mod} {
     align-content: space-between;
   }
-  .align-ct-space-ard--#{$breakpoint-mod} {
+  .align-ct-space-ard#{$breakpoint-mod} {
     align-content: space-around;
   }
 
   // align-items:
-  .align-i-start--#{$breakpoint-mod} {
+  .align-i-start#{$breakpoint-mod} {
     align-items: flex-start;
   }
-  .align-i-end--#{$breakpoint-mod} {
+  .align-i-end#{$breakpoint-mod} {
     align-items: flex-end;
   }
-  .align-i-center--#{$breakpoint-mod} {
+  .align-i-center#{$breakpoint-mod} {
     align-items: center;
   }
-  .align-i-stretch--#{$breakpoint-mod} {
+  .align-i-stretch#{$breakpoint-mod} {
     align-items: stretch;
   }
-  .align-i-baseline--#{$breakpoint-mod} {
+  .align-i-baseline#{$breakpoint-mod} {
     align-items: baseline;
   }
 
@@ -91,40 +91,39 @@
   ////////////////////////////////////////
   ////////////////////////////////////////
   // align-self:
-  .align-auto--#{$breakpoint-mod} {
+  .align-auto#{$breakpoint-mod} {
     align-self: auto;
   }
-  .align-start--#{$breakpoint-mod} {
+  .align-start#{$breakpoint-mod} {
     align-self: flex-start;
   }
-  .align-end--#{$breakpoint-mod} {
+  .align-end#{$breakpoint-mod} {
     align-self: flex-end;
   }
-  .align-center--#{$breakpoint-mod} {
+  .align-center#{$breakpoint-mod} {
     align-self: center;
   }
-  .align-stretch--#{$breakpoint-mod} {
+  .align-stretch#{$breakpoint-mod} {
     align-self: stretch;
   }
-  .align-baseline--#{$breakpoint-mod} {
+  .align-baseline#{$breakpoint-mod} {
     align-self: baseline;
   }
 
   // order
-  .order-initial--#{$breakpoint-mod} {
+  .order-initial#{$breakpoint-mod} {
     order: initial;
   }
-  .order-first--#{$breakpoint-mod} {
+  .order-first#{$breakpoint-mod} {
     order: 0;
   }
-  .order-last--#{$breakpoint-mod} {
+  .order-last#{$breakpoint-mod} {
     order: 99;
   }
 
-  @for $i from 1 through $column-count {
-    $column-index: "-" + $i;
-    .order#{$column-index} {
-      order: $i;
+  @include compose-column-rules($column-counts) {
+    .order-#{$column-count}#{$breakpoint-mod} {
+      order: $column-count;
     }
   }
 }

@@ -4,15 +4,15 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .ha-right--#{$breakpoint-mod} {
+  .ha-right#{$breakpoint-mod} {
     margin-right: 0;
     margin-left: auto;
   }
-  .ha-left--#{$breakpoint-mod} {
+  .ha-left#{$breakpoint-mod} {
     margin-right: auto;
     margin-left: 0;
   }
-  .ha-center--#{$breakpoint-mod} {
+  .ha-center#{$breakpoint-mod} {
     margin-right: auto;
     margin-left: auto;
   }

@@ -5,144 +5,144 @@
 
 @include compose-breakpoint-rules($breakpoints) {
   // measure:
-  .measure-none--#{$breakpoint-mod} {
+  .measure-none#{$breakpoint-mod} {
     max-width: none;
   }
-  .measure-normal--#{$breakpoint-mod} {
+  .measure-normal#{$breakpoint-mod} {
     max-width: map-get($measures, normal);
   }
-  .measure-narrow--#{$breakpoint-mod} {
+  .measure-narrow#{$breakpoint-mod} {
     max-width: map-get($measures, narrow);
   }
-  .measure-wide--#{$breakpoint-mod} {
+  .measure-wide#{$breakpoint-mod} {
     max-width: map-get($measures, wide);
   }
 
   // line-height:
-  .line-h-normal--#{$breakpoint-mod} {
+  .line-h-normal#{$breakpoint-mod} {
     line-height: map-get($line-heights, normal);
   }
-  .line-h-title--#{$breakpoint-mod} {
+  .line-h-title#{$breakpoint-mod} {
     line-height: map-get($line-heights, title);
   }
-  .line-h-solid--#{$breakpoint-mod} {
+  .line-h-solid#{$breakpoint-mod} {
     line-height: map-get($line-heights, solid);
   }
 
   // letter-spacing:
-  .letter-sp-normal--#{$breakpoint-mod} {
+  .letter-sp-normal#{$breakpoint-mod} {
     letter-spacing: map-get($letter-spacings, normal);
   }
-  .letter-sp-track--#{$breakpoint-mod} {
+  .letter-sp-track#{$breakpoint-mod} {
     letter-spacing: map-get($letter-spacings, track);
   }
-  .letter-sp-narrow--#{$breakpoint-mod} {
+  .letter-sp-narrow#{$breakpoint-mod} {
     letter-spacing: map-get($letter-spacings, narrow);
   }
-  .letter-sp-wide--#{$breakpoint-mod} {
+  .letter-sp-wide#{$breakpoint-mod} {
     letter-spacing: map-get($letter-spacings, wide);
   }
 
   // overflow-wrap:
-  .of-wrap-normal--#{$breakpoint-mod} {
+  .of-wrap-normal#{$breakpoint-mod} {
     overflow-wrap: normal;
   }
-  .of-wrap-break-word--#{$breakpoint-mod} {
+  .of-wrap-break-word#{$breakpoint-mod} {
     overflow-wrap: break-word;
   }
 
   // white-space:
-  .white-sp-normal--#{$breakpoint-mod} {
+  .white-sp-normal#{$breakpoint-mod} {
     white-space: normal;
   }
-  .white-sp-nowrap--#{$breakpoint-mod} {
+  .white-sp-nowrap#{$breakpoint-mod} {
     white-space: nowrap;
   }
-  .white-sp-pre--#{$breakpoint-mod} {
+  .white-sp-pre#{$breakpoint-mod} {
     white-space: pre;
   }
-  .white-sp-pre-wrap--#{$breakpoint-mod} {
+  .white-sp-pre-wrap#{$breakpoint-mod} {
     white-space: pre-wrap;
   }
-  .white-sp-pre-line--#{$breakpoint-mod} {
+  .white-sp-pre-line#{$breakpoint-mod} {
     white-space: pre-line;
   }
 
   // word-break:
-  .word-br-normal--#{$breakpoint-mod} {
+  .word-br-normal#{$breakpoint-mod} {
     word-break: normal;
   }
-  .word-br-break-all--#{$breakpoint-mod} {
+  .word-br-break-all#{$breakpoint-mod} {
     word-break: break-all;
   }
-  .word-br-keep-all--#{$breakpoint-mod} {
+  .word-br-keep-all#{$breakpoint-mod} {
     word-break: keep-all;
   }
-  .word-br-break-word--#{$breakpoint-mod} {
+  .word-br-break-word#{$breakpoint-mod} {
     word-break: break-word;
   }
 
   // hyphens:
-  .hyp-none--#{$breakpoint-mod} {
+  .hyp-none#{$breakpoint-mod} {
     hyphens: none;
   }
-  .hyp-manual--#{$breakpoint-mod} {
+  .hyp-manual#{$breakpoint-mod} {
     hyphens: manual;
   }
-  .hyp-auto--#{$breakpoint-mod} {
+  .hyp-auto#{$breakpoint-mod} {
     hyphens: auto;
   }
 
   // text-align:
-  .t-a-left--#{$breakpoint-mod} {
+  .t-a-left#{$breakpoint-mod} {
     text-align: left;
   }
-  .t-a-center--#{$breakpoint-mod} {
+  .t-a-center#{$breakpoint-mod} {
     text-align: center;
   }
-  .t-a-right--#{$breakpoint-mod} {
+  .t-a-right#{$breakpoint-mod} {
     text-align: right;
   }
 
   // text-decoration:
-  .t-d-none--#{$breakpoint-mod} {
+  .t-d-none#{$breakpoint-mod} {
     text-decoration: none;
   }
-  .t-d-strike--#{$breakpoint-mod} {
+  .t-d-strike#{$breakpoint-mod} {
     text-decoration: strike;
   }
-  .t-d-underline--#{$breakpoint-mod} {
+  .t-d-underline#{$breakpoint-mod} {
     text-decoration: underline;
   }
 
   // text-indent:
-  .t-i-0--#{$breakpoint-mod} {
+  .t-i-0#{$breakpoint-mod} {
     text-indent: 0;
   }
-  .t-i-100--#{$breakpoint-mod} {
+  .t-i-100#{$breakpoint-mod} {
     text-indent: 100%;
   }
 
   @include compose-index-rules($spacings-map) {
-    .t-i-#{$index-mod}--#{$breakpoint-mod} {
+    .t-i-#{$index-count}#{$breakpoint-mod} {
       text-indent: $index-val;
     }
-    .t-i-n#{$index-mod}--#{$breakpoint-mod} {
+    .t-i-n#{$index-count}#{$breakpoint-mod} {
       text-indent: -$index-val;
     }
   }
 
   // text-transform:
-  .t-t-none--#{$breakpoint-mod} {
+  .t-t-none#{$breakpoint-mod} {
     text-transform: none;
   }
-  .t-t-uppercase--#{$breakpoint-mod} {
+  .t-t-uppercase#{$breakpoint-mod} {
     text-transform: uppercase;
   }
-  .t-t-lowercase--#{$breakpoint-mod} {
+  .t-t-lowercase#{$breakpoint-mod} {
     text-transform: lowercase;
   }
-  .t-t-capitalize--#{$breakpoint-mod} {
+  .t-t-capitalize#{$breakpoint-mod} {
     text-transform: capitalize;
   }
 }

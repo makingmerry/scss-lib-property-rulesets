@@ -5,123 +5,123 @@
 
 @include compose-breakpoint-rules($breakpoints) {
   // border:
-  .b-top--#{$breakpoint-mod} {
+  .b-top#{$breakpoint-mod} {
     border-top: 1px solid;
   }
-  .b-bottom--#{$breakpoint-mod} {
+  .b-bottom#{$breakpoint-mod} {
     border-bottom: 1px solid;
   }
-  .b-right--#{$breakpoint-mod} {
+  .b-right#{$breakpoint-mod} {
     border-right: 1px solid;
   }
-  .b-left--#{$breakpoint-mod} {
+  .b-left#{$breakpoint-mod} {
     border-left: 1px solid;
   }
-  .b-all--#{$breakpoint-mod} {
+  .b-all#{$breakpoint-mod} {
     border: 1px solid;
   }
-  .b-hor--#{$breakpoint-mod} {
+  .b-hor#{$breakpoint-mod} {
     border-right: 1px solid;
     border-left: 1px solid;
   }
-  .b-ver--#{$breakpoint-mod} {
+  .b-ver#{$breakpoint-mod} {
     border-top: 1px solid;
     border-bottom: 1px solid;
   }
 
   // border-width:
-  .b-w-none--#{$breakpoint-mod} {
+  .b-w-none#{$breakpoint-mod} {
     border-width: 0;
   }
 
   @include border-width-rules($border-widths) {
-    .b-w#{$border-width-step}--#{$breakpoint-mod} {
+    .b-w#{$border-width-step}#{$breakpoint-mod} {
       border-width: $border-width-val;
     }
   }
 
   // border-radius:
-  .b-r-none--#{$breakpoint-mod} {
+  .b-r-none#{$breakpoint-mod} {
     border-radius: 0;
   }
-  .b-r-circle--#{$breakpoint-mod} {
+  .b-r-circle#{$breakpoint-mod} {
     border-radius: 100%;
   }
-  .b-r-pill--#{$breakpoint-mod} {
+  .b-r-pill#{$breakpoint-mod} {
     border-radius: 1000px;
   }
 
   @include border-width-rules($border-widths) {
-    .b-r#{$border-width-step}--#{$breakpoint-mod} {
+    .b-r#{$border-width-step}#{$breakpoint-mod} {
       border-radius: $border-width-val;
     }
   }
 
   // border-radius 'position':
-  .b-r-top--#{$breakpoint-mod} {
+  .b-r-top#{$breakpoint-mod} {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .b-r-bottom--#{$breakpoint-mod} {
+  .b-r-bottom#{$breakpoint-mod} {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .b-r-right--#{$breakpoint-mod} {
+  .b-r-right#{$breakpoint-mod} {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .b-r-left--#{$breakpoint-mod} {
+  .b-r-left#{$breakpoint-mod} {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .b-r-top-right--#{$breakpoint-mod} {
+  .b-r-top-right#{$breakpoint-mod} {
     border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .b-r-top-left--#{$breakpoint-mod} {
-    border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .b-r-bottom-right--#{$breakpoint-mod} {
+  .b-r-top-left#{$breakpoint-mod} {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .b-r-bottom-right#{$breakpoint-mod} {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .b-r-bottom-left--#{$breakpoint-mod} {
+  .b-r-bottom-left#{$breakpoint-mod} {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
   }
 
   // border-style:
-  .b-st-none--#{$breakpoint-mod} {
+  .b-st-none#{$breakpoint-mod} {
     border-style: none;
   }
-  .b-st-solid--#{$breakpoint-mod} {
+  .b-st-solid#{$breakpoint-mod} {
     border-style: solid;
   }
-  .b-st-dot--#{$breakpoint-mod} {
+  .b-st-dot#{$breakpoint-mod} {
     border-style: dot;
   }
-  .b-st-dash--#{$breakpoint-mod} {
+  .b-st-dash#{$breakpoint-mod} {
     border-style: dash;
   }
 
   // border-color:
-  .b-c-inherit--#{$breakpoint-mod} {
+  .b-c-inherit#{$breakpoint-mod} {
     border-color: inherit;
   }
-  .hov-b-c-inherit--#{$breakpoint-mod}:hover {
+  .hov-b-c-inherit#{$breakpoint-mod}:hover {
     border-color: inherit;
   }
 
   @include color-rules($colors) {
-    .b-c#{$color-name}--#{$breakpoint-mod} {
+    .b-c#{$color-name}#{$breakpoint-mod} {
       border-color: $color-val;
     }
-    .hov-b-c#{$color-name}--#{$breakpoint-mod}:hover {
+    .hov-b-c#{$color-name}#{$breakpoint-mod}:hover {
       border-color: $color-val;
     }
   }

@@ -8,7 +8,7 @@
   @each $step, $val in $font-families {
     $font-family-name: "-" + $step;
     $font-family-val: unquote($val);
-    .f-f#{$font-family-name}--#{$breakpoint-mod} {
+    .f-f#{$font-family-name}#{$breakpoint-mod} {
       font-family: $font-family-val;
     }
   }
@@ -19,7 +19,7 @@
     @each $step, $val in $font-sizes {
       $font-size-step: "-" + $step;
       $font-size-val: $val;
-      .f-s#{$font-size-step}--#{$breakpoint-mod} {
+      .f-s#{$font-size-step}#{$breakpoint-mod} {
         font-size: $font-size-val;
       }
     }
@@ -38,7 +38,7 @@
     @while $step <= $total-steps {
       $font-size-step: "-" + $step;
       $font-size-val: pow($ratio, $exponent) * $base;
-      .f-s#{$font-size-step}--#{$breakpoint-mod} {
+      .f-s#{$font-size-step}#{$breakpoint-mod} {
         font-size: $font-size-val;
       }
 
@@ -48,41 +48,41 @@
   }
 
   // font-weight:
-  .f-w-1--#{$breakpoint-mod} {
+  .f-w-1#{$breakpoint-mod} {
     font-weight: 100;
   }
-  .f-w-2--#{$breakpoint-mod} {
+  .f-w-2#{$breakpoint-mod} {
     font-weight: 200;
   }
-  .f-w-3--#{$breakpoint-mod} {
+  .f-w-3#{$breakpoint-mod} {
     font-weight: 300;
   }
-  .f-w-4--#{$breakpoint-mod} {
+  .f-w-4#{$breakpoint-mod} {
     font-weight: 400;
   }
-  .f-w-5--#{$breakpoint-mod} {
+  .f-w-5#{$breakpoint-mod} {
     font-weight: 500;
   }
-  .f-w-6--#{$breakpoint-mod} {
+  .f-w-6#{$breakpoint-mod} {
     font-weight: 600;
   }
-  .f-w-7--#{$breakpoint-mod} {
+  .f-w-7#{$breakpoint-mod} {
     font-weight: 700;
   }
 
   // font-style:
-  .f-st-normal--#{$breakpoint-mod} {
+  .f-st-normal#{$breakpoint-mod} {
     font-style: normal;
   }
-  .f-st-italic--#{$breakpoint-mod} {
+  .f-st-italic#{$breakpoint-mod} {
     font-style: italic;
   }
 
   // font-render:
-  .f-r-auto--#{$breakpoint-mod} {
+  .f-r-auto#{$breakpoint-mod} {
     -webkit-font-smoothing: auto;
   }
-  .f-r-smooth--#{$breakpoint-mod} {
+  .f-r-smooth#{$breakpoint-mod} {
     -webkit-font-smoothing: antialiased;
   }
 }

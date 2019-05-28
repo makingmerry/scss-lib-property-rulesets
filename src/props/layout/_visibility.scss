@@ -4,13 +4,13 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .vis-visible--#{$breakpoint-mod} {
+  .vis-visible#{$breakpoint-mod} {
     visibility: visible;
   }
-  .vis-hidden--#{$breakpoint-mod} {
+  .vis-hidden#{$breakpoint-mod} {
     visibility: hidden;
   }
-  .vis-collapse--#{$breakpoint-mod} {
+  .vis-collapse#{$breakpoint-mod} {
     visibility: collapse;
   }
 }

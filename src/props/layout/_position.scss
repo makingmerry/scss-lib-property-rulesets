@@ -5,56 +5,56 @@
 
 @include compose-breakpoint-rules($breakpoints) {
   // position:
-  .pos-static--#{$breakpoint-mod} {
+  .pos-static#{$breakpoint-mod} {
     position: static;
   }
-  .pos-fixed--#{$breakpoint-mod} {
+  .pos-fixed#{$breakpoint-mod} {
     position: fixed;
   }
-  .pos-relative--#{$breakpoint-mod} {
+  .pos-relative#{$breakpoint-mod} {
     position: relative;
   }
-  .pos-absolute--#{$breakpoint-mod} {
+  .pos-absolute#{$breakpoint-mod} {
     position: absolute;
   }
 
   // *translate:
-  .top-0--#{$breakpoint-mod} {
+  .top-0#{$breakpoint-mod} {
     top: 0;
   }
-  .bottom-0--#{$breakpoint-mod} {
+  .bottom-0#{$breakpoint-mod} {
     bottom: 0;
   }
-  .right-0--#{$breakpoint-mod} {
+  .right-0#{$breakpoint-mod} {
     right: 0;
   }
-  .left-0--#{$breakpoint-mod} {
+  .left-0#{$breakpoint-mod} {
     left: 0;
   }
 
   @include compose-index-rules($spacings-map) {
-    .top-#{$index-mod}--#{$breakpoint-mod} {
+    .top-#{$index-count}#{$breakpoint-mod} {
       top: $index-val;
     }
-    .top-n#{$index-mod}--#{$breakpoint-mod} {
+    .top-n#{$index-count}#{$breakpoint-mod} {
       top: -$index-val;
     }
-    .bottom-#{$index-mod}--#{$breakpoint-mod} {
+    .bottom-#{$index-count}#{$breakpoint-mod} {
       bottom: $index-val;
     }
-    .bottom-n#{$index-mod}--#{$breakpoint-mod} {
+    .bottom-n#{$index-count}#{$breakpoint-mod} {
       bottom: -$index-val;
     }
-    .right-#{$index-mod}--#{$breakpoint-mod} {
+    .right-#{$index-count}#{$breakpoint-mod} {
       right: $index-val;
     }
-    .right-n#{$index-mod}--#{$breakpoint-mod} {
+    .right-n#{$index-count}#{$breakpoint-mod} {
       right: -$index-val;
     }
-    .left-#{$index-mod}--#{$breakpoint-mod} {
+    .left-#{$index-count}#{$breakpoint-mod} {
       left: $index-val;
     }
-    .left-n#{$index-mod}--#{$breakpoint-mod} {
+    .left-n#{$index-count}#{$breakpoint-mod} {
       left: -$index-val;
     }
   }

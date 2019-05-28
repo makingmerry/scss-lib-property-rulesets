@@ -4,10 +4,10 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .pe-none--#{$breakpoint-mod} {
+  .pe-none#{$breakpoint-mod} {
     pointer-events: none;
   }
-  .pe-auto--#{$breakpoint-mod} {
+  .pe-auto#{$breakpoint-mod} {
     pointer-events: auto;
   }
 }

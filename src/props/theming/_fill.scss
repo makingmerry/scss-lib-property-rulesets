@@ -4,18 +4,18 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .fill-inherit--#{$breakpoint-mod} {
+  .fill-inherit#{$breakpoint-mod} {
     fill: inherit;
   }
-  .hov-fill-inherit--#{$breakpoint-mod}:hover {
+  .hov-fill-inherit#{$breakpoint-mod}:hover {
     fill: inherit;
   }
 
   @include color-rules($colors) {
-    .fill#{$color-name}--#{$breakpoint-mod} {
+    .fill#{$color-name}#{$breakpoint-mod} {
       fill: $color-val;
     }
-    .hov-fill#{$color-name}--#{$breakpoint-mod}:hover {
+    .hov-fill#{$color-name}#{$breakpoint-mod}:hover {
       fill: $color-val;
     }
   }

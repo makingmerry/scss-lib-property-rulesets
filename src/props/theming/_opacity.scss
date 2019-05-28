@@ -4,29 +4,29 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .op-transparent--#{$breakpoint-mod} {
+  .op-transparent#{$breakpoint-mod} {
     opacity: 0;
   }
-  .op-near-transparent--#{$breakpoint-mod} {
+  .op-near-transparent#{$breakpoint-mod} {
     opacity: map-get($opacities, near-transparent);
   }
-  .op-translucent--#{$breakpoint-mod} {
+  .op-translucent#{$breakpoint-mod} {
     opacity: map-get($opacities, translucent);
   }
-  .op-opaque--#{$breakpoint-mod} {
+  .op-opaque#{$breakpoint-mod} {
     opacity: 1;
   }
 
-  .hov-op-transparent--#{$breakpoint-mod}:hover {
+  .hov-op-transparent#{$breakpoint-mod}:hover {
     opacity: 0;
   }
-  .hov-op-near-transparent--#{$breakpoint-mod}:hover {
+  .hov-op-near-transparent#{$breakpoint-mod}:hover {
     opacity: map-get($opacities, near-transparent);
   }
-  .hov-op-translucent--#{$breakpoint-mod}:hover {
+  .hov-op-translucent#{$breakpoint-mod}:hover {
     opacity: map-get($opacities, translucent);
   }
-  .hov-op-opaque--#{$breakpoint-mod}:hover {
+  .hov-op-opaque#{$breakpoint-mod}:hover {
     opacity: 1;
   }
 }

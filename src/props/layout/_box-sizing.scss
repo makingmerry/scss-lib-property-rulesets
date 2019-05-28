@@ -4,10 +4,10 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .box-sizing-content--#{$breakpoint-mod} {
+  .box-sizing-content#{$breakpoint-mod} {
     box-sizing: content-box;
   }
-  .box-sizing-border--#{$breakpoint-mod} {
+  .box-sizing-border#{$breakpoint-mod} {
     box-sizing: border-box;
   }
 }

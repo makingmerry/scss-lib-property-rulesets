@@ -7,86 +7,85 @@
 
 @include compose-breakpoint-rules($breakpoints) {
   // column-fill:
-  .col-fill-auto--#{$breakpoint-mod} {
+  .col-fill-auto#{$breakpoint-mod} {
     column-fill: auto;
   }
-  .col-fill-balance--#{$breakpoint-mod} {
+  .col-fill-balance#{$breakpoint-mod} {
     column-fill: balance;
   }
-  .col-fill-balance-all--#{$breakpoint-mod} {
+  .col-fill-balance-all#{$breakpoint-mod} {
     column-fill: balance-all;
   }
 
   // column-span:
-  .col-span-none--#{$breakpoint-mod} {
+  .col-span-none#{$breakpoint-mod} {
     column-span: none;
   }
-  .col-span-all--#{$breakpoint-mod} {
+  .col-span-all#{$breakpoint-mod} {
     column-span: all;
   }
 
   // column-gap:
-  .col-gap-normal--#{$breakpoint-mod} {
+  .col-gap-normal#{$breakpoint-mod} {
     column-gap: normal;
   }
 
   @include compose-index-rules($spacings-map) {
-    .col-gap-#{$index-mod}--#{$breakpoint-mod} {
+    .col-gap-#{$index-count}#{$breakpoint-mod} {
       column-gap: $index-val;
     }
   }
 
   // column-count:
-  .col-count-auto--#{$breakpoint-mod} {
+  .col-count-auto#{$breakpoint-mod} {
     column-count: auto;
   }
 
-  @for $i from 1 through $column-count {
-    $column-index: "-" + $i;
-    .col-count#{$column-index}--#{$breakpoint-mod} {
-      column-count: $i;
+  @include compose-column-rules($column-counts) {
+    .col-count-#{$column-count}#{$breakpoint-mod} {
+      column-count: $column-count;
     }
   }
 
   // column-width:
-  .col-w-auto--#{$breakpoint-mod} {
+  .col-w-auto#{$breakpoint-mod} {
     column-width: auto;
   }
-  .col-w-normal--#{$breakpoint-mod} {
+  .col-w-normal#{$breakpoint-mod} {
     column-width: map-get($measures, normal);
   }
-  .col-w-narrow--#{$breakpoint-mod} {
+  .col-w-narrow#{$breakpoint-mod} {
     column-width: map-get($measures, narrow);
   }
-  .col-w-wide--#{$breakpoint-mod} {
+  .col-w-wide#{$breakpoint-mod} {
     column-width: map-get($measures, wide);
   }
 
   // column-rule-width:
   @include border-width-rules($border-widths) {
-    .col-rule-w#{$border-width-step}--#{$breakpoint-mod} {
+    .col-rule-w#{$border-width-step}#{$breakpoint-mod} {
       column-rule-width: $border-width-val;
     }
   }
 
   // column-rule-color:
   @include color-rules($colors) {
-    .col-rule-c#{$color-name}--#{$breakpoint-mod} {
+    .col-rule-c#{$color-name}#{$breakpoint-mod} {
       column-rule-color: $color-val;
     }
   }
 
   // column-rule-style:
-  .col-rule-st-none--#{$breakpoint-mod} {
+  .col-rule-st-none#{$breakpoint-mod} {
     column-rule-style: none;
   }
-  .col-rule-st-solid--#{$breakpoint-mod} {
+  .col-rule-st-solid#{$breakpoint-mod} {
     column-rule-style: solid;
   }
-  .col-rule-st-dot--#{$breakpoint-mod} {
+  .col-rule-st-dot#{$breakpoint-mod} {
     column-rule-style: dot;
   }
-  .col-rule-st-dash--#{$breakpoint-mod} {
+  .col-rule-st-dash#{$breakpoint-mod} {
     column-rule-style: dash;
   }
 }

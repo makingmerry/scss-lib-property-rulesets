@@ -4,28 +4,28 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .va-top--#{$breakpoint-mod} {
+  .va-top#{$breakpoint-mod} {
     vertical-align: top;
   }
-  .va-middle--#{$breakpoint-mod} {
+  .va-middle#{$breakpoint-mod} {
     vertical-align: middle;
   }
-  .va-bottom--#{$breakpoint-mod} {
+  .va-bottom#{$breakpoint-mod} {
     vertical-align: bottom;
   }
-  .va-text-top--#{$breakpoint-mod} {
+  .va-text-top#{$breakpoint-mod} {
     vertical-align: text-top;
   }
-  .va-text-bottom--#{$breakpoint-mod} {
+  .va-text-bottom#{$breakpoint-mod} {
     vertical-align: text-bottom;
   }
-  .va-sub--#{$breakpoint-mod} {
+  .va-sub#{$breakpoint-mod} {
     vertical-align: sub;
   }
-  .va-super--#{$breakpoint-mod} {
+  .va-super#{$breakpoint-mod} {
     vertical-align: super;
   }
-  .va-baseline--#{$breakpoint-mod} {
+  .va-baseline#{$breakpoint-mod} {
     vertical-align: baseline;
   }
 }

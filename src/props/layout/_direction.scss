@@ -4,10 +4,10 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .dir-ltr--#{$breakpoint-mod} {
+  .dir-ltr#{$breakpoint-mod} {
     direction: ltr;
   }
-  .dir-rtl--#{$breakpoint-mod} {
+  .dir-rtl#{$breakpoint-mod} {
     direction: rtl;
   }
 }
