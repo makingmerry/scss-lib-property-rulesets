@@ -3,29 +3,29 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .va-top#{$breakpoint-step} {
+@include compose-breakpoint-rules($breakpoints) {
+  .va-top--#{$breakpoint-mod} {
     vertical-align: top;
   }
-  .va-middle#{$breakpoint-step} {
+  .va-middle--#{$breakpoint-mod} {
     vertical-align: middle;
   }
-  .va-bottom#{$breakpoint-step} {
+  .va-bottom--#{$breakpoint-mod} {
     vertical-align: bottom;
   }
-  .va-text-top#{$breakpoint-step} {
+  .va-text-top--#{$breakpoint-mod} {
     vertical-align: text-top;
   }
-  .va-text-bottom#{$breakpoint-step} {
+  .va-text-bottom--#{$breakpoint-mod} {
     vertical-align: text-bottom;
   }
-  .va-sub#{$breakpoint-step} {
+  .va-sub--#{$breakpoint-mod} {
     vertical-align: sub;
   }
-  .va-super#{$breakpoint-step} {
+  .va-super--#{$breakpoint-mod} {
     vertical-align: super;
   }
-  .va-baseline#{$breakpoint-step} {
+  .va-baseline--#{$breakpoint-mod} {
     vertical-align: baseline;
   }
 }

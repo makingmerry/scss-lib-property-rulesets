@@ -3,125 +3,125 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   // border:
-  .b-top#{$breakpoint-step} {
+  .b-top--#{$breakpoint-mod} {
     border-top: 1px solid;
   }
-  .b-bottom#{$breakpoint-step} {
+  .b-bottom--#{$breakpoint-mod} {
     border-bottom: 1px solid;
   }
-  .b-right#{$breakpoint-step} {
+  .b-right--#{$breakpoint-mod} {
     border-right: 1px solid;
   }
-  .b-left#{$breakpoint-step} {
+  .b-left--#{$breakpoint-mod} {
     border-left: 1px solid;
   }
-  .b-all#{$breakpoint-step} {
+  .b-all--#{$breakpoint-mod} {
     border: 1px solid;
   }
-  .b-hor#{$breakpoint-step} {
+  .b-hor--#{$breakpoint-mod} {
     border-right: 1px solid;
     border-left: 1px solid;
   }
-  .b-ver#{$breakpoint-step} {
+  .b-ver--#{$breakpoint-mod} {
     border-top: 1px solid;
     border-bottom: 1px solid;
   }
 
   // border-width:
-  .b-w-none#{$breakpoint-step} {
+  .b-w-none--#{$breakpoint-mod} {
     border-width: 0;
   }
 
   @include border-width-rules($border-widths) {
-    .b-w#{$border-width-step}#{$breakpoint-step} {
+    .b-w#{$border-width-step}--#{$breakpoint-mod} {
       border-width: $border-width-val;
     }
   }
 
   // border-radius:
-  .b-r-none#{$breakpoint-step} {
+  .b-r-none--#{$breakpoint-mod} {
     border-radius: 0;
   }
-  .b-r-circle#{$breakpoint-step} {
+  .b-r-circle--#{$breakpoint-mod} {
     border-radius: 100%;
   }
-  .b-r-pill#{$breakpoint-step} {
+  .b-r-pill--#{$breakpoint-mod} {
     border-radius: 1000px;
   }
 
   @include border-width-rules($border-widths) {
-    .b-r#{$border-width-step}#{$breakpoint-step} {
+    .b-r#{$border-width-step}--#{$breakpoint-mod} {
       border-radius: $border-width-val;
     }
   }
 
   // border-radius 'position':
-  .b-r-top#{$breakpoint-step} {
+  .b-r-top--#{$breakpoint-mod} {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .b-r-bottom#{$breakpoint-step} {
+  .b-r-bottom--#{$breakpoint-mod} {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
-  .b-r-right#{$breakpoint-step} {
+  .b-r-right--#{$breakpoint-mod} {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .b-r-left#{$breakpoint-step} {
+  .b-r-left--#{$breakpoint-mod} {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .b-r-top-right#{$breakpoint-step} {
+  .b-r-top-right--#{$breakpoint-mod} {
     border-top-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .b-r-top-left#{$breakpoint-step} {
-    border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .b-r-bottom-right#{$breakpoint-step} {
+  .b-r-top-left--#{$breakpoint-mod} {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .b-r-bottom-right--#{$breakpoint-mod} {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .b-r-bottom-left#{$breakpoint-step} {
+  .b-r-bottom-left--#{$breakpoint-mod} {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
   }
 
   // border-style:
-  .b-st-none#{$breakpoint-step} {
+  .b-st-none--#{$breakpoint-mod} {
     border-style: none;
   }
-  .b-st-solid#{$breakpoint-step} {
+  .b-st-solid--#{$breakpoint-mod} {
     border-style: solid;
   }
-  .b-st-dot#{$breakpoint-step} {
+  .b-st-dot--#{$breakpoint-mod} {
     border-style: dot;
   }
-  .b-st-dash#{$breakpoint-step} {
+  .b-st-dash--#{$breakpoint-mod} {
     border-style: dash;
   }
 
   // border-color:
-  .b-c-inherit#{$breakpoint-step} {
+  .b-c-inherit--#{$breakpoint-mod} {
     border-color: inherit;
   }
-  .hov-b-c-inherit#{$breakpoint-step}:hover {
+  .hov-b-c-inherit--#{$breakpoint-mod}:hover {
     border-color: inherit;
   }
 
   @include color-rules($colors) {
-    .b-c#{$color-name}#{$breakpoint-step} {
+    .b-c#{$color-name}--#{$breakpoint-mod} {
       border-color: $color-val;
     }
-    .hov-b-c#{$color-name}#{$breakpoint-step}:hover {
+    .hov-b-c#{$color-name}--#{$breakpoint-mod}:hover {
       border-color: $color-val;
     }
   }

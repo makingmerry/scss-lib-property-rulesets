@@ -4,13 +4,29 @@
 ////////////////////////////////////////////////////////////
 
 // # Breakpoints
+// Takes in a `Map` param of breakpoints,
+// then generates breakpoint wrappers
+// and exposes (to the global scope) variables to @content
 //
-// @global:
-// $breakpoint-step
+// e.g.
+// map: (
+//   "small": 40em,
+// );
+// =>
+// @content
+// @media (min-width: 40em) {
+//   @content#{--small}
+// }
+// @params:
+// $map `Map`:
+// - ${size-name} `Num + unit`: width value for listed size
+//
+// @global-vars:
+// $breakpoint-mod
 ////////////////////////////////////////
 ////////////////////////////////////////
 
-// Core mixin, compose base rule with @media-query block if necessary.
+// Compose base rule with @media-query block if necessary.
 @mixin breakpoint($map, $size) {
   @if $size == base {
     @content;
@@ -22,17 +38,17 @@
 }
 
 // Constructs media-query rules with a map of breakpoints.
-@mixin breakpoint-rules($map) {
+@mixin compose-breakpoint-rules($map) {
   @for $i from 0 through length($map) {
     $size: base;
-    // Undesirable, but expose mixin variables to the global scope
+    // !Exposes variables to the global scope,
     // so @content can access them when composing rules.
-    $breakpoint-step: "" !global;
+    $breakpoint-mod: "" !global;
 
     // Compose base rules with @media-query blocks.
     @if $i != 0 {
       $size: nth(map-keys($map), $i);
-      $breakpoint-step: "--" + str-slice($size, 0, 1) !global;
+      $breakpoint-mod: str-slice($size, 0, 1) !global;
     }
 
     @include breakpoint($map, $size) {
@@ -42,7 +58,6 @@
 }
 
 // # Index
-//
 // Takes in a `Map` param of options,
 // then generates and exposes (to the global scope) variables to @content
 //
@@ -52,6 +67,7 @@
 //   "ratio": 2,
 //   "counts": 3,
 // );
+// =>
 // .m-top-1 { margin-top: 1em }
 // .m-top-2 { margin-top: 2em }
 // .m-top-3 { margin-top: 4em }
@@ -63,7 +79,8 @@
 // - $ratio `Num`: ratio of next value in loop
 //
 // @global-vars:
-// $index-mod:  "-" + $step !global;
+// $index-mod
+// $index-val
 ////////////////////////////////////////
 ////////////////////////////////////////
 

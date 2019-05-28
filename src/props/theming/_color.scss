@@ -3,19 +3,19 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .c-inherit#{$breakpoint-step} {
+@include compose-breakpoint-rules($breakpoints) {
+  .c-inherit--#{$breakpoint-mod} {
     color: inherit;
   }
-  .hov-c-inherit#{$breakpoint-step}:hover {
+  .hov-c-inherit--#{$breakpoint-mod}:hover {
     color: inherit;
   }
 
   @include color-rules($colors) {
-    .c#{$color-name}#{$breakpoint-step} {
+    .c#{$color-name}--#{$breakpoint-mod} {
       color: $color-val;
     }
-    .hov-c#{$color-name}#{$breakpoint-step}:hover {
+    .hov-c#{$color-name}--#{$breakpoint-mod}:hover {
       color: $color-val;
     }
   }

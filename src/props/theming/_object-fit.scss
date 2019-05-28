@@ -3,50 +3,50 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   // object-fit:
-  .obj-fit-none#{$breakpoint-step} {
+  .obj-fit-none--#{$breakpoint-mod} {
     object-fit: none;
   }
-  .obj-fit-fill#{$breakpoint-step} {
+  .obj-fit-fill--#{$breakpoint-mod} {
     object-fit: fill;
   }
-  .obj-fit-contain#{$breakpoint-step} {
+  .obj-fit-contain--#{$breakpoint-mod} {
     object-fit: contain;
   }
-  .obj-fit-cover#{$breakpoint-step} {
+  .obj-fit-cover--#{$breakpoint-mod} {
     object-fit: cover;
   }
-  .obj-fit-scale-down#{$breakpoint-step} {
+  .obj-fit-scale-down--#{$breakpoint-mod} {
     object-fit: scale-down;
   }
 
   // object-position:
-  .obj-pos-center-center#{$breakpoint-step} {
+  .obj-pos-center-center--#{$breakpoint-mod} {
     object-position: center center;
   }
-  .obj-pos-center-top#{$breakpoint-step} {
+  .obj-pos-center-top--#{$breakpoint-mod} {
     object-position: center top;
   }
-  .obj-pos-right-top#{$breakpoint-step} {
+  .obj-pos-right-top--#{$breakpoint-mod} {
     object-position: right top;
   }
-  .obj-pos-right-center#{$breakpoint-step} {
+  .obj-pos-right-center--#{$breakpoint-mod} {
     object-position: right center;
   }
-  .obj-pos-right-bottom#{$breakpoint-step} {
+  .obj-pos-right-bottom--#{$breakpoint-mod} {
     object-position: right bottom;
   }
-  .obj-pos-center-bottom#{$breakpoint-step} {
+  .obj-pos-center-bottom--#{$breakpoint-mod} {
     object-position: center bottom;
   }
-  .obj-pos-left-bottom#{$breakpoint-step} {
+  .obj-pos-left-bottom--#{$breakpoint-mod} {
     object-position: left bottom;
   }
-  .obj-pos-left-center#{$breakpoint-step} {
+  .obj-pos-left-center--#{$breakpoint-mod} {
     object-position: left center;
   }
-  .obj-pos-left-top#{$breakpoint-step} {
+  .obj-pos-left-top--#{$breakpoint-mod} {
     object-position: left top;
   }
 }

@@ -3,14 +3,14 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .vis-visible#{$breakpoint-step} {
+@include compose-breakpoint-rules($breakpoints) {
+  .vis-visible--#{$breakpoint-mod} {
     visibility: visible;
   }
-  .vis-hidden#{$breakpoint-step} {
+  .vis-hidden--#{$breakpoint-mod} {
     visibility: hidden;
   }
-  .vis-collapse#{$breakpoint-step} {
+  .vis-collapse--#{$breakpoint-mod} {
     visibility: collapse;
   }
 }

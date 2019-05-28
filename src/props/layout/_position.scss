@@ -3,58 +3,58 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   // position:
-  .pos-static#{$breakpoint-step} {
+  .pos-static--#{$breakpoint-mod} {
     position: static;
   }
-  .pos-fixed#{$breakpoint-step} {
+  .pos-fixed--#{$breakpoint-mod} {
     position: fixed;
   }
-  .pos-relative#{$breakpoint-step} {
+  .pos-relative--#{$breakpoint-mod} {
     position: relative;
   }
-  .pos-absolute#{$breakpoint-step} {
+  .pos-absolute--#{$breakpoint-mod} {
     position: absolute;
   }
 
   // *translate:
-  .top-0#{$breakpoint-step} {
+  .top-0--#{$breakpoint-mod} {
     top: 0;
   }
-  .bottom-0#{$breakpoint-step} {
+  .bottom-0--#{$breakpoint-mod} {
     bottom: 0;
   }
-  .right-0#{$breakpoint-step} {
+  .right-0--#{$breakpoint-mod} {
     right: 0;
   }
-  .left-0#{$breakpoint-step} {
+  .left-0--#{$breakpoint-mod} {
     left: 0;
   }
 
   @include compose-index-rules($spacings-map) {
-    .top-#{$index-mod}#{$breakpoint-step} {
+    .top-#{$index-mod}--#{$breakpoint-mod} {
       top: $index-val;
     }
-    .top-n#{$index-mod}#{$breakpoint-step} {
+    .top-n#{$index-mod}--#{$breakpoint-mod} {
       top: -$index-val;
     }
-    .bottom-#{$index-mod}#{$breakpoint-step} {
+    .bottom-#{$index-mod}--#{$breakpoint-mod} {
       bottom: $index-val;
     }
-    .bottom-n#{$index-mod}#{$breakpoint-step} {
+    .bottom-n#{$index-mod}--#{$breakpoint-mod} {
       bottom: -$index-val;
     }
-    .right-#{$index-mod}#{$breakpoint-step} {
+    .right-#{$index-mod}--#{$breakpoint-mod} {
       right: $index-val;
     }
-    .right-n#{$index-mod}#{$breakpoint-step} {
+    .right-n#{$index-mod}--#{$breakpoint-mod} {
       right: -$index-val;
     }
-    .left-#{$index-mod}#{$breakpoint-step} {
+    .left-#{$index-mod}--#{$breakpoint-mod} {
       left: $index-val;
     }
-    .left-n#{$index-mod}#{$breakpoint-step} {
+    .left-n#{$index-mod}--#{$breakpoint-mod} {
       left: -$index-val;
     }
   }

@@ -3,10 +3,10 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   @each $step, $val in $wraps {
     $wrap-step: "-" + $step;
-    .wrap#{$wrap-step}#{$breakpoint-step} {
+    .wrap#{$wrap-step}--#{$breakpoint-mod} {
       max-width: $val;
     }
   }

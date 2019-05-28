@@ -3,15 +3,15 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   // transition-duration:
-  .tx-normal#{$breakpoint-step} {
+  .tx-normal--#{$breakpoint-mod} {
     transition-duration: map-get($transitions, "normal");
   }
-  .tx-slow#{$breakpoint-step} {
+  .tx-slow--#{$breakpoint-mod} {
     transition-duration: map-get($transitions, "slow");
   }
-  .tx-fast#{$breakpoint-step} {
+  .tx-fast--#{$breakpoint-mod} {
     transition-duration: map-get($transitions, "fast");
   }
 }

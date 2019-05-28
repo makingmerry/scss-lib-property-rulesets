@@ -3,20 +3,20 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .z-1n#{$breakpoint-step} {
+@include compose-breakpoint-rules($breakpoints) {
+  .z-1n--#{$breakpoint-mod} {
     z-index: -1;
   }
-  .z-0#{$breakpoint-step} {
+  .z-0--#{$breakpoint-mod} {
     z-index: 0;
   }
-  .z-99#{$breakpoint-step} {
+  .z-99--#{$breakpoint-mod} {
     z-index: 99;
   }
 
   @for $i from 1 through $z-index-count {
     $z-index-step: "-" + $i;
-    .z#{$z-index-step}#{$breakpoint-step} {
+    .z#{$z-index-step}--#{$breakpoint-mod} {
       z-index: $i;
     }
   }

@@ -3,34 +3,34 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   // float:
-  .float-none#{$breakpoint-step} {
+  .float-none--#{$breakpoint-mod} {
     float: none;
   }
-  .float-right#{$breakpoint-step} {
+  .float-right--#{$breakpoint-mod} {
     float: right;
   }
-  .float-left#{$breakpoint-step} {
+  .float-left--#{$breakpoint-mod} {
     float: left;
   }
 
   // clear:
-  .clear-none#{$breakpoint-step} {
+  .clear-none--#{$breakpoint-mod} {
     clear: none;
   }
-  .clear-right#{$breakpoint-step} {
+  .clear-right--#{$breakpoint-mod} {
     clear: right;
   }
-  .clear-left#{$breakpoint-step} {
+  .clear-left--#{$breakpoint-mod} {
     clear: left;
   }
-  .clear-both#{$breakpoint-step} {
+  .clear-both--#{$breakpoint-mod} {
     clear: both;
   }
 
   // *clear-fix:
-  .contain-floats#{$breakpoint-step} {
+  .contain-floats--#{$breakpoint-mod} {
     &::after {
       content: "";
       display: table;

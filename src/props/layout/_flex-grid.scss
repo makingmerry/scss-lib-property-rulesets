@@ -3,10 +3,10 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   @include column-rules($column-count) {
     $column-grid: "-" + $column-count;
-    .fg-#{$column-grid}#{$column-index}#{$breakpoint-step} {
+    .fg-#{$column-grid}#{$column-index}--#{$breakpoint-mod} {
       flex-basis: $column-width-val;
       max-width: $column-width-val;
     }

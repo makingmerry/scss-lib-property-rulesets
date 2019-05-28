@@ -3,7 +3,11 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .pe-none#{$breakpoint-step} { pointer-events: none; }
-  .pe-auto#{$breakpoint-step} { pointer-events: auto; }
+@include compose-breakpoint-rules($breakpoints) {
+  .pe-none--#{$breakpoint-mod} {
+    pointer-events: none;
+  }
+  .pe-auto--#{$breakpoint-mod} {
+    pointer-events: auto;
+  }
 }

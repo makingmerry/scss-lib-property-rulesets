@@ -3,41 +3,41 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .d-none#{$breakpoint-step} {
+@include compose-breakpoint-rules($breakpoints) {
+  .d-none--#{$breakpoint-mod} {
     display: none;
   }
-  .d-inline#{$breakpoint-step} {
+  .d-inline--#{$breakpoint-mod} {
     display: inline;
   }
-  .d-i-block#{$breakpoint-step} {
+  .d-i-block--#{$breakpoint-mod} {
     display: inline-block;
   }
-  .d-block#{$breakpoint-step} {
+  .d-block--#{$breakpoint-mod} {
     display: block;
   }
-  .d-flex#{$breakpoint-step} {
+  .d-flex--#{$breakpoint-mod} {
     display: flex;
   }
-  .d-table#{$breakpoint-step} {
+  .d-table--#{$breakpoint-mod} {
     display: table;
   }
-  .d-i-table#{$breakpoint-step} {
+  .d-i-table--#{$breakpoint-mod} {
     display: inline-table;
   }
-  .d-t-cell#{$breakpoint-step} {
+  .d-t-cell--#{$breakpoint-mod} {
     display: table-cell;
   }
-  .d-t-row#{$breakpoint-step} {
+  .d-t-row--#{$breakpoint-mod} {
     display: table-row;
   }
-  .d-t-row-grp#{$breakpoint-step} {
+  .d-t-row-grp--#{$breakpoint-mod} {
     display: table-row-group;
   }
-  .d-t-col#{$breakpoint-step} {
+  .d-t-col--#{$breakpoint-mod} {
     display: table-column;
   }
-  .d-t-col-grp#{$breakpoint-step} {
+  .d-t-col-grp--#{$breakpoint-mod} {
     display: table-column-group;
   }
 }

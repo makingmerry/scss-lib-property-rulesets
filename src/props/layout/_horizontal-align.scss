@@ -3,16 +3,16 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .ha-right#{$breakpoint-step} {
+@include compose-breakpoint-rules($breakpoints) {
+  .ha-right--#{$breakpoint-mod} {
     margin-right: 0;
     margin-left: auto;
   }
-  .ha-left#{$breakpoint-step} {
+  .ha-left--#{$breakpoint-mod} {
     margin-right: auto;
     margin-left: 0;
   }
-  .ha-center#{$breakpoint-step} {
+  .ha-center--#{$breakpoint-mod} {
     margin-right: auto;
     margin-left: auto;
   }

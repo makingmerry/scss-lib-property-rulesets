@@ -3,87 +3,87 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   // # Container
   ////////////////////////////////////////
   ////////////////////////////////////////
 
   // flex-wrap:
-  .flex-wrap-nowrap#{$breakpoint-step} {
+  .flex-wrap-nowrap--#{$breakpoint-mod} {
     flex-wrap: nowrap;
   }
-  .flex-wrap-wrap#{$breakpoint-step} {
+  .flex-wrap-wrap--#{$breakpoint-mod} {
     flex-wrap: wrap;
   }
-  .flex-wrap-reverse#{$breakpoint-step} {
+  .flex-wrap-reverse--#{$breakpoint-mod} {
     flex-wrap: wrap-reverse;
   }
 
   // flex-direction:
-  .flex-dir-row#{$breakpoint-step} {
+  .flex-dir-row--#{$breakpoint-mod} {
     flex-direction: row;
   }
-  .flex-dir-row-reverse#{$breakpoint-step} {
+  .flex-dir-row-reverse--#{$breakpoint-mod} {
     flex-direction: row-reverse;
   }
-  .flex-dir-col#{$breakpoint-step} {
+  .flex-dir-col--#{$breakpoint-mod} {
     flex-direction: column;
   }
-  .flex-dir-col-reverse#{$breakpoint-step} {
+  .flex-dir-col-reverse--#{$breakpoint-mod} {
     flex-direction: column-reverse;
   }
 
   // justify-content:
-  .justify-ct-start#{$breakpoint-step} {
+  .justify-ct-start--#{$breakpoint-mod} {
     justify-content: flex-start;
   }
-  .justify-ct-end#{$breakpoint-step} {
+  .justify-ct-end--#{$breakpoint-mod} {
     justify-content: flex-end;
   }
-  .justify-ct-center#{$breakpoint-step} {
+  .justify-ct-center--#{$breakpoint-mod} {
     justify-content: center;
   }
-  .justify-ct-space-btw#{$breakpoint-step} {
+  .justify-ct-space-btw--#{$breakpoint-mod} {
     justify-content: space-between;
   }
-  .justify-ct-space-ard#{$breakpoint-step} {
+  .justify-ct-space-ard--#{$breakpoint-mod} {
     justify-content: space-around;
   }
 
   // align-content:
-  .align-ct-start#{$breakpoint-step} {
+  .align-ct-start--#{$breakpoint-mod} {
     align-content: flex-start;
   }
-  .align-ct-end#{$breakpoint-step} {
+  .align-ct-end--#{$breakpoint-mod} {
     align-content: flex-end;
   }
-  .align-ct-center#{$breakpoint-step} {
+  .align-ct-center--#{$breakpoint-mod} {
     align-content: center;
   }
-  .align-ct-stretch#{$breakpoint-step} {
+  .align-ct-stretch--#{$breakpoint-mod} {
     align-content: stretch;
   }
-  .align-ct-space-btw#{$breakpoint-step} {
+  .align-ct-space-btw--#{$breakpoint-mod} {
     align-content: space-between;
   }
-  .align-ct-space-ard#{$breakpoint-step} {
+  .align-ct-space-ard--#{$breakpoint-mod} {
     align-content: space-around;
   }
 
   // align-items:
-  .align-i-start#{$breakpoint-step} {
+  .align-i-start--#{$breakpoint-mod} {
     align-items: flex-start;
   }
-  .align-i-end#{$breakpoint-step} {
+  .align-i-end--#{$breakpoint-mod} {
     align-items: flex-end;
   }
-  .align-i-center#{$breakpoint-step} {
+  .align-i-center--#{$breakpoint-mod} {
     align-items: center;
   }
-  .align-i-stretch#{$breakpoint-step} {
+  .align-i-stretch--#{$breakpoint-mod} {
     align-items: stretch;
   }
-  .align-i-baseline#{$breakpoint-step} {
+  .align-i-baseline--#{$breakpoint-mod} {
     align-items: baseline;
   }
 
@@ -91,33 +91,33 @@
   ////////////////////////////////////////
   ////////////////////////////////////////
   // align-self:
-  .align-auto#{$breakpoint-step} {
+  .align-auto--#{$breakpoint-mod} {
     align-self: auto;
   }
-  .align-start#{$breakpoint-step} {
+  .align-start--#{$breakpoint-mod} {
     align-self: flex-start;
   }
-  .align-end#{$breakpoint-step} {
+  .align-end--#{$breakpoint-mod} {
     align-self: flex-end;
   }
-  .align-center#{$breakpoint-step} {
+  .align-center--#{$breakpoint-mod} {
     align-self: center;
   }
-  .align-stretch#{$breakpoint-step} {
+  .align-stretch--#{$breakpoint-mod} {
     align-self: stretch;
   }
-  .align-baseline#{$breakpoint-step} {
+  .align-baseline--#{$breakpoint-mod} {
     align-self: baseline;
   }
 
   // order
-  .order-initial#{$breakpoint-step} {
+  .order-initial--#{$breakpoint-mod} {
     order: initial;
   }
-  .order-first#{$breakpoint-step} {
+  .order-first--#{$breakpoint-mod} {
     order: 0;
   }
-  .order-last#{$breakpoint-step} {
+  .order-last--#{$breakpoint-mod} {
     order: 99;
   }
 

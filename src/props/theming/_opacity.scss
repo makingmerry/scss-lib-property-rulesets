@@ -3,30 +3,30 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .op-transparent#{$breakpoint-step} {
+@include compose-breakpoint-rules($breakpoints) {
+  .op-transparent--#{$breakpoint-mod} {
     opacity: 0;
   }
-  .op-near-transparent#{$breakpoint-step} {
+  .op-near-transparent--#{$breakpoint-mod} {
     opacity: map-get($opacities, near-transparent);
   }
-  .op-translucent#{$breakpoint-step} {
+  .op-translucent--#{$breakpoint-mod} {
     opacity: map-get($opacities, translucent);
   }
-  .op-opaque#{$breakpoint-step} {
+  .op-opaque--#{$breakpoint-mod} {
     opacity: 1;
   }
 
-  .hov-op-transparent#{$breakpoint-step}:hover {
+  .hov-op-transparent--#{$breakpoint-mod}:hover {
     opacity: 0;
   }
-  .hov-op-near-transparent#{$breakpoint-step}:hover {
+  .hov-op-near-transparent--#{$breakpoint-mod}:hover {
     opacity: map-get($opacities, near-transparent);
   }
-  .hov-op-translucent#{$breakpoint-step}:hover {
+  .hov-op-translucent--#{$breakpoint-mod}:hover {
     opacity: map-get($opacities, translucent);
   }
-  .hov-op-opaque#{$breakpoint-step}:hover {
+  .hov-op-opaque--#{$breakpoint-mod}:hover {
     opacity: 1;
   }
 }

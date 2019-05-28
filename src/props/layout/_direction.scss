@@ -3,11 +3,11 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
-  .dir-ltr#{$breakpoint-step} {
+@include compose-breakpoint-rules($breakpoints) {
+  .dir-ltr--#{$breakpoint-mod} {
     direction: ltr;
   }
-  .dir-rtl#{$breakpoint-step} {
+  .dir-rtl--#{$breakpoint-mod} {
     direction: rtl;
   }
 }

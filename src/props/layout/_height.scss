@@ -3,70 +3,70 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-@include breakpoint-rules($breakpoints) {
+@include compose-breakpoint-rules($breakpoints) {
   // height:
-  .h-auto#{$breakpoint-step} {
+  .h-auto--#{$breakpoint-mod} {
     height: auto;
   }
-  .h-25#{$breakpoint-step} {
+  .h-25--#{$breakpoint-mod} {
     height: 25%;
   }
-  .h-50#{$breakpoint-step} {
+  .h-50--#{$breakpoint-mod} {
     height: 50%;
   }
-  .h-75#{$breakpoint-step} {
+  .h-75--#{$breakpoint-mod} {
     height: 75%;
   }
-  .h-100#{$breakpoint-step} {
+  .h-100--#{$breakpoint-mod} {
     height: 100%;
   }
 
   // min-height:
-  .h-min-auto#{$breakpoint-step} {
+  .h-min-auto--#{$breakpoint-mod} {
     min-height: auto;
   }
-  .h-min-25#{$breakpoint-step} {
+  .h-min-25--#{$breakpoint-mod} {
     min-height: 25%;
   }
-  .h-min-50#{$breakpoint-step} {
+  .h-min-50--#{$breakpoint-mod} {
     min-height: 50%;
   }
-  .h-min-75#{$breakpoint-step} {
+  .h-min-75--#{$breakpoint-mod} {
     min-height: 75%;
   }
-  .h-min-100#{$breakpoint-step} {
+  .h-min-100--#{$breakpoint-mod} {
     min-height: 100%;
   }
 
   // max-height:
-  .h-max-none#{$breakpoint-step} {
+  .h-max-none--#{$breakpoint-mod} {
     max-height: none;
   }
-  .h-max-25#{$breakpoint-step} {
+  .h-max-25--#{$breakpoint-mod} {
     max-height: 25%;
   }
-  .h-max-50#{$breakpoint-step} {
+  .h-max-50--#{$breakpoint-mod} {
     max-height: 50%;
   }
-  .h-max-75#{$breakpoint-step} {
+  .h-max-75--#{$breakpoint-mod} {
     max-height: 75%;
   }
-  .h-max-100#{$breakpoint-step} {
+  .h-max-100--#{$breakpoint-mod} {
     max-height: 100%;
   }
 
   @each $step, $val in $heights {
     $height-step: "-" + $step;
     // height:
-    .h#{$height-step}#{$breakpoint-step} {
+    .h#{$height-step}--#{$breakpoint-mod} {
       height: $val;
     }
     // min-height:
-    .h-min#{$height-step}#{$breakpoint-step} {
+    .h-min#{$height-step}--#{$breakpoint-mod} {
       min-height: $val;
     }
     // max-height:
-    .h-max#{$height-step}#{$breakpoint-step} {
+    .h-max#{$height-step}--#{$breakpoint-mod} {
       max-height: $val;
     }
   }
