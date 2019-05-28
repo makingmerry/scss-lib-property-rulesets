@@ -145,19 +145,17 @@
     max-width: 2 / 3 * 100%;
   }
 
-  @each $step, $val in $widths {
-    $width-step: "-" + $step;
-    // width:
-    .w#{$width-step}#{$breakpoint-mod} {
-      width: $val;
+  @include compose-map-rules($widths) {
+    .w-#{$map-prop}#{$breakpoint-mod} {
+      width: $map-val;
     }
-    // min-width:
-    .w-min#{$width-step}#{$breakpoint-mod} {
-      min-width: $val;
+
+    .w-min-#{$map-prop}#{$breakpoint-mod} {
+      min-width: $map-val;
     }
-    // max-height:
-    .w-max#{$width-step}#{$breakpoint-mod} {
-      max-width: $val;
+
+    .w-max-#{$map-prop}#{$breakpoint-mod} {
+      max-width: $map-val;
     }
   }
 }

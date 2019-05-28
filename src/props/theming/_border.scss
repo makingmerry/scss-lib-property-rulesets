@@ -34,9 +34,9 @@
     border-width: 0;
   }
 
-  @include border-width-rules($border-widths) {
-    .b-w#{$border-width-step}#{$breakpoint-mod} {
-      border-width: $border-width-val;
+  @include compose-map-rules($border-widths) {
+    .b-w-#{$map-prop}#{$breakpoint-mod} {
+      border-width: $map-val;
     }
   }
 
@@ -51,9 +51,9 @@
     border-radius: 1000px;
   }
 
-  @include border-width-rules($border-widths) {
-    .b-r#{$border-width-step}#{$breakpoint-mod} {
-      border-radius: $border-width-val;
+  @include compose-map-rules($border-widths) {
+    .b-r-#{$map-prop}#{$breakpoint-mod} {
+      border-radius: $map-val;
     }
   }
 
@@ -117,12 +117,12 @@
     border-color: inherit;
   }
 
-  @include color-rules($colors) {
-    .b-c#{$color-name}#{$breakpoint-mod} {
-      border-color: $color-val;
+  @include compose-map-rules($colors) {
+    .b-c-#{$map-prop}#{$breakpoint-mod} {
+      border-color: $map-val;
     }
-    .hov-b-c#{$color-name}#{$breakpoint-mod}:hover {
-      border-color: $color-val;
+    .hov-b-c-#{$map-prop}#{$breakpoint-mod}:hover {
+      border-color: $map-val;
     }
   }
 }

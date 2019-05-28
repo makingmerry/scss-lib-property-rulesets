@@ -11,12 +11,12 @@
     color: inherit;
   }
 
-  @include color-rules($colors) {
-    .c#{$color-name}#{$breakpoint-mod} {
-      color: $color-val;
+  @include compose-map-rules($colors) {
+    .c-#{$map-prop}#{$breakpoint-mod} {
+      color: $map-val;
     }
-    .hov-c#{$color-name}#{$breakpoint-mod}:hover {
-      color: $color-val;
+    .hov-c-#{$map-prop}#{$breakpoint-mod}:hover {
+      color: $map-val;
     }
   }
 }

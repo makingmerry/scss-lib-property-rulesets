@@ -4,7 +4,7 @@
 ////////////////////////////////////////////////////////////
 
 @include compose-breakpoint-rules($breakpoints) {
-  .z-1n#{$breakpoint-mod} {
+  .z-n1#{$breakpoint-mod} {
     z-index: -1;
   }
   .z-0#{$breakpoint-mod} {
@@ -14,10 +14,9 @@
     z-index: 99;
   }
 
-  @for $i from 1 through $z-index-count {
-    $z-index-step: "-" + $i;
-    .z#{$z-index-step}#{$breakpoint-mod} {
-      z-index: $i;
+  @include compose-count-rules($z-index-counts) {
+    .z-#{$count-i}#{$breakpoint-mod} {
+      z-index: $count-i;
     }
   }
 }

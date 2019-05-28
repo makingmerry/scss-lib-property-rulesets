@@ -55,19 +55,17 @@
     max-height: 100%;
   }
 
-  @each $step, $val in $heights {
-    $height-step: "-" + $step;
-    // height:
-    .h#{$height-step}#{$breakpoint-mod} {
-      height: $val;
+  @include compose-map-rules($heights) {
+    .h-#{$map-prop}#{$breakpoint-mod} {
+      height: $map-val;
     }
-    // min-height:
-    .h-min#{$height-step}#{$breakpoint-mod} {
-      min-height: $val;
+
+    .h-min-#{$map-prop}#{$breakpoint-mod} {
+      min-height: $map-val;
     }
-    // max-height:
-    .h-max#{$height-step}#{$breakpoint-mod} {
-      max-height: $val;
+
+    .h-max-#{$map-prop}#{$breakpoint-mod} {
+      max-height: $map-val;
     }
   }
 }

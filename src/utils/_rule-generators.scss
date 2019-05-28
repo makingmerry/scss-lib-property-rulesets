@@ -3,10 +3,7 @@
 ////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////
 
-// # Breakpoints
-// Takes in a `Map` param of breakpoints,
-// then generates breakpoint wrappers
-// and exposes (to the global scope) variables to @content
+// # Compose breakpoint rules
 //
 // @global-vars:
 // $breakpoint-mod
@@ -40,9 +37,7 @@
   }
 }
 
-// # Index
-// Takes in a `Map` param of options,
-// then generates and exposes (to the global scope) variables to @content
+// # Compose index rules
 //
 // @global-vars:
 // $index-count
@@ -67,9 +62,23 @@
   }
 }
 
-// # Columns
-// Takes in a `counts` int,
-// then generates and exposes (to the global scope) variables to @content
+// # Compose map rules
+//
+// @global-vars:
+// $map-prop
+// $map-val
+////////////////////////////////////////
+////////////////////////////////////////
+
+@mixin compose-map-rules($map) {
+  @each $prop, $val in $map {
+    $map-prop: $prop !global;
+    $map-val: $val !global;
+    @content;
+  }
+}
+
+// # Compose column rules
 //
 // @global-vars:
 // $column-count
@@ -85,40 +94,25 @@
   }
 }
 
-// # Colors
+// # Compose count rules
 //
-// @global:
-// $color-name
-// $color-val
+// @global-vars:
+// $count
 ////////////////////////////////////////
 ////////////////////////////////////////
 
-// Constructs color rules with a map of color values.
-@mixin color-rules($map) {
-  @each $name, $val in $map {
-    // Undesirable, but expose mixin variables to the global scope
-    // so @content can access them when composing rules.
-    $color-name: "-" + $name !global;
-    $color-val: $val !global;
+@mixin compose-count-rules($end, $start: 1) {
+  @for $i from $start through $end {
+    $count-i: $i !global;
     @content;
   }
 }
 
-// # Borders
+// # Compose font-size rules
 //
-// @global:
-// $border-width-step
-// $border-width-val
+// @global-vars:
 ////////////////////////////////////////
 ////////////////////////////////////////
 
-// Constructs border-width rules with a map of border-width values.
-@mixin border-width-rules($map) {
-  @each $step, $val in $map {
-    // Undesirable, but expose mixin variables to the global scope
-    // so @content can access them when composing rules.
-    $border-width-step: "-" + $step !global;
-    $border-width-val: $val !global;
-    @content;
-  }
+@mixin compose-font-size-rules() {
 }

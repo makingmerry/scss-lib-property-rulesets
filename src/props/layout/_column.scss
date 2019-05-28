@@ -41,9 +41,9 @@
     column-count: auto;
   }
 
-  @include compose-column-rules($column-counts) {
-    .col-count-#{$column-count}#{$breakpoint-mod} {
-      column-count: $column-count;
+  @include compose-count-rules($column-counts) {
+    .col-count-#{$count-i}#{$breakpoint-mod} {
+      column-count: $count-i;
     }
   }
 
@@ -62,16 +62,16 @@
   }
 
   // column-rule-width:
-  @include border-width-rules($border-widths) {
-    .col-rule-w#{$border-width-step}#{$breakpoint-mod} {
-      column-rule-width: $border-width-val;
+  @include compose-map-rules($border-widths) {
+    .col-rule-w-#{$map-prop}#{$breakpoint-mod} {
+      column-rule-width: $map-val;
     }
   }
 
   // column-rule-color:
-  @include color-rules($colors) {
-    .col-rule-c#{$color-name}#{$breakpoint-mod} {
-      column-rule-color: $color-val;
+  @include compose-map-rules($colors) {
+    .col-rule-c-#{$map-prop}#{$breakpoint-mod} {
+      column-rule-color: $map-val;
     }
   }
 

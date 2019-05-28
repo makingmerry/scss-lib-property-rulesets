@@ -120,12 +120,12 @@
   }
 
   // background-color:
-  @include color-rules($colors) {
-    .bg-c#{$color-name}#{$breakpoint-mod} {
-      background-color: $color-val;
+  @include compose-map-rules($colors) {
+    .bg-c-#{$map-prop}#{$breakpoint-mod} {
+      background-color: $map-val;
     }
-    .hov-bg-c#{$color-name}#{$breakpoint-mod}:hover {
-      background-color: $color-val;
+    .hov-bg-c-#{$map-prop}#{$breakpoint-mod}:hover {
+      background-color: $map-val;
     }
   }
 }
