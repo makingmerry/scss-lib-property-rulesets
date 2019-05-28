@@ -114,5 +114,20 @@
 ////////////////////////////////////////
 ////////////////////////////////////////
 
-@mixin compose-font-size-rules() {
+@mixin compose-font-size-index-rules($map) {
+  $base-val: map-get($map, base-val);
+  $ratio: map-get($map, ratio);
+  $max: map-get($map, max);
+  $min: map-get($map, min);
+  $total: $max + $min;
+  $curr: 1;
+  $exponent: $max;
+
+  @while $curr <= $total {
+    $font-size-val: index-val($base-val, $exponent, $ratio) !global;
+    $font-size-prop: $curr !global;
+    @content;
+    $curr: $curr + 1;
+    $exponent: $exponent - 1;
+  }
 }

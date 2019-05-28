@@ -49,19 +49,22 @@ $z-index-counts: 10;
 ////////////////////////////////////////
 
 $font-families: (
-  "helvetica": '"helvetica neue", helvetica, sans-serif',
-  "times-new-roman": '"times new roman", serif',
+  "helvetica": (
+    "helvetica neue",
+    helvetica,
+    sans-serif,
+  ),
+  "times-new-roman": (
+    "times new roman",
+    serif,
+  ),
 );
 
-// List $font-sizes values if custom-font-sizes is required, e.g.
-// $font-sizes: (1: 2em, 2: 1em);
-$custom-font-sizes: false;
-$font-sizes: null;
 $font-size-scale: (
-  "base": 1em,
+  "base-val": 1em,
   "ratio": 1.25,
-  "steps-up": 5,
-  "steps-down": 2,
+  "max": 5,
+  "min": 2,
 );
 
 $measures: (
