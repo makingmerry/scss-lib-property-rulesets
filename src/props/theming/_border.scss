@@ -34,7 +34,7 @@
     border-width: 0;
   }
 
-  @include compose-map-rules($border-widths) {
+  @include compose-mapped-rules($border-widths) {
     .b-w-#{$map-prop}#{$breakpoint-mod} {
       border-width: $map-val;
     }
@@ -51,7 +51,7 @@
     border-radius: 1000px;
   }
 
-  @include compose-map-rules($border-widths) {
+  @include compose-mapped-rules($border-widths) {
     .b-r-#{$map-prop}#{$breakpoint-mod} {
       border-radius: $map-val;
     }
@@ -117,7 +117,7 @@
     border-color: inherit;
   }
 
-  @include compose-map-rules($colors) {
+  @include compose-mapped-rules($colors) {
     .b-c-#{$map-prop}#{$breakpoint-mod} {
       border-color: $map-val;
     }

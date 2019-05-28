@@ -32,30 +32,30 @@
     left: 0;
   }
 
-  @include compose-index-rules($spacings-map) {
-    .top-#{$index-count}#{$breakpoint-mod} {
-      top: $index-val;
+  @include compose-stepped-rules($spacings) {
+    .top-#{$step-index}#{$breakpoint-mod} {
+      top: $step-val;
     }
-    .top-n#{$index-count}#{$breakpoint-mod} {
-      top: -$index-val;
+    .top-n#{$step-index}#{$breakpoint-mod} {
+      top: -$step-val;
     }
-    .bottom-#{$index-count}#{$breakpoint-mod} {
-      bottom: $index-val;
+    .bottom-#{$step-index}#{$breakpoint-mod} {
+      bottom: $step-val;
     }
-    .bottom-n#{$index-count}#{$breakpoint-mod} {
-      bottom: -$index-val;
+    .bottom-n#{$step-index}#{$breakpoint-mod} {
+      bottom: -$step-val;
     }
-    .right-#{$index-count}#{$breakpoint-mod} {
-      right: $index-val;
+    .right-#{$step-index}#{$breakpoint-mod} {
+      right: $step-val;
     }
-    .right-n#{$index-count}#{$breakpoint-mod} {
-      right: -$index-val;
+    .right-n#{$step-index}#{$breakpoint-mod} {
+      right: -$step-val;
     }
-    .left-#{$index-count}#{$breakpoint-mod} {
-      left: $index-val;
+    .left-#{$step-index}#{$breakpoint-mod} {
+      left: $step-val;
     }
-    .left-n#{$index-count}#{$breakpoint-mod} {
-      left: -$index-val;
+    .left-n#{$step-index}#{$breakpoint-mod} {
+      left: -$step-val;
     }
   }
 }

@@ -11,7 +11,7 @@
     fill: inherit;
   }
 
-  @include compose-map-rules($colors) {
+  @include compose-mapped-rules($colors) {
     .fill-#{$map-prop}#{$breakpoint-mod} {
       fill: $map-val;
     }

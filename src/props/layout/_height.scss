@@ -55,7 +55,7 @@
     max-height: 100%;
   }
 
-  @include compose-map-rules($heights) {
+  @include compose-mapped-rules($heights) {
     .h-#{$map-prop}#{$breakpoint-mod} {
       height: $map-val;
     }

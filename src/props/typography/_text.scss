@@ -123,12 +123,12 @@
     text-indent: 100%;
   }
 
-  @include compose-index-rules($spacings-map) {
-    .t-i-#{$index-count}#{$breakpoint-mod} {
-      text-indent: $index-val;
+  @include compose-stepped-rules($spacings) {
+    .t-i-#{$step-index}#{$breakpoint-mod} {
+      text-indent: $step-val;
     }
-    .t-i-n#{$index-count}#{$breakpoint-mod} {
-      text-indent: -$index-val;
+    .t-i-n#{$step-index}#{$breakpoint-mod} {
+      text-indent: -$step-val;
     }
   }
 

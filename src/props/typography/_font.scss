@@ -5,15 +5,15 @@
 
 @include compose-breakpoint-rules($breakpoints) {
   // font-family:
-  @include compose-map-rules($font-families) {
+  @include compose-mapped-rules($font-families) {
     .f-f-#{$map-prop}#{$breakpoint-mod} {
       font-family: $map-val;
     }
   }
 
   // font-size:
-  @include compose-font-size-index-rules($font-size-scale) {
-    .f-s-#{$font-size-prop}#{$breakpoint-mod} {
+  @include compose-font-size-rules($font-sizes) {
+    .f-s-#{$font-size-index}#{$breakpoint-mod} {
       font-size: $font-size-val;
     }
   }

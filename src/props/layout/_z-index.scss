@@ -14,9 +14,9 @@
     z-index: 99;
   }
 
-  @include compose-count-rules($z-index-counts) {
-    .z-#{$count-i}#{$breakpoint-mod} {
-      z-index: $count-i;
+  @include compose-counter-rules($z-index-count) {
+    .z-#{$counter-index}#{$breakpoint-mod} {
+      z-index: $counter-index;
     }
   }
 }

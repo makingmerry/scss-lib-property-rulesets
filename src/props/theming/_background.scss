@@ -120,7 +120,7 @@
   }
 
   // background-color:
-  @include compose-map-rules($colors) {
+  @include compose-mapped-rules($colors) {
     .bg-c-#{$map-prop}#{$breakpoint-mod} {
       background-color: $map-val;
     }

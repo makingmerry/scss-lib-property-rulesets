@@ -55,78 +55,78 @@
     padding: 0;
   }
 
-  @include compose-index-rules($spacings-map) {
+  @include compose-stepped-rules($spacings) {
     // margins:
-    .m-top-#{$index-count}#{$breakpoint-mod} {
-      margin-top: $index-val;
+    .m-top-#{$step-index}#{$breakpoint-mod} {
+      margin-top: $step-val;
     }
-    .m-top-n#{$index-count}#{$breakpoint-mod} {
-      margin-top: -$index-val;
+    .m-top-n#{$step-index}#{$breakpoint-mod} {
+      margin-top: -$step-val;
     }
-    .m-bottom-#{$index-count}#{$breakpoint-mod} {
-      margin-bottom: $index-val;
+    .m-bottom-#{$step-index}#{$breakpoint-mod} {
+      margin-bottom: $step-val;
     }
-    .m-bottom-n#{$index-count}#{$breakpoint-mod} {
-      margin-bottom: -$index-val;
+    .m-bottom-n#{$step-index}#{$breakpoint-mod} {
+      margin-bottom: -$step-val;
     }
-    .m-right-#{$index-count}#{$breakpoint-mod} {
-      margin-right: $index-val;
+    .m-right-#{$step-index}#{$breakpoint-mod} {
+      margin-right: $step-val;
     }
-    .m-right-n#{$index-count}#{$breakpoint-mod} {
-      margin-right: -$index-val;
+    .m-right-n#{$step-index}#{$breakpoint-mod} {
+      margin-right: -$step-val;
     }
-    .m-left-#{$index-count}#{$breakpoint-mod} {
-      margin-left: $index-val;
+    .m-left-#{$step-index}#{$breakpoint-mod} {
+      margin-left: $step-val;
     }
-    .m-left-n#{$index-count}#{$breakpoint-mod} {
-      margin-left: -$index-val;
+    .m-left-n#{$step-index}#{$breakpoint-mod} {
+      margin-left: -$step-val;
     }
-    .m-ver-#{$index-count}#{$breakpoint-mod} {
-      margin-top: $index-val;
-      margin-bottom: $index-val;
+    .m-ver-#{$step-index}#{$breakpoint-mod} {
+      margin-top: $step-val;
+      margin-bottom: $step-val;
     }
-    .m-ver-n#{$index-count}#{$breakpoint-mod} {
-      margin-top: -$index-val;
-      margin-bottom: -$index-val;
+    .m-ver-n#{$step-index}#{$breakpoint-mod} {
+      margin-top: -$step-val;
+      margin-bottom: -$step-val;
     }
-    .m-hor-#{$index-count}#{$breakpoint-mod} {
-      margin-right: $index-val;
-      margin-left: $index-val;
+    .m-hor-#{$step-index}#{$breakpoint-mod} {
+      margin-right: $step-val;
+      margin-left: $step-val;
     }
-    .m-hor-n#{$index-count}#{$breakpoint-mod} {
-      margin-right: -$index-val;
-      margin-left: -$index-val;
+    .m-hor-n#{$step-index}#{$breakpoint-mod} {
+      margin-right: -$step-val;
+      margin-left: -$step-val;
     }
-    .m-all-#{$index-count}#{$breakpoint-mod} {
-      margin: $index-val;
+    .m-all-#{$step-index}#{$breakpoint-mod} {
+      margin: $step-val;
     }
-    .m-all-n#{$index-count}#{$breakpoint-mod} {
-      margin: -$index-val;
+    .m-all-n#{$step-index}#{$breakpoint-mod} {
+      margin: -$step-val;
     }
 
     // paddings:
-    .p-top-#{$index-count}#{$breakpoint-mod} {
-      padding-top: $index-val;
+    .p-top-#{$step-index}#{$breakpoint-mod} {
+      padding-top: $step-val;
     }
-    .p-bottom-#{$index-count}#{$breakpoint-mod} {
-      padding-bottom: $index-val;
+    .p-bottom-#{$step-index}#{$breakpoint-mod} {
+      padding-bottom: $step-val;
     }
-    .p-right-#{$index-count}#{$breakpoint-mod} {
-      padding-right: $index-val;
+    .p-right-#{$step-index}#{$breakpoint-mod} {
+      padding-right: $step-val;
     }
-    .p-left-#{$index-count}#{$breakpoint-mod} {
-      padding-left: $index-val;
+    .p-left-#{$step-index}#{$breakpoint-mod} {
+      padding-left: $step-val;
     }
-    .p-ver-#{$index-count}#{$breakpoint-mod} {
-      padding-top: $index-val;
-      padding-bottom: $index-val;
+    .p-ver-#{$step-index}#{$breakpoint-mod} {
+      padding-top: $step-val;
+      padding-bottom: $step-val;
     }
-    .p-hor-#{$index-count}#{$breakpoint-mod} {
-      padding-right: $index-val;
-      padding-left: $index-val;
+    .p-hor-#{$step-index}#{$breakpoint-mod} {
+      padding-right: $step-val;
+      padding-left: $step-val;
     }
-    .p-all-#{$index-count}#{$breakpoint-mod} {
-      padding: $index-val;
+    .p-all-#{$step-index}#{$breakpoint-mod} {
+      padding: $step-val;
     }
   }
 }

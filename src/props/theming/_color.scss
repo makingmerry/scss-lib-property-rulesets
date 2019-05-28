@@ -11,7 +11,7 @@
     color: inherit;
   }
 
-  @include compose-map-rules($colors) {
+  @include compose-mapped-rules($colors) {
     .c-#{$map-prop}#{$breakpoint-mod} {
       color: $map-val;
     }

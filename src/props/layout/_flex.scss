@@ -121,9 +121,9 @@
     order: 99;
   }
 
-  @include compose-column-rules($column-counts) {
-    .order-#{$column-count}#{$breakpoint-mod} {
-      order: $column-count;
+  @include compose-column-rules($column-count) {
+    .order-#{$column-index}#{$breakpoint-mod} {
+      order: $column-index;
     }
   }
 }

@@ -145,7 +145,7 @@
     max-width: 2 / 3 * 100%;
   }
 
-  @include compose-map-rules($widths) {
+  @include compose-mapped-rules($widths) {
     .w-#{$map-prop}#{$breakpoint-mod} {
       width: $map-val;
     }

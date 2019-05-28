@@ -30,9 +30,9 @@
     column-gap: normal;
   }
 
-  @include compose-index-rules($spacings-map) {
-    .col-gap-#{$index-count}#{$breakpoint-mod} {
-      column-gap: $index-val;
+  @include compose-stepped-rules($spacings) {
+    .col-gap-#{$step-index}#{$breakpoint-mod} {
+      column-gap: $step-val;
     }
   }
 
@@ -41,9 +41,9 @@
     column-count: auto;
   }
 
-  @include compose-count-rules($column-counts) {
-    .col-count-#{$count-i}#{$breakpoint-mod} {
-      column-count: $count-i;
+  @include compose-counter-rules($column-count) {
+    .col-count-#{$counter-index}#{$breakpoint-mod} {
+      column-count: $counter-index;
     }
   }
 
@@ -62,14 +62,14 @@
   }
 
   // column-rule-width:
-  @include compose-map-rules($border-widths) {
+  @include compose-mapped-rules($border-widths) {
     .col-rule-w-#{$map-prop}#{$breakpoint-mod} {
       column-rule-width: $map-val;
     }
   }
 
   // column-rule-color:
-  @include compose-map-rules($colors) {
+  @include compose-mapped-rules($colors) {
     .col-rule-c-#{$map-prop}#{$breakpoint-mod} {
       column-rule-color: $map-val;
     }
