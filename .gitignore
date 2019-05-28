@@ -1,12 +1,3 @@
-/*
-.*
-!*
-!src/**
-!*.js
-!package.json
-!package-lock.json
-!.gitignore
-!.gitattributes
-!README.md
-!CHANGELOG.md
-!LICENSE
+build/
+dist/
+node_modules
