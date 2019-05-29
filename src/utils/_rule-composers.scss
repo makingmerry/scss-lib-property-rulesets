@@ -73,7 +73,7 @@
 @mixin compose-column-rules($count) {
   @for $index from 1 through $count {
     $column-index: $index !global;
-    $column-width: 100 / ($count / $index) + "%" !global;
+    $column-width: 100% / ($count / $index) !global;
     @content;
   }
 }
