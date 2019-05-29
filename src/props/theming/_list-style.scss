@@ -1,0 +1,40 @@
+// # List style
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////
+
+@include compose-breakpoint-rules($breakpoints) {
+  // Type:
+  .list-style-type-none#{$breakpoint-mod} {
+    list-style-type: none;
+  }
+  .list-style-type-disc#{$breakpoint-mod} {
+    list-style-type: disc;
+  }
+  .list-style-type-circle#{$breakpoint-mod} {
+    list-style-type: cirlce;
+  }
+  .list-style-type-square#{$breakpoint-mod} {
+    list-style-type: square;
+  }
+  .list-style-type-decimal#{$breakpoint-mod} {
+    list-style-type: decimal;
+  }
+  .list-style-type-decimal-zero#{$breakpoint-mod} {
+    list-style-type: decimal-leading-zero;
+  }
+  .list-style-type-alpha#{$breakpoint-mod} {
+    list-style-type: lower-alpha;
+  }
+  .list-style-type-up-alpha#{$breakpoint-mod} {
+    list-style-type: upper-alpha;
+  }
+
+  // Position:
+  .list-style-pos-in#{$breakpoint-mod} {
+    list-style-position: inside;
+  }
+  .list-style-pos-out#{$breakpoint-mod} {
+    list-style-position: out;
+  }
+}

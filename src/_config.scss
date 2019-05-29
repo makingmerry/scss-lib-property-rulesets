@@ -10,19 +10,19 @@
 $breakpoints: (
   "small": 40em,
   "medium": 60em,
-  "large": 80em
+  "large": 80em,
 );
 
 $wraps: (
   "small": 50em,
   "medium": 70em,
-  "large": 90em
+  "large": 90em,
 );
 
 $spacings: (
-  "base-val": 1em,
+  "base-val": 0.25em,
   "ratio": 2,
-  "steps": 6
+  "steps": 8,
 );
 
 $widths: (
@@ -30,7 +30,7 @@ $widths: (
   2: 2em,
   3: 4em,
   4: 8em,
-  5: 16em
+  5: 16em,
 );
 
 $heights: (
@@ -38,7 +38,7 @@ $heights: (
   2: 2em,
   3: 4em,
   4: 8em,
-  5: 16em
+  5: 16em,
 );
 
 $column-count: 12;
@@ -52,19 +52,19 @@ $font-families: (
   "helvetica": (
     "helvetica neue",
     helvetica,
-    sans-serif
+    sans-serif,
   ),
   "times-new-roman": (
     "times new roman",
-    serif
-  )
+    serif,
+  ),
 );
 
 $font-sizes: (
   "base-val": 1em,
   "base-index": 5,
   "ratio": 1.25,
-  "smaller-steps": 2
+  "smaller-steps": 2,
 );
 
 // Optional: map custom font-sizes in ("name": value) pairs if required:
@@ -73,20 +73,20 @@ $custom-font-sizes: null;
 $measures: (
   "normal": 30em,
   "narrow": 20em,
-  "wide": 34em
+  "wide": 34em,
 );
 
 $line-heights: (
   "normal": 1.45,
   "title": 1.15,
-  "solid": 1
+  "solid": 1,
 );
 
 $letter-spacings: (
   "normal": 0,
   "track": 0.05em,
   "tight": -0.25em,
-  "wide": 0.25em
+  "wide": 0.25em,
 );
 
 // # Theming
@@ -112,30 +112,30 @@ $colors: (
   "ut-light-red": #ff725c,
   "ut-dark-green": #137752,
   "ut-green": #19a974,
-  "ut-light-green": #9eebcf
+  "ut-light-green": #9eebcf,
 );
 
 $border-widths: (
   1: 1px,
   2: 0.125em,
   3: 0.25em,
-  4: 0.5em
+  4: 0.5em,
 );
 
 $border-radiuses: (
   1: 1px,
   2: 0.125em,
   3: 0.25em,
-  4: 0.5em
+  4: 0.5em,
 );
 
 $opacities: (
   "near-transparent": 0.15,
-  "translucent": 0.85
+  "translucent": 0.85,
 );
 
 $transitions: (
   "normal": 0.2s,
   "slow": 1s,
-  "fast": 0.1s
+  "fast": 0.1s,
 );
