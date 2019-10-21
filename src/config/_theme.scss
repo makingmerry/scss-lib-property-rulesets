@@ -1,4 +1,4 @@
-// color
+// Color
 $brand-colors: ();
 
 $neutral-colors: (
@@ -26,7 +26,7 @@ $notification-colors: (
 
 $colors: concat-maps($brand-colors, $neutral-colors, $notification-colors);
 
-// border
+// Border
 $border-widths: (
   "0": 0,
   "1": rem(1),
@@ -49,7 +49,7 @@ $border-radii: (
   "7": rem(32),
 );
 
-// opacity
+// Opacity
 $opacities: (
   "0": 0,
   "1": 0.15,
@@ -58,7 +58,7 @@ $opacities: (
   "4": 1,
 );
 
-// transition
+// Transition
 $transition-durations: (
   "0": 0,
   "1": 0.15s,
