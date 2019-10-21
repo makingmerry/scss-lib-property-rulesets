@@ -1,5 +1,5 @@
 // Color
-$brand-colors: ();
+$project-colors: ();
 
 $neutral-colors: (
   "black": #000,
@@ -24,7 +24,7 @@ $notification-colors: (
   "light-green": #9eebcf,
 );
 
-$colors: concat-maps($brand-colors, $neutral-colors, $notification-colors);
+$colors: concat-maps($project-colors, $neutral-colors, $notification-colors);
 
 // Border
 $border-widths: (
