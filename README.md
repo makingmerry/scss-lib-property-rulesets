@@ -39,17 +39,15 @@ Configuration is split into 3 groups, each for a specific category of core desig
 
 ### Typography
 
-Inspired by [Butterick's Practical Typography](https://practicaltypography.com)
-
-| Property         | Type       | Description                                                              |
-| ---------------- | ---------- | ------------------------------------------------------------------------ |
-| \$base-font-size | unit value | Declare base font size for relative font-sizing (rem, em) in project     |
-| \$font-families  | map        | Font families                                                            |
-| \$type-scale     | map        | type scale for font sizes                                                |
-| \$line-lengths   | map        | Width of a block of text, sized relative to its font-size                |
-| \$line-heights   | map        | Leading, or vertical spacing between lines of text                       |
-| \$line-trackings | map        | Tracking, or horizontal white space between letters in a block of text   |
-| \$text-indents   | map        | Length of indentation space put before the first line in a block of text |
+| Property         | Type | Description                                                              |
+| ---------------- | ---- | ------------------------------------------------------------------------ |
+| \$base-font-size | unit | Declare base font size for relative font-sizing (rem, em) in project     |
+| \$font-families  | map  | Font families                                                            |
+| \$type-scale     | map  | type scale for font sizes                                                |
+| \$line-lengths   | map  | Width of a block of text, sized relative to its font-size                |
+| \$line-heights   | map  | Leading, or vertical spacing between lines of text                       |
+| \$line-trackings | map  | Tracking, or horizontal white space between letters in a block of text   |
+| \$text-indents   | map  | Length of indentation space put before the first line in a block of text |
 
 ### Layout
 
