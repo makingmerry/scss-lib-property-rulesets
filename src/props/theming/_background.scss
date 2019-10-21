@@ -1,7 +1,5 @@
-// # Background
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Background
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // background-position:
@@ -32,7 +30,6 @@
   .bg-pos-left-top#{$breakpoint-mod} {
     background-position: left top;
   }
-
   // background-size:
   .bg-size-auto#{$breakpoint-mod} {
     background-size: auto;
@@ -43,7 +40,6 @@
   .bg-size-cover#{$breakpoint-mod} {
     background-size: cover;
   }
-
   // background-repeat:
   .bg-repeat#{$breakpoint-mod} {
     background-repeat: repeat;
@@ -57,7 +53,6 @@
   .bg-repeat-y#{$breakpoint-mod} {
     background-repeat: repeat-y;
   }
-
   // background-attachment:
   .bg-attach-scroll#{$breakpoint-mod} {
     background-attachment: scroll;
@@ -68,7 +63,6 @@
   .bg-attach-local#{$breakpoint-mod} {
     background-attachment: local;
   }
-
   // background-blend-mode:
   .bg-blend-normal#{$breakpoint-mod} {
     background-blend-mode: normal;
@@ -118,7 +112,6 @@
   .bg-blend-luminosity#{$breakpoint-mod} {
     background-blend-mode: luminosity;
   }
-
   // background-color:
   @include compose-mapped-rules($colors) {
     .bg-c-#{$map-prop}#{$breakpoint-mod} {

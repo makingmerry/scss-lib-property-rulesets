@@ -1,7 +1,5 @@
-// # Fill
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Fill
+
 
 @include compose-breakpoint-rules($breakpoints) {
   .fill-inherit#{$breakpoint-mod} {
@@ -10,7 +8,6 @@
   .hov-fill-inherit#{$breakpoint-mod}:hover {
     fill: inherit;
   }
-
   @include compose-mapped-rules($colors) {
     .fill-#{$map-prop}#{$breakpoint-mod} {
       fill: $map-val;

@@ -1,7 +1,5 @@
-// # Border
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Border
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // border:
@@ -28,18 +26,15 @@
     border-top: 1px solid;
     border-bottom: 1px solid;
   }
-
   // border-width:
   .b-w-none#{$breakpoint-mod} {
     border-width: 0;
   }
-
   @include compose-mapped-rules($border-widths) {
     .b-w-#{$map-prop}#{$breakpoint-mod} {
       border-width: $map-val;
     }
   }
-
   // border-radius:
   .b-r-none#{$breakpoint-mod} {
     border-radius: 0;
@@ -50,13 +45,11 @@
   .b-r-pill#{$breakpoint-mod} {
     border-radius: 1000px;
   }
-
   @include compose-mapped-rules($border-widths) {
     .b-r-#{$map-prop}#{$breakpoint-mod} {
       border-radius: $map-val;
     }
   }
-
   // border-radius 'position':
   .b-r-top#{$breakpoint-mod} {
     border-bottom-left-radius: 0;
@@ -94,7 +87,6 @@
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-
   // border-style:
   .b-st-none#{$breakpoint-mod} {
     border-style: none;
@@ -108,7 +100,6 @@
   .b-st-dash#{$breakpoint-mod} {
     border-style: dash;
   }
-
   // border-color:
   .b-c-inherit#{$breakpoint-mod} {
     border-color: inherit;
@@ -116,7 +107,6 @@
   .hov-b-c-inherit#{$breakpoint-mod}:hover {
     border-color: inherit;
   }
-
   @include compose-mapped-rules($colors) {
     .b-c-#{$map-prop}#{$breakpoint-mod} {
       border-color: $map-val;

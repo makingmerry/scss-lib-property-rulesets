@@ -1,7 +1,5 @@
-// # Overflow
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Overflow
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // overflow:
@@ -17,7 +15,6 @@
   .of-scroll#{$breakpoint-mod} {
     overflow: scroll;
   }
-
   // overflow-x:
   .of-x-auto#{$breakpoint-mod} {
     overflow-x: auto;
@@ -31,7 +28,6 @@
   .of-x-scroll#{$breakpoint-mod} {
     overflow-x: scroll;
   }
-
   // overflow-y:
   .of-y-auto#{$breakpoint-mod} {
     overflow-y: auto;

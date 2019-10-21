@@ -1,7 +1,5 @@
-// # Float
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Float
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // float:
@@ -14,7 +12,6 @@
   .float-left#{$breakpoint-mod} {
     float: left;
   }
-
   // clear:
   .clear-none#{$breakpoint-mod} {
     clear: none;
@@ -28,7 +25,6 @@
   .clear-both#{$breakpoint-mod} {
     clear: both;
   }
-
   // *clear-fix:
   .contain-floats#{$breakpoint-mod} {
     &::after {

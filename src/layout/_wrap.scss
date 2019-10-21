@@ -1,0 +1,4 @@
+@include make-responsive-rulesets(
+  make-RSON($wraps, ".wp", "max-width"),
+  $screen-sizes
+);

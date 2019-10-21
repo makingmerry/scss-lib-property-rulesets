@@ -1,7 +1,5 @@
-// # Object fit (replaced-media)
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Object fit (replaced-media)
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // object-fit:
@@ -20,7 +18,6 @@
   .obj-fit-scale-down#{$breakpoint-mod} {
     object-fit: scale-down;
   }
-
   // object-position:
   .obj-pos-center-center#{$breakpoint-mod} {
     object-position: center center;

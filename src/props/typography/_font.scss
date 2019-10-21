@@ -1,7 +1,5 @@
-// # Font
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Font
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // font-family:
@@ -10,14 +8,12 @@
       font-family: $map-val;
     }
   }
-
   // font-size:
   @include compose-font-size-rules($font-sizes) {
     .f-s-#{$font-size-index}#{$breakpoint-mod} {
       font-size: $font-size-val;
     }
   }
-
   @if $custom-font-sizes != null {
     @include compose-mapped-rules($custom-font-sizes) {
       .f-s-#{$map-prop}#{$breakpoint-mod} {
@@ -25,7 +21,6 @@
       }
     }
   }
-
   // font-weight:
   .f-w-1#{$breakpoint-mod} {
     font-weight: 100;
@@ -48,7 +43,6 @@
   .f-w-7#{$breakpoint-mod} {
     font-weight: 700;
   }
-
   // font-style:
   .f-st-normal#{$breakpoint-mod} {
     font-style: normal;
@@ -56,7 +50,6 @@
   .f-st-italic#{$breakpoint-mod} {
     font-style: italic;
   }
-
   // font-render:
   .f-r-auto#{$breakpoint-mod} {
     -webkit-font-smoothing: auto;

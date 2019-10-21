@@ -1,7 +1,5 @@
-// # Color
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Color
+
 
 @include compose-breakpoint-rules($breakpoints) {
   .c-inherit#{$breakpoint-mod} {
@@ -10,7 +8,6 @@
   .hov-c-inherit#{$breakpoint-mod}:hover {
     color: inherit;
   }
-
   @include compose-mapped-rules($colors) {
     .c-#{$map-prop}#{$breakpoint-mod} {
       color: $map-val;

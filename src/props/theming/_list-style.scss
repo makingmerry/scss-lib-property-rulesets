@@ -1,7 +1,5 @@
-// # List style
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// List style
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // Type:
@@ -29,7 +27,6 @@
   .list-style-type-up-alpha#{$breakpoint-mod} {
     list-style-type: upper-alpha;
   }
-
   // Position:
   .list-style-pos-in#{$breakpoint-mod} {
     list-style-position: inside;

@@ -1,7 +1,5 @@
-// # Height
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Height
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // height:
@@ -20,7 +18,6 @@
   .h-100#{$breakpoint-mod} {
     height: 100%;
   }
-
   // min-height:
   .h-min-auto#{$breakpoint-mod} {
     min-height: auto;
@@ -37,7 +34,6 @@
   .h-min-100#{$breakpoint-mod} {
     min-height: 100%;
   }
-
   // max-height:
   .h-max-none#{$breakpoint-mod} {
     max-height: none;
@@ -54,16 +50,13 @@
   .h-max-100#{$breakpoint-mod} {
     max-height: 100%;
   }
-
   @include compose-mapped-rules($heights) {
     .h-#{$map-prop}#{$breakpoint-mod} {
       height: $map-val;
     }
-
     .h-min-#{$map-prop}#{$breakpoint-mod} {
       min-height: $map-val;
     }
-
     .h-max-#{$map-prop}#{$breakpoint-mod} {
       max-height: $map-val;
     }

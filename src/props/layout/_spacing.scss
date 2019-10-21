@@ -1,8 +1,6 @@
-// # Spacing
+// Spacing
 // Margins and paddings.
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // margin:
@@ -29,7 +27,6 @@
   .m-all-0#{$breakpoint-mod} {
     margin: 0;
   }
-
   // padding:
   .p-top-0#{$breakpoint-mod} {
     padding-top: 0;
@@ -54,7 +51,6 @@
   .p-all-0#{$breakpoint-mod} {
     padding: 0;
   }
-
   @include compose-stepped-rules($spacings) {
     // margins:
     .m-top-#{$step-index}#{$breakpoint-mod} {
@@ -103,7 +99,6 @@
     .m-all-n#{$step-index}#{$breakpoint-mod} {
       margin: -$step-val;
     }
-
     // paddings:
     .p-top-#{$step-index}#{$breakpoint-mod} {
       padding-top: $step-val;

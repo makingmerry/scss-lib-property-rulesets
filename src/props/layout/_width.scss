@@ -1,7 +1,5 @@
-// # Width
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Width
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // width:
@@ -50,7 +48,6 @@
   .w-two-thirds#{$breakpoint-mod} {
     width: 2 / 3 * 100%;
   }
-
   // min-width:
   .w-min-auto#{$breakpoint-mod} {
     min-width: auto;
@@ -97,7 +94,6 @@
   .w-min-two-thirds#{$breakpoint-mod} {
     width: 2 / 3 * 100%;
   }
-
   // max-height:
   .w-max-none#{$breakpoint-mod} {
     max-width: none;
@@ -144,16 +140,13 @@
   .w-max-two-thirds#{$breakpoint-mod} {
     max-width: 2 / 3 * 100%;
   }
-
   @include compose-mapped-rules($widths) {
     .w-#{$map-prop}#{$breakpoint-mod} {
       width: $map-val;
     }
-
     .w-min-#{$map-prop}#{$breakpoint-mod} {
       min-width: $map-val;
     }
-
     .w-max-#{$map-prop}#{$breakpoint-mod} {
       max-width: $map-val;
     }

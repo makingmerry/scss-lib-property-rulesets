@@ -1,7 +1,5 @@
-// # Text
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Text
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // measure:
@@ -13,21 +11,18 @@
       max-width: $map-val;
     }
   }
-
   // line-height:
   @include compose-mapped-rules($line-heights) {
     .line-h-#{$map-prop}#{$breakpoint-mod} {
       line-height: $map-val;
     }
   }
-
   // letter-spacing:
   @include compose-mapped-rules($letter-spacings) {
     .letter-sp-#{$map-prop}#{$breakpoint-mod} {
       letter-spacing: $map-val;
     }
   }
-
   // overflow-wrap:
   .of-wrap-normal#{$breakpoint-mod} {
     overflow-wrap: normal;
@@ -35,7 +30,6 @@
   .of-wrap-break-word#{$breakpoint-mod} {
     overflow-wrap: break-word;
   }
-
   // white-space:
   .white-sp-normal#{$breakpoint-mod} {
     white-space: normal;
@@ -52,7 +46,6 @@
   .white-sp-pre-line#{$breakpoint-mod} {
     white-space: pre-line;
   }
-
   // word-break:
   .word-br-normal#{$breakpoint-mod} {
     word-break: normal;
@@ -66,7 +59,6 @@
   .word-br-break-word#{$breakpoint-mod} {
     word-break: break-word;
   }
-
   // hyphens:
   .hyp-none#{$breakpoint-mod} {
     hyphens: none;
@@ -77,7 +69,6 @@
   .hyp-auto#{$breakpoint-mod} {
     hyphens: auto;
   }
-
   // text-align:
   .t-a-left#{$breakpoint-mod} {
     text-align: left;
@@ -88,7 +79,6 @@
   .t-a-right#{$breakpoint-mod} {
     text-align: right;
   }
-
   // text-decoration:
   .t-d-none#{$breakpoint-mod} {
     text-decoration: none;
@@ -99,7 +89,6 @@
   .t-d-underline#{$breakpoint-mod} {
     text-decoration: underline;
   }
-
   // text-indent:
   .t-i-0#{$breakpoint-mod} {
     text-indent: 0;
@@ -115,7 +104,6 @@
       text-indent: -$step-val;
     }
   }
-
   // text-transform:
   .t-t-none#{$breakpoint-mod} {
     text-transform: none;

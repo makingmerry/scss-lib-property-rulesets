@@ -1,30 +1,22 @@
-// # Config
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-
-// # Layout
+// Config
+// Layout
 ////////////////////////////////////////
 ////////////////////////////////////////
-
 $breakpoints: (
   "small": 40em,
   "medium": 60em,
   "large": 80em,
 );
-
 $wraps: (
   "small": 50em,
   "medium": 70em,
   "large": 90em,
 );
-
 $spacings: (
   "base-val": 0.25em,
   "ratio": 2,
   "steps": 8,
 );
-
 $widths: (
   1: 1em,
   2: 2em,
@@ -32,7 +24,6 @@ $widths: (
   4: 8em,
   5: 16em,
 );
-
 $heights: (
   1: 1em,
   2: 2em,
@@ -40,14 +31,11 @@ $heights: (
   4: 8em,
   5: 16em,
 );
-
 $column-count: 12;
 $z-index-count: 10;
-
-// # Typography
+// Typography
 ////////////////////////////////////////
 ////////////////////////////////////////
-
 $font-families: (
   "helvetica": (
     "helvetica neue",
@@ -59,40 +47,33 @@ $font-families: (
     serif,
   ),
 );
-
 $font-sizes: (
   "base-val": 1em,
   "base-index": 5,
   "ratio": 1.25,
   "smaller-steps": 2,
 );
-
 // Optional: map custom font-sizes in ("name": value) pairs if required:
 $custom-font-sizes: null;
-
 $measures: (
   "normal": 30em,
   "narrow": 20em,
   "wide": 34em,
 );
-
 $line-heights: (
   "normal": 1.45,
   "title": 1.15,
   "solid": 1,
 );
-
 $letter-spacings: (
   "normal": 0,
   "track": 0.05em,
   "tight": -0.25em,
   "wide": 0.25em,
 );
-
-// # Theming
+// Theming
 ////////////////////////////////////////
 ////////////////////////////////////////
-
 $colors: (
   "black": #000,
   "near-black": #111,
@@ -114,26 +95,22 @@ $colors: (
   "ut-green": #19a974,
   "ut-light-green": #9eebcf,
 );
-
 $border-widths: (
   1: 1px,
   2: 0.125em,
   3: 0.25em,
   4: 0.5em,
 );
-
 $border-radiuses: (
   1: 1px,
   2: 0.125em,
   3: 0.25em,
   4: 0.5em,
 );
-
 $opacities: (
   "near-transparent": 0.15,
   "translucent": 0.85,
 );
-
 $transitions: (
   "normal": 0.2s,
   "slow": 1s,

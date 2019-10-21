@@ -1,7 +1,5 @@
-// # Z-index
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Z-index
+
 
 @include compose-breakpoint-rules($breakpoints) {
   .z-n1#{$breakpoint-mod} {
@@ -13,7 +11,6 @@
   .z-99#{$breakpoint-mod} {
     z-index: 99;
   }
-
   @include compose-counter-rules($z-index-count) {
     .z-#{$counter-index}#{$breakpoint-mod} {
       z-index: $counter-index;

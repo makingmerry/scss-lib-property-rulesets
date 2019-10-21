@@ -1,7 +1,5 @@
-// # Position
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Position
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // position:
@@ -17,7 +15,6 @@
   .pos-absolute#{$breakpoint-mod} {
     position: absolute;
   }
-
   // *translate:
   .top-0#{$breakpoint-mod} {
     top: 0;
@@ -31,7 +28,6 @@
   .left-0#{$breakpoint-mod} {
     left: 0;
   }
-
   @include compose-stepped-rules($spacings) {
     .top-#{$step-index}#{$breakpoint-mod} {
       top: $step-val;

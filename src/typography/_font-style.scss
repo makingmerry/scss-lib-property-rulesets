@@ -1,0 +1,17 @@
+@include make-responsive-rulesets(
+  (
+    (
+      "selector": ".f-sy-normal",
+      "declarations": (
+        font-style: normal,
+      )
+    ),
+    (
+      "selector": ".f-sy-italic",
+      "declarations": (
+        font-style: italic,
+      )
+    )
+  ),
+  $screen-sizes
+);

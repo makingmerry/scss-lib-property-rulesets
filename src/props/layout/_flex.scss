@@ -1,13 +1,10 @@
-// # Flex
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+// Flex
+
 
 @include compose-breakpoint-rules($breakpoints) {
-  // # Container
+  // Container
   ////////////////////////////////////////
   ////////////////////////////////////////
-
   // flex-wrap:
   .flex-wrap-nowrap#{$breakpoint-mod} {
     flex-wrap: nowrap;
@@ -18,7 +15,6 @@
   .flex-wrap-reverse#{$breakpoint-mod} {
     flex-wrap: wrap-reverse;
   }
-
   // flex-direction:
   .flex-dir-row#{$breakpoint-mod} {
     flex-direction: row;
@@ -32,7 +28,6 @@
   .flex-dir-col-reverse#{$breakpoint-mod} {
     flex-direction: column-reverse;
   }
-
   // justify-content:
   .justify-ct-start#{$breakpoint-mod} {
     justify-content: flex-start;
@@ -49,7 +44,6 @@
   .justify-ct-space-ard#{$breakpoint-mod} {
     justify-content: space-around;
   }
-
   // align-content:
   .align-ct-start#{$breakpoint-mod} {
     align-content: flex-start;
@@ -69,7 +63,6 @@
   .align-ct-space-ard#{$breakpoint-mod} {
     align-content: space-around;
   }
-
   // align-items:
   .align-i-start#{$breakpoint-mod} {
     align-items: flex-start;
@@ -86,8 +79,7 @@
   .align-i-baseline#{$breakpoint-mod} {
     align-items: baseline;
   }
-
-  // # Item
+  // Item
   ////////////////////////////////////////
   ////////////////////////////////////////
   // align-self:
@@ -109,7 +101,6 @@
   .align-baseline#{$breakpoint-mod} {
     align-self: baseline;
   }
-
   // order
   .order-initial#{$breakpoint-mod} {
     order: initial;
@@ -120,7 +111,6 @@
   .order-last#{$breakpoint-mod} {
     order: 99;
   }
-
   @include compose-column-rules($column-count) {
     .order-#{$column-index}#{$breakpoint-mod} {
       order: $column-index;

@@ -1,9 +1,7 @@
-// # Column
+// Column
 // CSS column properties,
 // not to be confused with layout grid/column classes.
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////
+
 
 @include compose-breakpoint-rules($breakpoints) {
   // column-fill:
@@ -16,7 +14,6 @@
   .col-fill-balance-all#{$breakpoint-mod} {
     column-fill: balance-all;
   }
-
   // column-span:
   .col-span-none#{$breakpoint-mod} {
     column-span: none;
@@ -24,29 +21,24 @@
   .col-span-all#{$breakpoint-mod} {
     column-span: all;
   }
-
   // column-gap:
   .col-gap-normal#{$breakpoint-mod} {
     column-gap: normal;
   }
-
   @include compose-stepped-rules($spacings) {
     .col-gap-#{$step-index}#{$breakpoint-mod} {
       column-gap: $step-val;
     }
   }
-
   // column-count:
   .col-count-auto#{$breakpoint-mod} {
     column-count: auto;
   }
-
   @include compose-counter-rules($column-count) {
     .col-count-#{$counter-index}#{$breakpoint-mod} {
       column-count: $counter-index;
     }
   }
-
   // column-width:
   .col-w-auto#{$breakpoint-mod} {
     column-width: auto;
@@ -56,21 +48,18 @@
       column-width: $map-val;
     }
   }
-
   // column-rule-width:
   @include compose-mapped-rules($border-widths) {
     .col-rule-w-#{$map-prop}#{$breakpoint-mod} {
       column-rule-width: $map-val;
     }
   }
-
   // column-rule-color:
   @include compose-mapped-rules($colors) {
     .col-rule-c-#{$map-prop}#{$breakpoint-mod} {
       column-rule-color: $map-val;
     }
   }
-
   // column-rule-style:
   .col-rule-st-none#{$breakpoint-mod} {
     column-rule-style: none;
