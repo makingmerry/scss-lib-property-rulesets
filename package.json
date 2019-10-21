@@ -12,9 +12,9 @@
     }
   },
   "scripts": {
-    "dev": "node build.js",
+    "dev": "node dev.js",
     "start": "npm-watch dev",
-    "build": "node dist.js",
+    "dist": "node dist.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,7 +24,8 @@
   "keywords": [
     "scss",
     "sass",
-    "css"
+    "css",
+    "atomic css"
   ],
   "author": "Neilson Cheng",
   "license": "MIT",

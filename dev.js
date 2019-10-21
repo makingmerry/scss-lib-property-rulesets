@@ -4,7 +4,15 @@ const sass = require("node-sass")
 sass.render(
   {
     file: "./src/styles.scss",
-    includePaths: ["./src/", "./src/utils", "./src/props/"],
+    includePaths: [
+      "./src",
+      "./src/extensions",
+      "./src/config",
+      "./src/helpers",
+      "./src/typography",
+      "./src/layout",
+      "./src/theme",
+    ],
     outFile: "./build/atomic.css",
     outputStyle: "expanded",
     sourceMap: false,

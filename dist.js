@@ -4,7 +4,15 @@ const sass = require("node-sass")
 sass.render(
   {
     file: "./src/styles.scss",
-    includePaths: ["./src/", "./src/utils", "./src/props/"],
+    includePaths: [
+      "./src",
+      "./src/extensions",
+      "./src/config",
+      "./src/helpers",
+      "./src/typography",
+      "./src/layout",
+      "./src/theme",
+    ],
     outFile: "./dist/atomic.css",
     outputStyle: "compressed",
     sourceMap: true,
@@ -16,12 +24,12 @@ sass.render(
     } else {
       fs.outputFile("./dist/atomic.css", res.css, function(writeErr) {
         if (!writeErr) {
-          console.log("[FS]: CSS dist file written to disk.")
+          console.log("[FS]: CSS distribution file written to disk.")
         }
       })
       fs.outputFile("./dist/atomic.map.css", res.map, function(writeErr) {
         if (!writeErr) {
-          console.log("[FS]: CSS map dist file written to disk.")
+          console.log("[FS]: CSS map distribution file written to disk.")
         }
       })
     }
