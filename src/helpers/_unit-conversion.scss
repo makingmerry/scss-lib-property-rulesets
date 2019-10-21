@@ -1,4 +1,6 @@
-@function rem($pixels, $context: $base-font-size) {
+$base-context: 16px;
+
+@function convert-px-to-rem($pixels, $context: $base-context) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }
@@ -7,7 +9,8 @@
   }
   @return $pixels / $context * 1rem;
 }
-@function em($pixels, $context: $base-font-size) {
+
+@function convert-px-to-em($pixels, $context: $base-context) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }

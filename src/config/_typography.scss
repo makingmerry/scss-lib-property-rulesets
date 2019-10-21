@@ -1,24 +1,33 @@
-// font
+// Context
 $base-font-size: 16px;
 
+@function rem($pixels) {
+  @return convert-px-to-rem($pixels, $base-font-size);
+}
+
+@function em($pixels) {
+  @return convert-px-to-em($pixels, $base-font-size);
+}
+
+// Font
 $font-families: (
   "helvetica": "helvetica neue, helvetica, sans-serif",
 );
 
 $type-scale: (
-  "1": 3rem,
-  "2": 2.25rem,
-  "3": 1.5rem,
-  "4": 1.25rem,
-  "5": 1rem,
-  "6": 0.875rem,
+  "1": rem(48),
+  "2": rem(36),
+  "3": rem(24),
+  "4": rem(20),
+  "5": rem(16),
+  "6": rem(14),
 );
 
-// line
+// Line
 $line-measures: (
-  "base": 30em,
-  "narrow": 20em,
-  "wide": 34em,
+  "base": em(480),
+  "narrow": em(320),
+  "wide": em(560),
 );
 
 $line-heights: (
@@ -28,16 +37,16 @@ $line-heights: (
 );
 
 $line-trackings: (
-  "base": 0.05em,
-  "tight": -0.5em,
-  "wide": 0.25em,
+  "base": em(1),
+  "tight": em(-8),
+  "wide": em(4),
 );
 
-// word
+// Word
 $text-indents: (
   "0": 0,
-  "1": 0.25rem,
-  "2": 0.5rem,
-  "3": 1rem,
-  "4": 2rem,
+  "1": rem(4),
+  "2": rem(8),
+  "3": rem(16),
+  "4": rem(32),
 );

@@ -7,11 +7,26 @@
 @import "helpers/unit-conversion";
 
 // Config
-@import "config/layout";
 @import "config/typography";
+@import "config/layout";
 @import "config/theme";
 
 // Atomic classes
+// Typography
+@import "typography/font-family";
+@import "typography/font-size";
+@import "typography/font-weight";
+@import "typography/font-style";
+@import "typography/font-render";
+@import "typography/line-measure";
+@import "typography/line-height";
+@import "typography/line-tracking";
+@import "typography/text-align";
+@import "typography/text-transform";
+@import "typography/text-decoration";
+@import "typography/text-indent";
+@import "typography/text-white-space";
+
 // Layout
 @import "layout/position";
 @import "layout/z-index";
@@ -38,21 +53,6 @@
 @import "layout/pointer-events";
 @import "layout/object-fit";
 @import "layout/object-position";
-
-// Typography
-@import "typography/font-family";
-@import "typography/font-size";
-@import "typography/font-weight";
-@import "typography/font-style";
-@import "typography/font-render";
-@import "typography/line-measure";
-@import "typography/line-height";
-@import "typography/line-tracking";
-@import "typography/text-align";
-@import "typography/text-transform";
-@import "typography/text-decoration";
-@import "typography/text-indent";
-@import "typography/text-white-space";
 
 // Theme
 @import "theme/color";

@@ -28,19 +28,19 @@ $colors: concat-maps($brand-colors, $neutral-colors, $notification-colors);
 // border
 $border-widths: (
   "0": 0,
-  "1": 0.125rem,
-  "2": 0.25rem,
-  "3": 0.5rem,
-  "4": 1rem,
-  "5": 2rem,
+  "1": rem(2),
+  "2": rem(4),
+  "3": rem(8),
+  "4": rem(16),
+  "5": rem(32),
 );
 
 $border-radii: (
   "0": 0,
-  "1": 0.125rem,
-  "2": 0.25rem,
-  "3": 0.5rem,
-  "4": 1rem,
+  "1": rem(2),
+  "2": rem(4),
+  "3": rem(8),
+  "4": rem(16),
 );
 
 // opacity

@@ -1,19 +1,19 @@
-// container
+// Container
 $screen-sizes: (
-  "s": 40rem,
-  "m": 60rem,
-  "l": 80rem,
+  "s": rem(640),
+  "m": rem(960),
+  "l": rem(1280),
 );
 
 $wraps: (
-  "s": 40rem,
-  "m": 60rem,
-  "l": 80rem,
+  "s": rem(640),
+  "m": rem(960),
+  "l": rem(1280),
 );
 
 $grids: 12;
 
-// positioning
+// Positioning
 $z-indexes: (
   "0": 0,
   "1": 1,
@@ -24,29 +24,29 @@ $z-indexes: (
 );
 $moves: (
   "0": 0,
-  "1": 1rem,
-  "2": 2rem,
+  "1": rem(16),
+  "2": rem(32),
 );
 
-// spacing
+// Spacing
 $margins: (
   "0": 0,
-  "1": 0.25rem,
-  "2": 0.5rem,
-  "3": 1rem,
-  "4": 2rem,
-  "5": 4rem,
-  "6": 8rem,
-  "7": 16rem,
+  "1": rem(4),
+  "2": rem(8),
+  "3": rem(16),
+  "4": rem(32),
+  "5": rem(64),
+  "6": rem(128),
+  "7": rem(256),
 );
 
 $paddings: (
   "0": 0,
-  "1": 0.25rem,
-  "2": 0.5rem,
-  "3": 1rem,
-  "4": 2rem,
-  "5": 4rem,
-  "6": 8rem,
-  "7": 16rem,
+  "1": rem(4),
+  "2": rem(8),
+  "3": rem(16),
+  "4": rem(32),
+  "5": rem(64),
+  "6": rem(128),
+  "7": rem(256),
 );
