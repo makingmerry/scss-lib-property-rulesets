@@ -1,5 +1,6 @@
 // color
 $brand-colors: ();
+
 $neutral-colors: (
   "black": #000,
   "near-black": #111,
@@ -21,7 +22,9 @@ $notification-colors: (
   "green": #19a974,
   "light-green": #9eebcf,
 );
+
 $colors: concat-maps($brand-colors, $neutral-colors, $notification-colors);
+
 // border
 $border-widths: (
   "0": 0,
@@ -31,6 +34,7 @@ $border-widths: (
   "4": 1rem,
   "5": 2rem,
 );
+
 $border-radii: (
   "0": 0,
   "1": 0.125rem,
@@ -38,6 +42,7 @@ $border-radii: (
   "3": 0.5rem,
   "4": 1rem,
 );
+
 // opacity
 $opacities: (
   "0": 0,
@@ -46,6 +51,7 @@ $opacities: (
   "3": 0.85,
   "4": 1,
 );
+
 // transition
 $transition-durations: (
   "0": 0,

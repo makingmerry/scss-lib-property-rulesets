@@ -1,30 +1,3 @@
-// RSON
-// -
-// pattern:
-// (
-//   (
-//     'selector': '.red-box',
-//     'declarations': (
-//       display: block,
-//       background-color: red,
-//     ),
-//     'state': '',
-//   ),
-//   ...
-// )
-
-//////////////////////////////
-// make-RSON
-// {Function} returns a RSON data object list
-// for generating rulesets with 'ruleset makers'
-// -
-// @param {Map} $config-map - Map of selector modifier `key`s to declaration `value`s
-// @param {String} $selector-prefix - Identity part of selector
-// @param {String | List} $properties - Property(ies) to list in declaration blocks
-// @param {String} $state - (Optional) state listener (e.g. ':hover') to modify selector
-// -
-// @return {List}
-//////////////////////////////
 @function make-RSON($config-map, $selector-prefix, $properties, $state: "") {
   $result: ();
   // generate data objects from each config line
@@ -36,7 +9,7 @@
       $declaration-block: map-merge(
         $declaration-block,
         (
-          $property: $value
+          $property: $value,
         )
       );
     }
@@ -46,25 +19,14 @@
       (
         "selector": $selector-prefix + "-" + $key,
         "declarations": $declaration-block,
-        "state": $state
+        "state": $state,
       ),
       "comma"
     );
   }
   @return $result;
 }
-// ruleset
 
-//////////////////////////////
-// make-responsive-rulesets
-// {Mixin} forms mulitple rulesets from a RSON list,
-// duplicated for multiple screens size constraints
-// -
-// @param {List} $RSON - RSON list containing ruleset data to form CSS rulesets
-// @param {Map} $screen-sizes - Map of screen-sizes to get constraints from
-// -
-// @requires {Mixin} make-rulesets
-//////////////////////////////
 @mixin make-responsive-rulesets($RSON, $screen-sizes) {
   // form base rulesets
   @include make-rulesets($RSON);
@@ -75,15 +37,7 @@
     }
   }
 }
-//////////////////////////////
-// make-rulesets
-// {Mixin} forms mulitple rulesets from a RSON list
-// -
-// @param {List} $RSON - RSON list containing ruleset data to form CSS rulesets
-// @param {String} $selector-mod - (Optional) string to modify all selectors
-// -
-// @requires {Mixin} make-ruleset
-//////////////////////////////
+
 @mixin make-rulesets($RSON, $selector-mod: "") {
   @each $obj in $RSON {
     // forms single CSS rulesets from every data object
@@ -95,15 +49,7 @@
     @include make-ruleset($selector, $declarations, $selector-mod, $state);
   }
 }
-//////////////////////////////
-// make-ruleset
-// {Mixin} forms a single CSS ruleset with delcared arguments
-// -
-// @param {String} $selector - Name prefixed with type-notation (e.g. '.' for Class)
-// @param {Map} $declarations - Property to `value` pairs
-// @param {String} $selector-mod - (Optional) string to modify selector
-// @param {String} $state - (Optional) state listener (e.g. ':hover') to modify selector
-//////////////////////////////
+
 @mixin make-ruleset($selector, $declarations, $selector-mod: "", $state: "") {
   @if $selector-mod != "" {
     $selector: $selector + "--" + $selector-mod;

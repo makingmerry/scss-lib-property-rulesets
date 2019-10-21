@@ -1,13 +1,16 @@
 // Sass method extensions
 @import "extensions/list";
 @import "extensions/map";
+
+// Helper methods
+@import "helpers/ruleset-builder";
+@import "helpers/unit-conversion";
+
 // Config
 @import "config/layout";
 @import "config/typography";
 @import "config/theme";
-@import "config/reset";
-// Helper methods
-@import "helpers/ruleset-builder";
+
 // Atomic classes
 // Layout
 @import "layout/position";
@@ -35,6 +38,7 @@
 @import "layout/pointer-events";
 @import "layout/object-fit";
 @import "layout/object-position";
+
 // Typography
 @import "typography/font-family";
 @import "typography/font-size";
@@ -49,6 +53,7 @@
 @import "typography/text-decoration";
 @import "typography/text-indent";
 @import "typography/text-white-space";
+
 // Theme
 @import "theme/color";
 @import "theme/background-color";

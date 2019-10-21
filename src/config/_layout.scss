@@ -4,12 +4,15 @@ $screen-sizes: (
   "m": 60rem,
   "l": 80rem,
 );
+
 $wraps: (
   "s": 40rem,
   "m": 60rem,
   "l": 80rem,
 );
+
 $grids: 12;
+
 // positioning
 $z-indexes: (
   "0": 0,
@@ -24,6 +27,7 @@ $moves: (
   "1": 1rem,
   "2": 2rem,
 );
+
 // spacing
 $margins: (
   "0": 0,
@@ -35,6 +39,7 @@ $margins: (
   "6": 8rem,
   "7": 16rem,
 );
+
 $paddings: (
   "0": 0,
   "1": 0.25rem,
