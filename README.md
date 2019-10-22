@@ -71,63 +71,50 @@ npm run dist
 
 ### Typography
 
-| Property         | Class             | Modifiers                               |
-| ---------------- | ----------------- | --------------------------------------- |
-| font-family      | f-f-\${modifier}  | `Specified in config`                   |
-| font-size        | f-s-\${modifier}  | `Specified in config`                   |
-| font-weight      | f-w-\${modifier}  | 1—9                                     |
-| font-render      | f-r-\${modifier}  | auto, smooth                            |
-| font-style       | f-sy-\${modifier} | normal, italic                          |
-| line-height      | l-h-\${modifier}  | copy, title, solid                      |
-| line-length      | l-l-\${modifier}  | none, base, narrow, wide                |
-| line-tracking    | l-t-\${modifier}  | none, base, tight, wide                 |
-| text-align       | t-a-\${modifier}  | left, center, right                     |
-| text-decoration  | t-d-\${modifier}  | none, strike, underline                 |
-| text-indent      | t-i-\${modifier}  | `Specified in config`                   |
-| text-transform   | t-t-\${modifier}  | none ,upper ,lower ,cap                 |
-| text-white-space | t-ws-\${modifier} | normal, nowrap, pre, pre-wrap, pre-line |
+| Property         | Class          | Modifer | Value                                   |
+| ---------------- | -------------- | ------- | --------------------------------------- |
+| font-family      | f-f-\${value}  |         | `Specified in config`                   |
+| font-size        | f-s-\${value}  |         | `Specified in config`                   |
+| font-weight      | f-w-\${value}  |         | 1—9                                     |
+| font-render      | f-r-\${value}  |         | auto, smooth                            |
+| font-style       | f-sy-\${value} |         | normal, italic                          |
+| line-height      | l-h-\${value}  |         | copy, title, solid                      |
+| line-length      | l-l-\${value}  |         | none, base, narrow, wide                |
+| line-tracking    | l-t-\${value}  |         | none, base, tight, wide                 |
+| text-align       | t-a-\${value}  |         | left, center, right                     |
+| text-decoration  | t-d-\${value}  |         | none, strike, underline                 |
+| text-indent      | t-i-\${value}  |         | `Specified in config`                   |
+| text-transform   | t-t-\${value}  |         | none ,upper ,lower ,cap                 |
+| text-white-space | t-ws-\${value} |         | normal, nowrap, pre, pre-wrap, pre-line |
 
 ### Layout
 
-| Property        | classname             | Modifiers |
-| --------------- | --------------------- | --------- |
-| position        | pos-\${modifier}      |
-| display         | d-\${modifier}        |
-| flex-direction  | flx-dir-\${modifier}  |
-| flex-wrap       | flx-wp-\${modifier}   |
-| align-content   | flx-ac-\${modifier}   |
-| align-items     | flx-ai-\${modifier}   |
-| align-self      | flx-as-\${modifier}   |
-| justify-content | flx-jc-\${modifier}   |
-| order           | flx-ord-\${modifier}  |
-| float           | float-\${modifier}    |
-| height          | h-\${modifier}        |
-| margin          | m-all-\${modifier}    |
-|                 | m-ver-\${modifier}    |
-|                 | m-hor-\${modifier}    |
-|                 | m-top-\${modifier}    |
-|                 | m-right-\${modifier}  |
-|                 | m-bottom-\${modifier} |
-|                 | m-left-\${modifier}   |
-| object-fit      | obj-f-\${modifier}    |
-| object-position | ob-pos-\${modifier}   |
-| overflow        | of-\${modifier}       |
-| padding         | p-all-\${modifier}    |
-|                 | p-ver-\${modifier}    |
-|                 | p-hor-\${modifier}    |
-|                 | p-top-\${modifier}    |
-|                 | p-right-\${modifier}  |
-|                 | p-bottom-\${modifier} |
-|                 | p-left-\${modifier}   |
-| pointer-event   | pe-\${modifier}       |
-| vertical-align  | va-\${modifier}       |
-| visibility      | vis-\${modifier}      |
-| width           | w-\${modifier}        |
-| z-index         | z-\${modifier}        |
-
-<!-- horizontal-align
-move
-wrap -->
+| Property                                           | Class                    | Modifier                 | Value |
+| -------------------------------------------------- | ------------------------ | ------------------------ | ----- |
+| position                                           | pos-\${value}            |                          |       |
+| display                                            | d-\${value}              |                          |       |
+| flex-direction                                     | flx-dir-\${value}        |                          |       |
+| flex-wrap                                          | flx-wp-\${value}         |                          |       |
+| align-content                                      | flx-ac-\${value}         |                          |       |
+| align-items                                        | flx-ai-\${value}         |                          |       |
+| align-self                                         | flx-as-\${value}         |                          |       |
+| justify-content                                    | flx-jc-\${value}         |                          |       |
+| order                                              | flx-ord-\${value}        |                          |       |
+| float                                              | float-\${value}          |                          |       |
+| height                                             | h-\${value}              |                          |       |
+| margin                                             | m-${modifier}-${value}   | top, right, bottom, left |       |
+| object-fit                                         | obj-f-\${value}          |                          |       |
+| object-position                                    | ob-pos-\${value}         |                          |       |
+| overflow                                           | of-\${value}             |                          |       |
+| padding                                            | p-\${modifier}-\${value} | top, right, bottom, left |       |
+| pointer-event                                      | pe-\${value}             |                          |       |
+| vertical-align                                     | va-\${value}             |                          |       |
+| visibility                                         | vis-\${value}            |                          |       |
+| width                                              | w-\${value}              |                          |       |
+| z-index                                            | z-\${value}              |                          |       |
+| _horizontal-align_<br>(margin-left + margin-right) | ha-\${value}             |                          |       |
+| _move_                                             | ${modifer}-${value}      | top, right, bottom, left |       |
+| _wrap_<br>(max-width)                              | wrap-\${value}           |                          |       |
 
 ### Theme
 
