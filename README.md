@@ -89,9 +89,45 @@ npm run dist
 
 ### Layout
 
-| Property | classname | Modifiers |
-| -------- | --------- | --------- |
+| Property        | classname             | Modifiers |
+| --------------- | --------------------- | --------- |
+| position        | pos-\${modifier}      |
+| display         | d-\${modifier}        |
+| flex-direction  | flx-dir-\${modifier}  |
+| flex-wrap       | flx-wp-\${modifier}   |
+| align-content   | flx-ac-\${modifier}   |
+| align-items     | flx-ai-\${modifier}   |
+| align-self      | flx-as-\${modifier}   |
+| justify-content | flx-jc-\${modifier}   |
+| order           | flx-ord-\${modifier}  |
+| float           | float-\${modifier}    |
+| height          | h-\${modifier}        |
+| margin          | m-all-\${modifier}    |
+|                 | m-ver-\${modifier}    |
+|                 | m-hor-\${modifier}    |
+|                 | m-top-\${modifier}    |
+|                 | m-right-\${modifier}  |
+|                 | m-bottom-\${modifier} |
+|                 | m-left-\${modifier}   |
+| object-fit      | obj-f-\${modifier}    |
+| object-position | ob-pos-\${modifier}   |
+| overflow        | of-\${modifier}       |
+| padding         | p-all-\${modifier}    |
+|                 | p-ver-\${modifier}    |
+|                 | p-hor-\${modifier}    |
+|                 | p-top-\${modifier}    |
+|                 | p-right-\${modifier}  |
+|                 | p-bottom-\${modifier} |
+|                 | p-left-\${modifier}   |
+| pointer-event   | pe-\${modifier}       |
+| vertical-align  | va-\${modifier}       |
+| visibility      | vis-\${modifier}      |
+| width           | w-\${modifier}        |
+| z-index         | z-\${modifier}        |
 
+<!-- horizontal-align
+move
+wrap -->
 
 ### Theme
 
