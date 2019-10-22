@@ -31,15 +31,9 @@ npm run dist
 
 ## Configuration
 
-Configuration is split into 3 groups, each for a specific category of core design elements:
-
-1. [Typography](#user-content-typography)
-2. [Layout](#user-content-layout)
-3. [Theme](#user-content-theme)
-
 ### Typography
 
-| Property         | Type | Description                                                              |
+| Name             | Type | Description                                                              |
 | ---------------- | ---- | ------------------------------------------------------------------------ |
 | \$base-font-size | unit | Declare base font size for relative font-sizing (rem, em) in project     |
 | \$font-families  | map  | Font families                                                            |
@@ -51,7 +45,7 @@ Configuration is split into 3 groups, each for a specific category of core desig
 
 ### Layout
 
-| Property       | Type | Description                                                                                                                                             |
+| Name           | Type | Description                                                                                                                                             |
 | -------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | \$screen-sizes | map  | Media query breakpoints                                                                                                                                 |
 | \$wraps        | map  | Max width containers for child components                                                                                                               |
@@ -63,7 +57,7 @@ Configuration is split into 3 groups, each for a specific category of core desig
 
 ### Theme
 
-| Property               | Type | Description                              |
+| Name                   | Type | Description                              |
 | ---------------------- | ---- | ---------------------------------------- |
 | \$project-colors       | map  | Project colors and names                 |
 | \$neutral-colors       | map  | Neutral colors and names                 |
@@ -75,7 +69,36 @@ Configuration is split into 3 groups, each for a specific category of core desig
 
 ## Properties
 
-`TODO`
+### Typography
+
+| Property         | Class             | Modifiers             | Values                |
+| ---------------- | ----------------- | --------------------- | --------------------- |
+| font-family      | f-f-\${modifier}  | `Specified in config` | `Specified in config` |
+| font-size        | f-s-\${modifier}  | `Specified in config` | `Specified in config` |
+| font-weight      | f-w-\${modifier}  | 1—9                   | 100—900               |
+| font-render      | f-r-\${modifier}  | auto                  | auto                  |
+|                  |                   | smooth                | smooth                |
+| font-style       | f-sy-\${modifier} | normal, italic        | normal, italic        |
+| line-height      | l-h-\${modifier}  |
+| line-length      | l-l-\${modifier}  |
+| line-tracking    | l-t-\${modifier}  |
+| text-align       | t-a-\${modifier}  |
+| text-decoration  | t-d-\${modifier}  |
+| text-indent      | t-i-\${modifier}  |
+| text-transform   | t-t-\${modifier}  |
+| text-white-space | t-ws-\${modifier} |
+
+### Layout
+
+| Property | classname |
+| -------- | --------- |
+
+
+### Theme
+
+| Property | classname |
+| -------- | --------- |
+
 
 ## Resources
 
