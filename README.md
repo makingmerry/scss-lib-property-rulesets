@@ -71,33 +71,32 @@ npm run dist
 
 ### Typography
 
-| Property         | Class             | Modifiers             | Values                |
-| ---------------- | ----------------- | --------------------- | --------------------- |
-| font-family      | f-f-\${modifier}  | `Specified in config` | `Specified in config` |
-| font-size        | f-s-\${modifier}  | `Specified in config` | `Specified in config` |
-| font-weight      | f-w-\${modifier}  | 1—9                   | 100—900               |
-| font-render      | f-r-\${modifier}  | auto                  | auto                  |
-|                  |                   | smooth                | smooth                |
-| font-style       | f-sy-\${modifier} | normal, italic        | normal, italic        |
-| line-height      | l-h-\${modifier}  |
-| line-length      | l-l-\${modifier}  |
-| line-tracking    | l-t-\${modifier}  |
-| text-align       | t-a-\${modifier}  |
-| text-decoration  | t-d-\${modifier}  |
-| text-indent      | t-i-\${modifier}  |
-| text-transform   | t-t-\${modifier}  |
-| text-white-space | t-ws-\${modifier} |
+| Property         | Class             | Modifiers                               |
+| ---------------- | ----------------- | --------------------------------------- |
+| font-family      | f-f-\${modifier}  | `Specified in config`                   |
+| font-size        | f-s-\${modifier}  | `Specified in config`                   |
+| font-weight      | f-w-\${modifier}  | 1—9                                     |
+| font-render      | f-r-\${modifier}  | auto, smooth                            |
+| font-style       | f-sy-\${modifier} | normal, italic                          |
+| line-height      | l-h-\${modifier}  | copy, title, solid                      |
+| line-length      | l-l-\${modifier}  | none, base, narrow, wide                |
+| line-tracking    | l-t-\${modifier}  | none, base, tight, wide                 |
+| text-align       | t-a-\${modifier}  | left, center, right                     |
+| text-decoration  | t-d-\${modifier}  | none, strike, underline                 |
+| text-indent      | t-i-\${modifier}  | `Specified in config`                   |
+| text-transform   | t-t-\${modifier}  | none ,upper ,lower ,cap                 |
+| text-white-space | t-ws-\${modifier} | normal, nowrap, pre, pre-wrap, pre-line |
 
 ### Layout
 
-| Property | classname |
-| -------- | --------- |
+| Property | classname | Modifiers |
+| -------- | --------- | --------- |
 
 
 ### Theme
 
-| Property | classname |
-| -------- | --------- |
+| Property | classname | Modifiers |
+| -------- | --------- | --------- |
 
 
 ## Resources
