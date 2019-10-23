@@ -69,76 +69,83 @@ npm run dist
 
 ## Properties
 
+### State Modifiers
+
+| State      | Modifer        | Description                                     |
+| ---------- | -------------- | ----------------------------------------------- |
+| :hover     | .hov-\${class} | Applied when mouseover element                  |
+| js-enabled | .js-\${class}  | Applied when .js class is applied to `html` tag |
+
 ### Typography
 
-| Property         | Class           | Modifer | Value                                   |
-| ---------------- | --------------- | ------- | --------------------------------------- |
-| font-family      | .f-f-\${value}  |         | _Specified in config_                   |
-| font-size        | .f-s-\${value}  |         | _Specified in config_                   |
-| font-weight      | .f-w-\${value}  |         | 1—9                                     |
-| font-render      | .f-r-\${value}  |         | auto, smooth                            |
-| font-style       | .f-sy-\${value} |         | normal, italic                          |
-| line-height      | .l-h-\${value}  |         | copy, title, solid                      |
-| line-length      | .l-l-\${value}  |         | none, base, narrow, wide                |
-| line-tracking    | .l-t-\${value}  |         | none, base, tight, wide                 |
-| text-align       | .t-a-\${value}  |         | left, center, right                     |
-| text-decoration  | .t-d-\${value}  |         | none, strike, underline                 |
-| text-indent      | .t-i-\${value}  |         | _Specified in config_                   |
-| text-transform   | .t-t-\${value}  |         | none ,upper ,lower ,cap                 |
-| text-white-space | .t-ws-\${value} |         | normal, nowrap, pre, pre-wrap, pre-line |
+| Property         | Class           | Modifer | Value                                   | :hover  | js-enabled |
+| ---------------- | --------------- | ------- | --------------------------------------- | ------- | ---------- |
+| font-family      | .f-f-\${value}  |         | _Specified in config_                   | `false` | `false`    |
+| font-size        | .f-s-\${value}  |         | _Specified in config_                   | `false` | `false`    |
+| font-weight      | .f-w-\${value}  |         | 1—9                                     | `false` | `false`    |
+| font-render      | .f-r-\${value}  |         | auto, smooth                            | `false` | `false`    |
+| font-style       | .f-sy-\${value} |         | normal, italic                          | `false` | `false`    |
+| line-height      | .l-h-\${value}  |         | copy, title, solid                      | `false` | `false`    |
+| line-length      | .l-l-\${value}  |         | none, base, narrow, wide                | `false` | `false`    |
+| line-tracking    | .l-t-\${value}  |         | none, base, tight, wide                 | `false` | `false`    |
+| text-align       | .t-a-\${value}  |         | left, center, right                     | `false` | `false`    |
+| text-decoration  | .t-d-\${value}  |         | none, strike, underline                 | `false` | `false`    |
+| text-indent      | .t-i-\${value}  |         | _Specified in config_                   | `false` | `false`    |
+| text-transform   | .t-t-\${value}  |         | none ,upper ,lower ,cap                 | `false` | `false`    |
+| text-white-space | .t-ws-\${value} |         | normal, nowrap, pre, pre-wrap, pre-line | `false` | `false`    |
 
 ### Layout
 
-| Property                                           | Class                     | Modifier                 | Value                                                                                                         |
-| -------------------------------------------------- | ------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| position                                           | .pos-\${value}            |                          | static, fixed, relative, absolute                                                                             |
-| z-index                                            | .z-\${value}              |                          | _Specified in config_                                                                                         |
-| _move_                                             | .${modifer}-${value}      | top, right, bottom, left | _Specified in config_                                                                                         |
-| float                                              | .float-\${value}          |                          | none, right, left                                                                                             |
-| display                                            | .d-\${value}              |                          | none, block, inline, block, flex, table, i-table, t-cell, t-row, t-row-grp, t-column, t-column-grp, table-fix |
-| width                                              | .w-\${value}              |                          | auto, 0, 25, 50, 75, 100, 100vw                                                                               |
-| min-width                                          | .w-\${value}-min          |                          | 100, 100vw                                                                                                    |
-| max-width                                          | .w-\${value}-max          |                          | 100, 100vw                                                                                                    |
-| height                                             | .h-\${value}              |                          | auto, 0, 25, 50, 75, 100, 100vh                                                                               |
-| min-height                                         | .h-\${value}-min          |                          | 100, 100vw                                                                                                    |
-| max-height                                         | .h-\${value}-max          |                          | 100, 100vw                                                                                                    |
-| _wrap_<br>(max-width)                              | .wrap-\${value}           |                          | _Specified in config_                                                                                         |
-| _horizontal-align_<br>(margin-left + margin-right) | .ha-\${value}             |                          | right, left, center                                                                                           |
-| vertical-align                                     | .va-\${value}             |                          | top, middle, bottom, t-top, t-bottom, sub, sup, baseline                                                      |
-| margin                                             | .m-\${modifier}-\${value} | top, right, bottom, left | _Specified in config_                                                                                         |
-| padding                                            | .p-\${modifier}-\${value} | top, right, bottom, left | _Specified in config_                                                                                         |
-| overflow                                           | .of-\${value}             |                          | visible, hidden, scroll, auto, x-visible, x-hidden, x-scroll, x-auto, y-visible, y-hidden, y-scroll, y-auto   |
-| flex-direction                                     | .flx-dir-\${value}        |                          | row, row-r, column, column-r                                                                                  |
-| flex-wrap                                          | .flx-wp-\${value}         |                          | none, wrap, wrap-r                                                                                            |
-| align-content                                      | .flx-ac-\${value}         |                          | start, end, center, stretch, s-between, s-around                                                              |
-| align-items                                        | .flx-ai-\${value}         |                          | start, end, center, stretch, baseline                                                                         |
-| align-self                                         | .flx-as-\${value}         |                          | auto, start, end, center, stretch, baseline                                                                   |
-| justify-content                                    | .flx-jc-\${value}         |                          | start, end, center, s-between, s-around                                                                       |
-| order                                              | .flx-ord-\${value}        |                          | first, last                                                                                                   |
-| object-fit                                         | .obj-f-\${value}          |                          | none, fill, contain, cover, scale-down                                                                        |
-| object-position                                    | .obj-p-\${value}          |                          | none, top, top-right, right, bottom-right, bottom, bottom-left, left, top-left, center                        |
-| visibility                                         | .vis-\${value}            |                          | visible, hidden, collapse                                                                                     |
-| pointer-event                                      | .pe-\${value}             |                          | none, auto                                                                                                    |
+| Property                                           | Class                     | Modifier                 | Value                                                                                                         | Hover   | js-enabled |
+| -------------------------------------------------- | ------------------------- | ------------------------ | ------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
+| position                                           | .pos-\${value}            |                          | static, fixed, relative, absolute                                                                             | `false` | `true`     |
+| z-index                                            | .z-\${value}              |                          | _Specified in config_                                                                                         | `false` | `false`    |
+| _move_                                             | .${modifer}-${value}      | top, right, bottom, left | _Specified in config_                                                                                         | `false` | `false`    |
+| float                                              | .float-\${value}          |                          | none, right, left                                                                                             | `false` | `false`    |
+| display                                            | .d-\${value}              |                          | none, block, inline, block, flex, table, i-table, t-cell, t-row, t-row-grp, t-column, t-column-grp, table-fix | `false` | `true`     |
+| width                                              | .w-\${value}              |                          | auto, 0, 25, 50, 75, 100, 100vw                                                                               | `false` | `false`    |
+| min-width                                          | .w-\${value}-min          |                          | 100, 100vw                                                                                                    | `false` | `false`    |
+| max-width                                          | .w-\${value}-max          |                          | 100, 100vw                                                                                                    | `false` | `false`    |
+| height                                             | .h-\${value}              |                          | auto, 0, 25, 50, 75, 100, 100vh                                                                               | `false` | `false`    |
+| min-height                                         | .h-\${value}-min          |                          | 100, 100vw                                                                                                    | `false` | `false`    |
+| max-height                                         | .h-\${value}-max          |                          | 100, 100vw                                                                                                    | `false` | `false`    |
+| _wrap_<br>(max-width)                              | .wrap-\${value}           |                          | _Specified in config_                                                                                         | `false` | `false`    |
+| _horizontal-align_<br>(margin-left + margin-right) | .ha-\${value}             |                          | right, left, center                                                                                           | `false` | `false`    |
+| vertical-align                                     | .va-\${value}             |                          | top, middle, bottom, t-top, t-bottom, sub, sup, baseline                                                      | `false` | `false`    |
+| margin                                             | .m-\${modifier}-\${value} | top, right, bottom, left | _Specified in config_                                                                                         | `false` | `false`    |
+| padding                                            | .p-\${modifier}-\${value} | top, right, bottom, left | _Specified in config_                                                                                         | `false` | `false`    |
+| overflow                                           | .of-\${value}             |                          | visible, hidden, scroll, auto, x-visible, x-hidden, x-scroll, x-auto, y-visible, y-hidden, y-scroll, y-auto   | `false` | `true`     |
+| flex-direction                                     | .flx-dir-\${value}        |                          | row, row-r, column, column-r                                                                                  | `false` | `false`    |
+| flex-wrap                                          | .flx-wp-\${value}         |                          | none, wrap, wrap-r                                                                                            | `false` | `false`    |
+| align-content                                      | .flx-ac-\${value}         |                          | start, end, center, stretch, s-between, s-around                                                              | `false` | `false`    |
+| align-items                                        | .flx-ai-\${value}         |                          | start, end, center, stretch, baseline                                                                         | `false` | `false`    |
+| align-self                                         | .flx-as-\${value}         |                          | auto, start, end, center, stretch, baseline                                                                   | `false` | `false`    |
+| justify-content                                    | .flx-jc-\${value}         |                          | start, end, center, s-between, s-around                                                                       | `false` | `false`    |
+| order                                              | .flx-ord-\${value}        |                          | first, last                                                                                                   | `false` | `false`    |
+| object-fit                                         | .obj-f-\${value}          |                          | none, fill, contain, cover, scale-down                                                                        | `false` | `false`    |
+| object-position                                    | .obj-p-\${value}          |                          | none, top, top-right, right, bottom-right, bottom, bottom-left, left, top-left, center                        | `false` | `false`    |
+| visibility                                         | .vis-\${value}            |                          | visible, hidden, collapse                                                                                     | `false` | `true`     |
+| pointer-event                                      | .pe-\${value}             |                          | none, auto                                                                                                    | `false` | `false`    |
 
 ### Theme
 
-| Property              | classname       | Modifiers | Value                                                                                  |
-| --------------------- | --------------- | --------- | -------------------------------------------------------------------------------------- |
-| background-color      | .bg-c-\${value} |           | _Specified in config_                                                                  |
-| background-size       | .bg-s-\${value} |           | none, cover, contain                                                                   |
-| background-position   | .bg-p-\${value} |           | none, top, top-right, right, bottom-right, bottom, bottom-left, left, top-left, center |
-| background-repeat     | .bg-r-\${value} |           | none, repeat, repeat-x, repeat-y                                                       |
-| background-attachment | .bg-a-\${value} |           | scroll, fixed, local                                                                   |
-| border                | .b-\${value}    |           | none, all, top, right, bottom, left                                                    |
-| border-width          | .b-w-\${value}  |           | _Specified in config_                                                                  |
-| border-style          | .b-sy-\${value} |           | none, solid, dot, dash                                                                 |
-| border-color          | .b-c-\${value}  |           | _Specified in config_                                                                  |
-| border-radius         | .b-r-\${value}  |           | _Specified in config_                                                                  |
-| color                 | .c-\${value}    |           | _Specified in config_                                                                  |
-| fill                  | .fil-\${value}  |           | _Specified in config_                                                                  |
-| cursor                | .cs-\${value}   |           | none, auto, default, pointer, text                                                     |
-| opacity               | .op-\${value}   |           | _Specified in config_                                                                  |
-| transition-duration   | .tx-\${value}   |           | _Specified in config_                                                                  |
+| Property              | classname       | Modifiers | Value                                                                                  | Hover   | js-enabled |
+| --------------------- | --------------- | --------- | -------------------------------------------------------------------------------------- | ------- | ---------- |
+| background-color      | .bg-c-\${value} |           | _Specified in config_                                                                  | `true`  | `false`    |
+| background-size       | .bg-s-\${value} |           | none, cover, contain                                                                   | `false` | `false`    |
+| background-position   | .bg-p-\${value} |           | none, top, top-right, right, bottom-right, bottom, bottom-left, left, top-left, center | `false` | `false`    |
+| background-repeat     | .bg-r-\${value} |           | none, repeat, repeat-x, repeat-y                                                       | `false` | `false`    |
+| background-attachment | .bg-a-\${value} |           | scroll, fixed, local                                                                   | `false` | `false`    |
+| border                | .b-\${value}    |           | none, all, top, right, bottom, left                                                    | `false` | `false`    |
+| border-width          | .b-w-\${value}  |           | _Specified in config_                                                                  | `false` | `false`    |
+| border-style          | .b-sy-\${value} |           | none, solid, dot, dash                                                                 | `false` | `false`    |
+| border-color          | .b-c-\${value}  |           | _Specified in config_                                                                  | `true`  | `false`    |
+| border-radius         | .b-r-\${value}  |           | _Specified in config_                                                                  | `false` | `false`    |
+| color                 | .c-\${value}    |           | _Specified in config_                                                                  | `true`  | `false`    |
+| fill                  | .fil-\${value}  |           | _Specified in config_                                                                  | `true`  | `false`    |
+| cursor                | .cs-\${value}   |           | none, auto, default, pointer, text                                                     | `false` | `false`    |
+| opacity               | .op-\${value}   |           | _Specified in config_                                                                  | `true`  | `false`    |
+| transition-duration   | .tx-\${value}   |           | _Specified in config_                                                                  | `false` | `false`    |
 
 ## Resources
 
