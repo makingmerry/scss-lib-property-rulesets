@@ -33,39 +33,39 @@ npm run dist
 
 ### Typography
 
-| Name             | Type | Description                                                              |
-| ---------------- | ---- | ------------------------------------------------------------------------ |
-| \$base-font-size | unit | Declare base font size for relative font-sizing (rem, em) in project     |
-| \$font-families  | map  | Font families                                                            |
-| \$type-scale     | map  | type scale for font sizes                                                |
-| \$line-lengths   | map  | Width of a block of text, sized relative to its font-size                |
-| \$line-heights   | map  | Leading, or vertical spacing between lines of text                       |
-| \$line-trackings | map  | Tracking, or horizontal white space between letters in a block of text   |
-| \$text-indents   | map  | Length of indentation space put before the first line in a block of text |
+| Name             | Type   | Description                                                              |
+| ---------------- | ------ | ------------------------------------------------------------------------ |
+| \$base-font-size | `unit` | Declare base font size for relative font-sizing (rem, em) in project     |
+| \$font-families  | `map`  | Font families                                                            |
+| \$type-scale     | `map`  | type scale for font sizes                                                |
+| \$line-lengths   | `map`  | Width of a block of text, sized relative to its font-size                |
+| \$line-heights   | `map`  | Leading, or vertical spacing between lines of text                       |
+| \$line-trackings | `map`  | Tracking, or horizontal white space between letters in a block of text   |
+| \$text-indents   | `map`  | Length of indentation space put before the first line in a block of text |
 
 ### Layout
 
-| Name           | Type | Description                                                                                                                                             |
-| -------------- | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| \$screen-sizes | map  | Media query breakpoints                                                                                                                                 |
-| \$wraps        | map  | Max width containers for child components                                                                                                               |
-| \$grids        | list | Number of columns in [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_LayoutBasic_Concepts_of_Flexbox) grids used in project |
-| \$z-indexes    | map  | Z-order of _positioned elements_                                                                                                                        |
-| \$moves        | map  | Vertical and horionzal position of _positioned elements_                                                                                                |
-| \$margins      | map  | Margin area for elements                                                                                                                                |
-| \$paddings     | map  | Padding area for elements                                                                                                                               |
+| Name           | Type   | Description                                                                                                                                             |
+| -------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| \$screen-sizes | `map`  | Media query breakpoints                                                                                                                                 |
+| \$wraps        | `map`  | Max width containers for child components                                                                                                               |
+| \$grids        | `list` | Number of columns in [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_LayoutBasic_Concepts_of_Flexbox) grids used in project |
+| \$z-indexes    | `map`  | Z-order of _positioned elements_                                                                                                                        |
+| \$moves        | `map`  | Vertical and horionzal position of _positioned elements_                                                                                                |
+| \$margins      | `map`  | Margin area for elements                                                                                                                                |
+| \$paddings     | `map`  | Padding area for elements                                                                                                                               |
 
 ### Theme
 
-| Name                   | Type | Description                              |
-| ---------------------- | ---- | ---------------------------------------- |
-| \$project-colors       | map  | Project colors and names                 |
-| \$neutral-colors       | map  | Neutral colors and names                 |
-| \$notification-colors  | map  | System notification colors and names     |
-| \$border-widths        | map  | Border widths for elements               |
-| \$border-radii         | map  | Border radius for elements               |
-| \$opacities            | map  | Opacities for elements                   |
-| \$transition-durations | map  | Duration timings for element transitions |
+| Name                   | Type  | Description                              |
+| ---------------------- | ----- | ---------------------------------------- |
+| \$project-colors       | `map` | Project colors and names                 |
+| \$neutral-colors       | `map` | Neutral colors and names                 |
+| \$notification-colors  | `map` | System notification colors and names     |
+| \$border-widths        | `map` | Border widths for elements               |
+| \$border-radii         | `map` | Border radius for elements               |
+| \$opacities            | `map` | Opacities for elements                   |
+| \$transition-durations | `map` | Duration timings for element transitions |
 
 ## Properties
 
